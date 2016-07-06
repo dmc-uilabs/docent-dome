@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="e350c7f0-dcc7-1004-8eff-1efa6142d1e4" name="Core Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="a" idRef="c2562140-dccb-1004-851b-9aae9d31c1d9">
+                    <parameter name="a" idRef="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </mappedParameter>
+                <mappedParameter name="targetLevel" idRef="c256213d-dccb-1004-851b-9aae9d31c1d9">
+                    <parameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </mappedParameter>
+                <mappedParameter name="coreLogicMatrix" idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4">
+                    <parameter name="coreLogicMatrix" idRef="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </mappedParameter>
+                <mappedParameter name="coreLogicMrl" idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4">
+                    <parameter name="coreLogicMrl" idRef="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </mappedParameter>
+                <mappedParameter name="coreLogicFile" idRef="c256213e-dccb-1004-851b-9aae9d31c1d9">
+                    <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </mappedParameter>
+                <mappedParameter name="text" idRef="c256213f-dccb-1004-851b-9aae9d31c1d9">
+                    <parameter name="text" idRef="0fc340cd-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </mappedParameter>
+                <mappedParameter name="c" idRef="c2562142-dccb-1004-851b-9aae9d31c1d9">
+                    <parameter name="c" idRef="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </mappedParameter>
+                <mappedParameter name="b" idRef="c2562141-dccb-1004-851b-9aae9d31c1d9">
+                    <parameter name="b" idRef="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>

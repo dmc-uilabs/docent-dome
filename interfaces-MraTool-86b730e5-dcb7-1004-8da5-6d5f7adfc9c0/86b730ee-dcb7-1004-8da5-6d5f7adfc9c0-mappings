@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="86b730ee-dcb7-1004-8da5-6d5f7adfc9c0" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="mrl" idRef="01647e1f-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="mrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model1Str" idRef="01647e10-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model3Str" idRef="01647e16-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model4Str" idRef="01647e19-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model2Str" idRef="01647e13-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model5Str" idRef="01647e1c-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model3Str" idRef="01647e15-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model4Str" idRef="01647e18-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model2Str" idRef="01647e12-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="mrl" idRef="01647e1e-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="mrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model1Str" idRef="01647e0f-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+                <mappedParameter name="model5Str" idRef="01647e1b-dcc6-1004-8ebf-63ccdaa7c18a">
+                    <parameter name="model5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="model2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0" description="key"/>
+            <parameter name="model2Str" idRef="01647e12-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="mrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0" description="key"/>
+            <parameter name="mrl" idRef="01647e1e-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <context name="Context" idRef="01647e0c-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0" description="key"/>
+            <context name="Context" idRef="01647e0d-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="model3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0" description="key"/>
+            <parameter name="model3Str" idRef="01647e15-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="model4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0" description="key"/>
+            <parameter name="model4Str" idRef="01647e18-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="model5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0" description="key"/>
+            <parameter name="model5Str" idRef="01647e1b-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="model1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="86b730e5-dcb7-1004-8da5-6d5f7adfc9c0" description="key"/>
+            <parameter name="model1Str" idRef="01647e0f-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="model3Str" idRef="01647e15-dcc6-1004-8ebf-63ccdaa7c18a" description="key"/>
+            <parameter name="model3Str" idRef="01647e16-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="model4Str" idRef="01647e18-dcc6-1004-8ebf-63ccdaa7c18a" description="key"/>
+            <parameter name="model4Str" idRef="01647e19-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="model2Str" idRef="01647e12-dcc6-1004-8ebf-63ccdaa7c18a" description="key"/>
+            <parameter name="model2Str" idRef="01647e13-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="mrl" idRef="01647e1e-dcc6-1004-8ebf-63ccdaa7c18a" description="key"/>
+            <parameter name="mrl" idRef="01647e1f-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="model1Str" idRef="01647e0f-dcc6-1004-8ebf-63ccdaa7c18a" description="key"/>
+            <parameter name="model1Str" idRef="01647e10-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+            <parameter name="model5Str" idRef="01647e1b-dcc6-1004-8ebf-63ccdaa7c18a" description="key"/>
+            <parameter name="model5Str" idRef="01647e1c-dcc6-1004-8ebf-63ccdaa7c18a" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>

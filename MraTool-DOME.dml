@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="DomeModel" id="e350c7ec-dcc7-1004-8eff-1efa6142d1e4" name="MRA Tool">
+    <modelinfo>
+        <version>0.0.0</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" name="model1Str">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">Yes</dataobject>
+            </data>
+        </parameter>
+        <parameter id="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" name="model2Str">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" name="model3Str">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" name="model4Str">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" name="model5Str">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" name="modelMrl">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c5087eba-dcc7-1004-8f30-7ddbaa41ec41" name="modelMatrix">
+            <currentType value="Matrix"/>
+            <data>
+                <dataobject type="Matrix">
+                    <unit>No_Unit</unit>
+                    <initialValue type="integer">0</initialValue>
+                    <fixedSize>true</fixedSize>
+                    <data type="integer">2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" name="questionModelFile">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>/home/cameron/workspace/models/mratool/mra_questions.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e350c7ed-dcc7-1004-8eff-1efa6142d1e4" name="coreModelMrl">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="5" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="0fc340cf-dcc8-1004-8526-89610793ce55" name="modelText">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">"Question 1?"</dataobject>
+            </data>
+        </parameter>
+        <parameter id="0fc340d7-dcc8-1004-8526-89610793ce55" name="modelQuestionList">
+            <currentType value="List"/>
+            <data>
+                <dataobject type="List">
+                    <itemType>String</itemType>
+                    <parameters>
+                        <parameter name="a" idRef="0fc34105-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                        <parameter name="b" idRef="0fc3410b-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                        <parameter name="c" idRef="0fc34111-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                    </parameters>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="0fc34105-dcc8-1004-8526-89610793ce55" name="a">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">"Question 1?"</dataobject>
+            </data>
+        </parameter>
+        <parameter id="0fc3410b-dcc8-1004-8526-89610793ce55" name="b">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">"Question 2?"</dataobject>
+            </data>
+        </parameter>
+        <parameter id="0fc34111-dcc8-1004-8526-89610793ce55" name="c">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">"Question 3?"</dataobject>
+            </data>
+        </parameter>
+        <parameter id="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" name="targetLevel">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="6" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <relations>
+        <relation type="Procedural" id="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0" name="Procedural Relation">
+            <parameters>
+                <parameter id="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0" name="mrl">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="a007e4b0-dcc3-1004-842d-7926bbd9ac50" name="answer1Str">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">Yes</dataobject>
+                    </data>
+                </parameter>
+                <parameter id="a007e4b2-dcc3-1004-842d-7926bbd9ac50" name="answer2Str">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">Yes</dataobject>
+                    </data>
+                </parameter>
+                <parameter id="a007e4b4-dcc3-1004-842d-7926bbd9ac50" name="answer3Str">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">Yes</dataobject>
+                    </data>
+                </parameter>
+                <parameter id="a007e4b6-dcc3-1004-842d-7926bbd9ac50" name="answer4Str">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">Yes</dataobject>
+                    </data>
+                </parameter>
+                <parameter id="a007e4b8-dcc3-1004-842d-7926bbd9ac50" name="answer5Str">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">Yes</dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[if answer1Str == "Yes | No | Not Applicable":
+  answer1Num = 0
+if answer1Str == "Yes":
+  answer1Num = 1
+if answer1Str == "No":
+  answer1Num = 2
+if answer1Str == "Not Applicable":
+  answer1Num = 3
+
+if answer2Str == "Yes | No | Not Applicable":
+  answer2Num = 0
+if answer2Str == "Yes":
+  answer2Num = 1
+if answer2Str == "No":
+  answer2Num = 2
+if answer2Str == "Not Applicable":
+  answer2Num = 3
+
+if answer3Str == "Yes | No | Not Applicable":
+  answer3Num = 0
+if answer3Str == "Yes":
+  answer3Num = 1
+if answer3Str == "No":
+  answer3Num = 2
+if answer3Str == "Not Applicable":
+  answer3Num = 3
+
+if answer4Str == "Yes | No | Not Applicable":
+  answer4Num = 0
+if answer4Str == "Yes":
+  answer4Num = 1
+if answer4Str == "No":
+  answer4Num = 2
+if answer4Str == "Not Applicable":
+  answer4Num = 3
+
+if answer5Str == "Yes | No | Not Applicable":
+  answer5Num = 0
+if answer5Str == "Yes":
+  answer5Num = 1
+if answer5Str == "No":
+  answer5Num = 2
+if answer5Str == "Not Applicable":
+  answer5Num = 3
+
+if answer1Num == 0 or answer2Num == 0 or answer3Num == 0 or answer4Num == 0 or answer5Num == 0:
+  mrl = 0
+if answer1Num == 3 or answer2Num == 3 or answer3Num == 3 or answer4Num == 3 or answer5Num == 3:
+  mrl = 0
+if answer1Num == 2 or answer2Num == 2 or answer3Num == 2 or answer4Num == 2 or answer5Num == 2:
+  mrl = 5
+if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 and answer5Num == 1:
+  mrl = 6]]></body>
+            <dependencies>
+                <dependency idRef="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0">
+                    <parameter name="answer1Str" idRef="a007e4b0-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                    <parameter name="answer2Str" idRef="a007e4b2-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                    <parameter name="answer3Str" idRef="a007e4b4-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                    <parameter name="answer4Str" idRef="a007e4b6-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                    <parameter name="answer5Str" idRef="a007e4b8-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                </dependency>
+            </dependencies>
+        </relation>
+        <relation type="Procedural" id="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41" name="CoreLogic Relation">
+            <parameters>
+                <parameter id="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41" name="coreLogicMatrix">
+                    <currentType value="Matrix"/>
+                    <data>
+                        <dataobject type="Matrix">
+                            <unit>No_Unit</unit>
+                            <initialValue type="integer">1</initialValue>
+                            <fixedSize>true</fixedSize>
+                            <data type="integer">2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41" name="coreLogicMrl">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="5" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="0fc340cb-dcc8-1004-8526-89610793ce55" name="coreLogicFile">
+                    <currentType value="File"/>
+                    <data>
+                        <dataobject type="File">
+                            <filePath>/home/cameron/workspace/models/mratool/mra_questions.txt</filePath>
+                            <fileType>Text</fileType>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="0fc340cd-dcc8-1004-8526-89610793ce55" name="text">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">"Question 1?"</dataobject>
+                    </data>
+                </parameter>
+                <parameter id="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed" name="a">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">"Question 1?"</dataobject>
+                    </data>
+                </parameter>
+                <parameter id="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed" name="b">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">"Question 2?"</dataobject>
+                    </data>
+                </parameter>
+                <parameter id="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed" name="c">
+                    <currentType value="String"/>
+                    <data>
+                        <dataobject type="String">"Question 3?"</dataobject>
+                    </data>
+                </parameter>
+                <parameter id="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" name="targetLevel">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="6" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[CONST_UNDEFINED = 0
+CONST_YES = 1
+CONST_NO = 2
+CONST_NOT_APPLICABLE  = 3
+
+boolFoundUndefined = False
+boolFoundYes = False
+boolFoundNo = False
+boolFoundNotApplicable = False
+
+numRows = coreLogicMatrix.getRowCount()
+numCols = coreLogicMatrix.getColumnCount()
+
+for colIndex in range(numRows):
+  for rowIndex in range(numCols):
+    answerVal = coreLogicMatrix[colIndex][rowIndex]
+    if answerVal == CONST_UNDEFINED:
+      boolFoundUndefined = True
+    if answerVal == CONST_YES:
+      boolFoundYes = True
+    if answerVal == CONST_NO:
+      boolFoundNo = True
+    if answerVal == CONST_NOT_APPLICABLE:
+      boolFoundNotApplicable = True
+
+if boolFoundUndefined:
+  coreLogicMrl = 0
+if boolFoundNo and not boolFoundNotApplicable:
+  coreLogicMrl = targetLevel - 1
+if boolFoundYes and not boolFoundNo and not boolFoundNotApplicable:
+  coreLogicMrl = targetLevel
+if not boolFoundYes and not boolFoundNo and not boolFoundNotApplicable:
+  coreLogicMrl = -1
+
+text.setValue(coreLogicFile.getFilePath())
+inFile = open(coreLogicFile.getFilePath(), "r")
+fileText = inFile.read()
+fileText = fileText.rstrip()
+text.setValue(fileText)
+
+questionArray = fileText.split(",")
+index = 0
+text=questionArray[0]
+a=questionArray[0]
+b=questionArray[1]
+c=questionArray[2]
+#text = coreLogicQuestionList.getElementAt(0)
+#for question in questionArray:
+#  coreLogicQuestionList.setElementValue(index, question)
+#  index = index + 1]]></body>
+            <dependencies>
+                <dependency idRef="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed">
+                    <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </dependency>
+                <dependency idRef="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed">
+                    <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </dependency>
+                <dependency idRef="0fc340cd-dcc8-1004-8526-89610793ce55">
+                    <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </dependency>
+                <dependency idRef="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed">
+                    <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </dependency>
+                <dependency idRef="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41">
+                    <parameter name="coreLogicMatrix" idRef="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                    <parameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                </dependency>
+            </dependencies>
+        </relation>
+    </relations>
+    <visualizations/>
+    <contexts>
+        <context id="01647e0c-dcc6-1004-8ebf-63ccdaa7c18a" name="Context">
+            <modelobjects>
+                <parameter name="model2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="model1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="model3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="model4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="model5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="modelMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="modelMatrix" idRef="c5087eba-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="coreModelMrl" idRef="e350c7ed-dcc7-1004-8eff-1efa6142d1e4" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="modelText" idRef="0fc340cf-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="modelQuestionList" idRef="0fc340d7-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </modelobjects>
+        </context>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <context name="Context" idRef="01647e0c-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <relation name="Procedural Relation" idRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                <relation name="CoreLogic Relation" idRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files">
+            <modelobjects>
+                <parameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="answer5Str" idRef="a007e4b8-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="model5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="text" idRef="0fc340cd-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="modelText" idRef="0fc340cf-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="b" idRef="0fc3410b-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="b" idRef="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </mappedParameter>
+            <mappedParameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </mappedParameter>
+            <mappedParameter name="coreLogicMrl" idRef="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="coreModelMrl" idRef="e350c7ed-dcc7-1004-8eff-1efa6142d1e4" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="answer1Str" idRef="a007e4b0-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="model1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="c" idRef="0fc34111-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="c" idRef="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </mappedParameter>
+            <mappedParameter name="coreLogicMatrix" idRef="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="modelMatrix" idRef="c5087eba-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="answer2Str" idRef="a007e4b2-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="model2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="a" idRef="0fc34105-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="a" idRef="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </mappedParameter>
+            <mappedParameter name="answer4Str" idRef="a007e4b6-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="model4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </mappedParameter>
+            <mappedParameter name="answer3Str" idRef="a007e4b4-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="model3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="modelMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="mrl" idRef="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+            </mappedParameter>
+        </modelMappings>
+    </mappings>
+    <auxfiles>
+        <auxfile id="0fc340b0-dcc8-1004-8526-89610793ce55" name="mra_questions.txt">
+            <isMainModelFile value="false"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>/home/cameron/workspace/models/mratool/mra_questions.txt</file>
+        </auxfile>
+    </auxfiles>
+</model>

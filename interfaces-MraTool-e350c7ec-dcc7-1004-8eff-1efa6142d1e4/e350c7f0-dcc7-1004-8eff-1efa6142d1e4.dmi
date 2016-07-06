@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="e350c7f0-dcc7-1004-8eff-1efa6142d1e4" name="Core Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="e350c7f6-dcc7-1004-8eff-1efa6142d1e4" name="coreLogicMatrix">
+            <currentType value="Matrix"/>
+            <data>
+                <dataobject type="Matrix">
+                    <unit>No_Unit</unit>
+                    <initialValue type="integer">1</initialValue>
+                    <fixedSize>true</fixedSize>
+                    <data type="integer">2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="e350c7f7-dcc7-1004-8eff-1efa6142d1e4" name="coreLogicMrl">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="5" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c256213d-dccb-1004-851b-9aae9d31c1d9" name="targetLevel">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="6" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c256213e-dccb-1004-851b-9aae9d31c1d9" name="coreLogicFile">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>mra_questions.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c256213f-dccb-1004-851b-9aae9d31c1d9" name="text">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">"Question 1?"</dataobject>
+            </data>
+        </parameter>
+        <parameter id="c2562140-dccb-1004-851b-9aae9d31c1d9" name="a">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">"Question 1?"</dataobject>
+            </data>
+        </parameter>
+        <parameter id="c2562141-dccb-1004-851b-9aae9d31c1d9" name="b">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">"Question 2?"</dataobject>
+            </data>
+        </parameter>
+        <parameter id="c2562142-dccb-1004-851b-9aae9d31c1d9" name="c">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">"Question 3?"</dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations/>
+    <contexts>
+        <context id="IFACE_MODEL_CXT" name="Model View"/>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="coreLogicMatrix" idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4"/>
+                    <parameter name="coreLogicMrl" idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4"/>
+                    <parameter name="targetLevel" idRef="c256213d-dccb-1004-851b-9aae9d31c1d9"/>
+                    <parameter name="coreLogicFile" idRef="c256213e-dccb-1004-851b-9aae9d31c1d9"/>
+                    <parameter name="text" idRef="c256213f-dccb-1004-851b-9aae9d31c1d9"/>
+                    <parameter name="a" idRef="c2562140-dccb-1004-851b-9aae9d31c1d9"/>
+                    <parameter name="b" idRef="c2562141-dccb-1004-851b-9aae9d31c1d9"/>
+                    <parameter name="c" idRef="c2562142-dccb-1004-851b-9aae9d31c1d9"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs"/>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="coreLogicMatrix" idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4" causality="Intermediate"/>
+                    <parameter name="coreLogicFile" idRef="c256213e-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
+                    <parameter name="coreLogicMrl" idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4" causality="Intermediate"/>
+                    <parameter name="a" idRef="c2562140-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
+                    <parameter name="targetLevel" idRef="c256213d-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
+                    <parameter name="text" idRef="c256213f-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
+                    <parameter name="c" idRef="c2562142-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
+                    <parameter name="b" idRef="c2562141-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="e350c7f0-dcc7-1004-8eff-1efa6142d1e4">
+        <nodes>
+            <node idRef="c256213d-dccb-1004-851b-9aae9d31c1d9"/>
+            <node idRef="c256213e-dccb-1004-851b-9aae9d31c1d9"/>
+            <node idRef="c256213f-dccb-1004-851b-9aae9d31c1d9"/>
+            <node idRef="c2562140-dccb-1004-851b-9aae9d31c1d9"/>
+            <node idRef="c2562141-dccb-1004-851b-9aae9d31c1d9"/>
+            <node idRef="c2562142-dccb-1004-851b-9aae9d31c1d9"/>
+            <node idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4"/>
+            <node idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4"/>
+        </nodes>
+        <arcs>
+            <from idRef="c256213d-dccb-1004-851b-9aae9d31c1d9">
+                <to idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4"/>
+            </from>
+            <from idRef="c256213e-dccb-1004-851b-9aae9d31c1d9">
+                <to idRef="c256213f-dccb-1004-851b-9aae9d31c1d9"/>
+                <to idRef="c2562140-dccb-1004-851b-9aae9d31c1d9"/>
+                <to idRef="c2562141-dccb-1004-851b-9aae9d31c1d9"/>
+                <to idRef="c2562142-dccb-1004-851b-9aae9d31c1d9"/>
+            </from>
+            <from idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4">
+                <to idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="c256213d-dccb-1004-851b-9aae9d31c1d9" ifaceId="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed"/>
+        <iToRpMap relParamId="c256213e-dccb-1004-851b-9aae9d31c1d9" ifaceId="0fc340cb-dcc8-1004-8526-89610793ce55"/>
+        <iToRpMap relParamId="c256213f-dccb-1004-851b-9aae9d31c1d9" ifaceId="0fc340cd-dcc8-1004-8526-89610793ce55"/>
+        <iToRpMap relParamId="c2562140-dccb-1004-851b-9aae9d31c1d9" ifaceId="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed"/>
+        <iToRpMap relParamId="c2562141-dccb-1004-851b-9aae9d31c1d9" ifaceId="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed"/>
+        <iToRpMap relParamId="c2562142-dccb-1004-851b-9aae9d31c1d9" ifaceId="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed"/>
+        <iToRpMap relParamId="e350c7f6-dcc7-1004-8eff-1efa6142d1e4" ifaceId="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41"/>
+        <iToRpMap relParamId="e350c7f7-dcc7-1004-8eff-1efa6142d1e4" ifaceId="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41"/>
+    </interfaceToRelParamMap>
+</modelinterface>
