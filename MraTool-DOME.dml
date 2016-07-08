@@ -5,52 +5,41 @@
         <version>0.0.0</version>
     </modelinfo>
     <parameters>
-        <parameter id="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" name="model1Str">
+        <parameter id="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" name="demo1Str">
             <currentType value="String"/>
             <data>
                 <dataobject type="String">Yes</dataobject>
             </data>
         </parameter>
-        <parameter id="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" name="model2Str">
+        <parameter id="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" name="demo2Str">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">Yes</dataobject>
+            </data>
+        </parameter>
+        <parameter id="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" name="demo3Str">
             <currentType value="String"/>
             <data>
                 <dataobject type="String"></dataobject>
             </data>
         </parameter>
-        <parameter id="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" name="model3Str">
+        <parameter id="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" name="demo4Str">
             <currentType value="String"/>
             <data>
                 <dataobject type="String"></dataobject>
             </data>
         </parameter>
-        <parameter id="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" name="model4Str">
+        <parameter id="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" name="demo5Str">
             <currentType value="String"/>
             <data>
                 <dataobject type="String"></dataobject>
             </data>
         </parameter>
-        <parameter id="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" name="model5Str">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" name="modelMrl">
+        <parameter id="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" name="demoMrl">
             <currentType value="Integer"/>
             <data>
                 <dataobject type="Integer">
-                    <quantity magnitude="0" unit="No_Unit"/>
-                </dataobject>
-            </data>
-        </parameter>
-        <parameter id="c5087eba-dcc7-1004-8f30-7ddbaa41ec41" name="modelMatrix">
-            <currentType value="Matrix"/>
-            <data>
-                <dataobject type="Matrix">
-                    <unit>No_Unit</unit>
-                    <initialValue type="integer">0</initialValue>
-                    <fixedSize>true</fixedSize>
-                    <data type="integer">2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
+                    <quantity magnitude="6" unit="No_Unit"/>
                 </dataobject>
             </data>
         </parameter>
@@ -116,15 +105,86 @@
                 </dataobject>
             </data>
         </parameter>
+        <parameter id="dded74ba-dcd9-1004-862b-517ed13a8a94" name="numSubThreads">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="22" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dded74bb-dcd9-1004-862b-517ed13a8a94" name="numQuestions">
+            <isConstant value="true"/>
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="419" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dded74bc-dcd9-1004-862b-517ed13a8a94" name="scope">
+            <currentType value="Text"/>
+            <data>
+                <dataobject type="Text"><![CDATA[]]></dataobject>
+            </data>
+        </parameter>
+        <parameter id="dded74d2-dcd9-1004-862b-517ed13a8a94" name="questionAnswers">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="integer">1</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="integer">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dded74d5-dcd9-1004-862b-517ed13a8a94" name="questionLevels">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="integer">22</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="integer">0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dded74d6-dcd9-1004-862b-517ed13a8a94" name="questionSubThreads">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="integer">2</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="integer">0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="dded74d7-dcd9-1004-862b-517ed13a8a94" name="subThreadLevels">
+            <currentType value="Vector"/>
+            <data>
+                <dataobject type="Vector">
+                    <unit>No_Unit</unit>
+                    <rowVector>false</rowVector>
+                    <initialValue type="integer">1</initialValue>
+                    <fixedSize>false</fixedSize>
+                    <data type="integer">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
+                </dataobject>
+            </data>
+        </parameter>
     </parameters>
     <relations>
-        <relation type="Procedural" id="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0" name="Procedural Relation">
+        <relation type="Procedural" id="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0" name="Demo Relation">
             <parameters>
                 <parameter id="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0" name="mrl">
                     <currentType value="Integer"/>
                     <data>
                         <dataobject type="Integer">
-                            <quantity magnitude="0" unit="No_Unit"/>
+                            <quantity magnitude="6" unit="No_Unit"/>
                         </dataobject>
                     </data>
                 </parameter>
@@ -224,25 +284,6 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
         </relation>
         <relation type="Procedural" id="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41" name="CoreLogic Relation">
             <parameters>
-                <parameter id="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41" name="coreLogicMatrix">
-                    <currentType value="Matrix"/>
-                    <data>
-                        <dataobject type="Matrix">
-                            <unit>No_Unit</unit>
-                            <initialValue type="integer">1</initialValue>
-                            <fixedSize>true</fixedSize>
-                            <data type="integer">2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1;1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
-                        </dataobject>
-                    </data>
-                </parameter>
-                <parameter id="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41" name="coreLogicMrl">
-                    <currentType value="Integer"/>
-                    <data>
-                        <dataobject type="Integer">
-                            <quantity magnitude="5" unit="No_Unit"/>
-                        </dataobject>
-                    </data>
-                </parameter>
                 <parameter id="0fc340cb-dcc8-1004-8526-89610793ce55" name="coreLogicFile">
                     <currentType value="File"/>
                     <data>
@@ -250,30 +291,6 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
                             <filePath>/home/cameron/workspace/models/mratool/mra_questions.txt</filePath>
                             <fileType>Text</fileType>
                         </dataobject>
-                    </data>
-                </parameter>
-                <parameter id="0fc340cd-dcc8-1004-8526-89610793ce55" name="text">
-                    <currentType value="String"/>
-                    <data>
-                        <dataobject type="String">"Question 1?"</dataobject>
-                    </data>
-                </parameter>
-                <parameter id="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed" name="a">
-                    <currentType value="String"/>
-                    <data>
-                        <dataobject type="String">"Question 1?"</dataobject>
-                    </data>
-                </parameter>
-                <parameter id="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed" name="b">
-                    <currentType value="String"/>
-                    <data>
-                        <dataobject type="String">"Question 2?"</dataobject>
-                    </data>
-                </parameter>
-                <parameter id="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed" name="c">
-                    <currentType value="String"/>
-                    <data>
-                        <dataobject type="String">"Question 3?"</dataobject>
                     </data>
                 </parameter>
                 <parameter id="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" name="targetLevel">
@@ -284,73 +301,137 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
                         </dataobject>
                     </data>
                 </parameter>
+                <parameter id="dded74d8-dcd9-1004-862b-517ed13a8a94" name="subThreadLevels">
+                    <currentType value="Vector"/>
+                    <data>
+                        <dataobject type="Vector">
+                            <unit>No_Unit</unit>
+                            <rowVector>false</rowVector>
+                            <initialValue type="integer">1</initialValue>
+                            <fixedSize>false</fixedSize>
+                            <data type="integer">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dded74d9-dcd9-1004-862b-517ed13a8a94" name="questionAnswers">
+                    <currentType value="Vector"/>
+                    <data>
+                        <dataobject type="Vector">
+                            <unit>No_Unit</unit>
+                            <rowVector>false</rowVector>
+                            <initialValue type="integer">1</initialValue>
+                            <fixedSize>false</fixedSize>
+                            <data type="integer">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dded74da-dcd9-1004-862b-517ed13a8a94" name="questionLevels">
+                    <currentType value="Vector"/>
+                    <data>
+                        <dataobject type="Vector">
+                            <unit>No_Unit</unit>
+                            <rowVector>false</rowVector>
+                            <initialValue type="integer">22</initialValue>
+                            <fixedSize>false</fixedSize>
+                            <data type="integer">0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dded74db-dcd9-1004-862b-517ed13a8a94" name="questionSubThreads">
+                    <currentType value="Vector"/>
+                    <data>
+                        <dataobject type="Vector">
+                            <unit>No_Unit</unit>
+                            <rowVector>false</rowVector>
+                            <initialValue type="integer">2</initialValue>
+                            <fixedSize>false</fixedSize>
+                            <data type="integer">0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dded74dc-dcd9-1004-862b-517ed13a8a94" name="scope">
+                    <currentType value="Text"/>
+                    <data>
+                        <dataobject type="Text"><![CDATA[]]></dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dded74dd-dcd9-1004-862b-517ed13a8a94" name="numQuestions">
+                    <isConstant value="true"/>
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="419" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="dded74de-dcd9-1004-862b-517ed13a8a94" name="numSubThreads">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="22" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
             </parameters>
             <body><![CDATA[CONST_UNDEFINED = 0
 CONST_YES = 1
 CONST_NO = 2
 CONST_NOT_APPLICABLE  = 3
 
-boolFoundUndefined = False
-boolFoundYes = False
-boolFoundNo = False
-boolFoundNotApplicable = False
+#
+# Calculates the MRL level of a sub thread
+#
+def calculateMrlLevels(subThreadNum):
+  for index in range(0, numSubThreads):
+    currentLevel = targetLevel.getValue()
+    subThreadLevels.setItem(index, getSubThreadLevel(index, currentLevel))
 
-numRows = coreLogicMatrix.getRowCount()
-numCols = coreLogicMatrix.getColumnCount()
+def getSubThreadLevel(subThreadNum, level):
+  boolFoundUndefined = False
+  boolFoundYes = False
+  boolFoundNo = False
+  boolFoundNotApplicable = False
 
-for colIndex in range(numRows):
-  for rowIndex in range(numCols):
-    answerVal = coreLogicMatrix[colIndex][rowIndex]
-    if answerVal == CONST_UNDEFINED:
-      boolFoundUndefined = True
-    if answerVal == CONST_YES:
-      boolFoundYes = True
-    if answerVal == CONST_NO:
-      boolFoundNo = True
-    if answerVal == CONST_NOT_APPLICABLE:
-      boolFoundNotApplicable = True
+  #  
+  # Loop through all the questions
+  # Only pay attention to the ones at the current level
+  #
+  for index in range(0, numQuestions):
+    answerLevel = questionLevels.getItem(index)
+    if answerLevel == level:
+      answerVal = questionAnswers.getItem(index)
+      if answerVal == CONST_UNDEFINED:
+        boolFoundUndefined = True
+      if answerVal == CONST_YES:
+        boolFoundYes = True
+      if answerVal == CONST_NO:
+        boolFoundNo = True
+      if answerVal == CONST_NOT_APPLICABLE:
+        boolFoundNotApplicable = True
 
-if boolFoundUndefined:
-  coreLogicMrl = 0
-if boolFoundNo and not boolFoundNotApplicable:
-  coreLogicMrl = targetLevel - 1
-if boolFoundYes and not boolFoundNo and not boolFoundNotApplicable:
-  coreLogicMrl = targetLevel
-if not boolFoundYes and not boolFoundNo and not boolFoundNotApplicable:
-  coreLogicMrl = -1
+  if(boolFoundUndefined):
+    return CONST_UNDEFINED
+  if(boolFoundNo):
+    return CONST_NO
+  if(boolFoundYes):
+    return CONST_YES
+  return CONST_UNDEFINED
 
-text.setValue(coreLogicFile.getFilePath())
-inFile = open(coreLogicFile.getFilePath(), "r")
-fileText = inFile.read()
-fileText = fileText.rstrip()
-text.setValue(fileText)
 
-questionArray = fileText.split(",")
-index = 0
-text=questionArray[0]
-a=questionArray[0]
-b=questionArray[1]
-c=questionArray[2]
-#text = coreLogicQuestionList.getElementAt(0)
-#for question in questionArray:
-#  coreLogicQuestionList.setElementValue(index, question)
-#  index = index + 1]]></body>
+#
+# Main code starts here
+#
+calculateMrlLevels(0)]]></body>
             <dependencies>
-                <dependency idRef="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed">
+                <dependency idRef="dded74d8-dcd9-1004-862b-517ed13a8a94">
                     <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
-                </dependency>
-                <dependency idRef="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed">
-                    <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
-                </dependency>
-                <dependency idRef="0fc340cd-dcc8-1004-8526-89610793ce55">
-                    <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
-                </dependency>
-                <dependency idRef="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed">
-                    <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
-                </dependency>
-                <dependency idRef="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41">
-                    <parameter name="coreLogicMatrix" idRef="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
                     <parameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                    <parameter name="questionAnswers" idRef="dded74d9-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                    <parameter name="questionLevels" idRef="dded74da-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                    <parameter name="questionSubThreads" idRef="dded74db-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                    <parameter name="scope" idRef="dded74dc-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                    <parameter name="numQuestions" idRef="dded74dd-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                    <parameter name="numSubThreads" idRef="dded74de-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
                 </dependency>
             </dependencies>
         </relation>
@@ -359,24 +440,30 @@ c=questionArray[2]
     <contexts>
         <context id="01647e0c-dcc6-1004-8ebf-63ccdaa7c18a" name="Context">
             <modelobjects>
-                <parameter name="model2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-                <parameter name="model1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-                <parameter name="model3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-                <parameter name="model4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-                <parameter name="model5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-                <parameter name="modelMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-                <parameter name="modelMatrix" idRef="c5087eba-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="demo2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="demo1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="demo3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="demo4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="demo5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="demoMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
                 <parameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
                 <parameter name="coreModelMrl" idRef="e350c7ed-dcc7-1004-8eff-1efa6142d1e4" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
                 <parameter name="modelText" idRef="0fc340cf-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
                 <parameter name="modelQuestionList" idRef="0fc340d7-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
                 <parameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="numQuestions" idRef="dded74bb-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="numSubThreads" idRef="dded74ba-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="scope" idRef="dded74bc-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="questionLevels" idRef="dded74d5-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="questionSubThreads" idRef="dded74d6-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="subThreadLevels" idRef="dded74d7-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </modelobjects>
         </context>
         <context id="BUILD_CXT" name="Build View">
             <modelobjects>
                 <context name="Context" idRef="01647e0c-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-                <relation name="Procedural Relation" idRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+                <relation name="Demo Relation" idRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
                 <relation name="CoreLogic Relation" idRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </modelobjects>
         </context>
@@ -389,47 +476,50 @@ c=questionArray[2]
     </contexts>
     <mappings>
         <modelMappings>
-            <mappedParameter name="answer5Str" idRef="a007e4b8-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="model5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-            </mappedParameter>
-            <mappedParameter name="text" idRef="0fc340cd-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
-                <parameter name="modelText" idRef="0fc340cf-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-            </mappedParameter>
-            <mappedParameter name="b" idRef="0fc3410b-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="b" idRef="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            <mappedParameter name="subThreadLevels" idRef="dded74d7-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="subThreadLevels" idRef="dded74d8-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
             <mappedParameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
                 <parameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="coreLogicMrl" idRef="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
-                <parameter name="coreModelMrl" idRef="e350c7ed-dcc7-1004-8eff-1efa6142d1e4" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="numSubThreads" idRef="dded74ba-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="numSubThreads" idRef="dded74de-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="answer1Str" idRef="a007e4b0-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="model1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="scope" idRef="dded74dc-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="scope" idRef="dded74bc-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="c" idRef="0fc34111-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="c" idRef="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            <mappedParameter name="numQuestions" idRef="dded74bb-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="numQuestions" idRef="dded74dd-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="coreLogicMatrix" idRef="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
-                <parameter name="modelMatrix" idRef="c5087eba-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="questionAnswers" idRef="dded74d9-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="answer2Str" idRef="a007e4b2-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="model2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="demo1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="answer1Str" idRef="a007e4b0-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
             </mappedParameter>
-            <mappedParameter name="a" idRef="0fc34105-dcc8-1004-8526-89610793ce55" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="a" idRef="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            <mappedParameter name="questionLevels" idRef="dded74d5-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="questionLevels" idRef="dded74da-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="answer4Str" idRef="a007e4b6-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="model4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="questionSubThreads" idRef="dded74d6-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="questionSubThreads" idRef="dded74db-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </mappedParameter>
+            <mappedParameter name="answer5Str" idRef="a007e4b8-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="demo5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
             <mappedParameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
                 <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="answer3Str" idRef="a007e4b4-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="model3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-            </mappedParameter>
-            <mappedParameter name="modelMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+            <mappedParameter name="demoMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
                 <parameter name="mrl" idRef="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+            </mappedParameter>
+            <mappedParameter name="demo4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="answer4Str" idRef="a007e4b6-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+            </mappedParameter>
+            <mappedParameter name="answer3Str" idRef="a007e4b4-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="demo3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="answer2Str" idRef="a007e4b2-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="demo2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
         </modelMappings>
     </mappings>

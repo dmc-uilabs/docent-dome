@@ -90,17 +90,20 @@
             <filter id="INPUTS_FILTER" name="Inputs"/>
             <filter id="OUTPUTS_FILTER" name="Outputs">
                 <parameters>
-                    <parameter name="coreLogicMatrix" idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4" causality="Intermediate"/>
                     <parameter name="coreLogicFile" idRef="c256213e-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
-                    <parameter name="coreLogicMrl" idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4" causality="Intermediate"/>
-                    <parameter name="a" idRef="c2562140-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
                     <parameter name="targetLevel" idRef="c256213d-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
-                    <parameter name="text" idRef="c256213f-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
-                    <parameter name="c" idRef="c2562142-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
-                    <parameter name="b" idRef="c2562141-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
                 </parameters>
             </filter>
-            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates">
+                <parameters>
+                    <parameter name="coreLogicMatrix" idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4"/>
+                    <parameter name="coreLogicMrl" idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4"/>
+                    <parameter name="text" idRef="c256213f-dccb-1004-851b-9aae9d31c1d9"/>
+                    <parameter name="a" idRef="c2562140-dccb-1004-851b-9aae9d31c1d9"/>
+                    <parameter name="b" idRef="c2562141-dccb-1004-851b-9aae9d31c1d9"/>
+                    <parameter name="c" idRef="c2562142-dccb-1004-851b-9aae9d31c1d9"/>
+                </parameters>
+            </filter>
         </view>
     </views>
     <directedGraph id="e350c7f0-dcc7-1004-8eff-1efa6142d1e4">
@@ -114,29 +117,10 @@
             <node idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4"/>
             <node idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4"/>
         </nodes>
-        <arcs>
-            <from idRef="c256213d-dccb-1004-851b-9aae9d31c1d9">
-                <to idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4"/>
-            </from>
-            <from idRef="c256213e-dccb-1004-851b-9aae9d31c1d9">
-                <to idRef="c256213f-dccb-1004-851b-9aae9d31c1d9"/>
-                <to idRef="c2562140-dccb-1004-851b-9aae9d31c1d9"/>
-                <to idRef="c2562141-dccb-1004-851b-9aae9d31c1d9"/>
-                <to idRef="c2562142-dccb-1004-851b-9aae9d31c1d9"/>
-            </from>
-            <from idRef="e350c7f6-dcc7-1004-8eff-1efa6142d1e4">
-                <to idRef="e350c7f7-dcc7-1004-8eff-1efa6142d1e4"/>
-            </from>
-        </arcs>
+        <arcs/>
     </directedGraph>
     <interfaceToRelParamMap>
         <iToRpMap relParamId="c256213d-dccb-1004-851b-9aae9d31c1d9" ifaceId="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed"/>
         <iToRpMap relParamId="c256213e-dccb-1004-851b-9aae9d31c1d9" ifaceId="0fc340cb-dcc8-1004-8526-89610793ce55"/>
-        <iToRpMap relParamId="c256213f-dccb-1004-851b-9aae9d31c1d9" ifaceId="0fc340cd-dcc8-1004-8526-89610793ce55"/>
-        <iToRpMap relParamId="c2562140-dccb-1004-851b-9aae9d31c1d9" ifaceId="ab18b1a4-dcc9-1004-8ee2-6faaf762a6ed"/>
-        <iToRpMap relParamId="c2562141-dccb-1004-851b-9aae9d31c1d9" ifaceId="ab18b1a5-dcc9-1004-8ee2-6faaf762a6ed"/>
-        <iToRpMap relParamId="c2562142-dccb-1004-851b-9aae9d31c1d9" ifaceId="ab18b1a6-dcc9-1004-8ee2-6faaf762a6ed"/>
-        <iToRpMap relParamId="e350c7f6-dcc7-1004-8eff-1efa6142d1e4" ifaceId="c5087ec8-dcc7-1004-8f30-7ddbaa41ec41"/>
-        <iToRpMap relParamId="e350c7f7-dcc7-1004-8eff-1efa6142d1e4" ifaceId="c5087ecb-dcc7-1004-8f30-7ddbaa41ec41"/>
     </interfaceToRelParamMap>
 </modelinterface>
