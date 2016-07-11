@@ -134,9 +134,9 @@
                 <dataobject type="Vector">
                     <unit>No_Unit</unit>
                     <rowVector>false</rowVector>
-                    <initialValue type="integer">1</initialValue>
+                    <initialValue type="integer">2</initialValue>
                     <fixedSize>false</fixedSize>
-                    <data type="integer">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                    <data type="integer">2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
                 </dataobject>
             </data>
         </parameter>
@@ -170,10 +170,24 @@
                 <dataobject type="Vector">
                     <unit>No_Unit</unit>
                     <rowVector>false</rowVector>
-                    <initialValue type="integer">1</initialValue>
+                    <initialValue type="integer">0</initialValue>
                     <fixedSize>false</fixedSize>
-                    <data type="integer">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
+                    <data type="integer">0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
                 </dataobject>
+            </data>
+        </parameter>
+        <parameter id="f71a2ce3-dcdf-1004-8037-ee27359ac2b0" name="currentQuestionIndex">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="f71a2cea-dcdf-1004-8037-ee27359ac2b0" name="currentQuestionText">
+            <currentType value="Text"/>
+            <data>
+                <dataobject type="Text"><![CDATA[]]></dataobject>
             </data>
         </parameter>
     </parameters>
@@ -282,7 +296,7 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
                 </dependency>
             </dependencies>
         </relation>
-        <relation type="Procedural" id="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41" name="CoreLogic Relation">
+        <relation type="Procedural" id="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41" name="CalculateMRL Relation">
             <parameters>
                 <parameter id="0fc340cb-dcc8-1004-8526-89610793ce55" name="coreLogicFile">
                     <currentType value="File"/>
@@ -307,9 +321,9 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
                         <dataobject type="Vector">
                             <unit>No_Unit</unit>
                             <rowVector>false</rowVector>
-                            <initialValue type="integer">1</initialValue>
+                            <initialValue type="integer">0</initialValue>
                             <fixedSize>false</fixedSize>
-                            <data type="integer">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</data>
+                            <data type="integer">0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
                         </dataobject>
                     </data>
                 </parameter>
@@ -319,9 +333,9 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
                         <dataobject type="Vector">
                             <unit>No_Unit</unit>
                             <rowVector>false</rowVector>
-                            <initialValue type="integer">1</initialValue>
+                            <initialValue type="integer">2</initialValue>
                             <fixedSize>false</fixedSize>
-                            <data type="integer">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                            <data type="integer">2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
                         </dataobject>
                     </data>
                 </parameter>
@@ -391,15 +405,18 @@ def getSubThreadLevel(subThreadNum, level):
   boolFoundYes = False
   boolFoundNo = False
   boolFoundNotApplicable = False
-
+    
   #  
   # Loop through all the questions
   # Only pay attention to the ones at the current level
   #
   for index in range(0, numQuestions):
     answerLevel = questionLevels.getItem(index)
-    if answerLevel == level:
+    answerSubThreadNum = questionSubThreads.getItem(index)
+    
+    if answerLevel == level and answerSubThreadNum == subThreadNum:
       answerVal = questionAnswers.getItem(index)
+      print "Answer:", answerVal
       if answerVal == CONST_UNDEFINED:
         boolFoundUndefined = True
       if answerVal == CONST_YES:
@@ -408,15 +425,18 @@ def getSubThreadLevel(subThreadNum, level):
         boolFoundNo = True
       if answerVal == CONST_NOT_APPLICABLE:
         boolFoundNotApplicable = True
-
+  
   if(boolFoundUndefined):
+    print "Undefined"
     return CONST_UNDEFINED
   if(boolFoundNo):
+    print "No"
     return CONST_NO
   if(boolFoundYes):
+    print "Yes"
     return CONST_YES
+  print "Didn't find anything"
   return CONST_UNDEFINED
-
 
 #
 # Main code starts here
@@ -434,6 +454,47 @@ calculateMrlLevels(0)]]></body>
                     <parameter name="numSubThreads" idRef="dded74de-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
                 </dependency>
             </dependencies>
+        </relation>
+        <relation type="Procedural" id="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" name="GetNextQuestion Relation">
+            <parameters>
+                <parameter id="f71a2ce4-dcdf-1004-8037-ee27359ac2b0" name="currentQuestionIndex">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" name="numQuestions">
+                    <isConstant value="true"/>
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="419" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f71a2ceb-dcdf-1004-8037-ee27359ac2b0" name="currentQuestionText">
+                    <currentType value="Text"/>
+                    <data>
+                        <dataobject type="Text"><![CDATA[]]></dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f71a2cee-dcdf-1004-8037-ee27359ac2b0" name="questionAnswers">
+                    <currentType value="Vector"/>
+                    <data>
+                        <dataobject type="Vector">
+                            <unit>No_Unit</unit>
+                            <rowVector>false</rowVector>
+                            <initialValue type="integer">2</initialValue>
+                            <fixedSize>false</fixedSize>
+                            <data type="integer">2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[]]></body>
+            <dependencies/>
         </relation>
     </relations>
     <visualizations/>
@@ -458,13 +519,16 @@ calculateMrlLevels(0)]]></body>
                 <parameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
                 <parameter name="questionSubThreads" idRef="dded74d6-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
                 <parameter name="subThreadLevels" idRef="dded74d7-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="currentQuestionIndex" idRef="f71a2ce3-dcdf-1004-8037-ee27359ac2b0" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+                <parameter name="currentQuestionText" idRef="f71a2cea-dcdf-1004-8037-ee27359ac2b0" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </modelobjects>
         </context>
         <context id="BUILD_CXT" name="Build View">
             <modelobjects>
+                <relation name="GetNextQuestion Relation" idRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                 <context name="Context" idRef="01647e0c-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
                 <relation name="Demo Relation" idRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
-                <relation name="CoreLogic Relation" idRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                <relation name="CalculateMRL Relation" idRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </modelobjects>
         </context>
         <context id="FILE_CXT" name="Files">
@@ -476,23 +540,29 @@ calculateMrlLevels(0)]]></body>
     </contexts>
     <mappings>
         <modelMappings>
-            <mappedParameter name="subThreadLevels" idRef="dded74d7-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="subThreadLevels" idRef="dded74d8-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            <mappedParameter name="demoMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="mrl" idRef="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
             </mappedParameter>
-            <mappedParameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            <mappedParameter name="numQuestions" idRef="dded74dd-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="numQuestions" idRef="dded74bb-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="subThreadLevels" idRef="dded74d8-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="subThreadLevels" idRef="dded74d7-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
             <mappedParameter name="numSubThreads" idRef="dded74ba-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
                 <parameter name="numSubThreads" idRef="dded74de-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="scope" idRef="dded74dc-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
-                <parameter name="scope" idRef="dded74bc-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="demo2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="answer2Str" idRef="a007e4b2-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
             </mappedParameter>
-            <mappedParameter name="numQuestions" idRef="dded74bb-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="numQuestions" idRef="dded74dd-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            <mappedParameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="questionAnswers" idRef="dded74d9-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
-                <parameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="answer5Str" idRef="a007e4b8-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="demo5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
             <mappedParameter name="demo1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
                 <parameter name="answer1Str" idRef="a007e4b0-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
@@ -500,26 +570,32 @@ calculateMrlLevels(0)]]></body>
             <mappedParameter name="questionLevels" idRef="dded74d5-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
                 <parameter name="questionLevels" idRef="dded74da-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
+            <mappedParameter name="scope" idRef="dded74dc-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="scope" idRef="dded74bc-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="questionAnswers" idRef="dded74d9-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
             <mappedParameter name="questionSubThreads" idRef="dded74d6-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
                 <parameter name="questionSubThreads" idRef="dded74db-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="answer5Str" idRef="a007e4b8-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="demo5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="currentQuestionText" idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
+                <parameter name="currentQuestionText" idRef="f71a2cea-dcdf-1004-8037-ee27359ac2b0" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="coreLogicFile" idRef="0fc340cb-dcc8-1004-8526-89610793ce55" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
-            </mappedParameter>
-            <mappedParameter name="demoMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="mrl" idRef="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
-            </mappedParameter>
-            <mappedParameter name="demo4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="answer4Str" idRef="a007e4b6-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+            <mappedParameter name="numQuestions" idRef="dded74bb-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="numQuestions" idRef="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
             </mappedParameter>
             <mappedParameter name="answer3Str" idRef="a007e4b4-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
                 <parameter name="demo3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="answer2Str" idRef="a007e4b2-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="demo2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
+                <parameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="demo4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="answer4Str" idRef="a007e4b6-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+            </mappedParameter>
+            <mappedParameter name="currentQuestionIndex" idRef="f71a2ce3-dcdf-1004-8037-ee27359ac2b0" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="currentQuestionIndex" idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
             </mappedParameter>
         </modelMappings>
     </mappings>

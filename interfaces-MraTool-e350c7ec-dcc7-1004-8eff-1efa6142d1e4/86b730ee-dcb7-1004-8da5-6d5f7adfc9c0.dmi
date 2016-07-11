@@ -7,9 +7,55 @@
     </interfaceinfo>
     <parameters/>
     <visualizations/>
-    <relations/>
+    <relations>
+        <relation type="Procedural" id="f71a2cdf-dcdf-1004-8037-ee27359ac2b0" name="GetNextQuestion Relation">
+            <parameters>
+                <parameter id="f71a2ce5-dcdf-1004-8037-ee27359ac2b0" name="currentQuestionIndex">
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="0" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f71a2ce8-dcdf-1004-8037-ee27359ac2b0" name="numQuestions">
+                    <isConstant value="true"/>
+                    <currentType value="Integer"/>
+                    <data>
+                        <dataobject type="Integer">
+                            <quantity magnitude="419" unit="No_Unit"/>
+                        </dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f71a2cec-dcdf-1004-8037-ee27359ac2b0" name="currentQuestionText">
+                    <currentType value="Text"/>
+                    <data>
+                        <dataobject type="Text"><![CDATA[]]></dataobject>
+                    </data>
+                </parameter>
+                <parameter id="f71a2cef-dcdf-1004-8037-ee27359ac2b0" name="questionAnswers">
+                    <currentType value="Vector"/>
+                    <data>
+                        <dataobject type="Vector">
+                            <unit>No_Unit</unit>
+                            <rowVector>false</rowVector>
+                            <initialValue type="integer">2</initialValue>
+                            <fixedSize>false</fixedSize>
+                            <data type="integer">2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
+                        </dataobject>
+                    </data>
+                </parameter>
+            </parameters>
+            <body><![CDATA[]]></body>
+            <dependencies/>
+        </relation>
+    </relations>
     <contexts>
-        <context id="IFACE_MODEL_CXT" name="Model View"/>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <relation name="GetNextQuestion Relation" idRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0"/>
+            </modelobjects>
+        </context>
     </contexts>
     <views>
         <view name="Build View">

@@ -90,8 +90,8 @@
             <filter id="INPUTS_FILTER" name="Inputs"/>
             <filter id="OUTPUTS_FILTER" name="Outputs">
                 <parameters>
-                    <parameter name="coreLogicFile" idRef="c256213e-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
                     <parameter name="targetLevel" idRef="c256213d-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
+                    <parameter name="coreLogicFile" idRef="c256213e-dccb-1004-851b-9aae9d31c1d9" causality="Intermediate"/>
                 </parameters>
             </filter>
             <filter id="INDETERMINATES_FILTER" name="Indeterminates">
