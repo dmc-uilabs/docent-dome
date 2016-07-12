@@ -6,95 +6,12 @@
         <defaultinterface/>
     </interfaceinfo>
     <mappingsandintermediates>
-        <mappings>
-            <interfacemappings>
-                <mappedParameter name="currentQuestionIndex" idRef="f71a2ce6-dcdf-1004-8037-ee27359ac2b0">
-                    <parameter name="currentQuestionIndex" idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                </mappedParameter>
-                <mappedParameter name="questionAnswers" idRef="f71a2cf0-dcdf-1004-8037-ee27359ac2b0">
-                    <parameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                </mappedParameter>
-                <mappedParameter name="numQuestions" idRef="f71a2ce9-dcdf-1004-8037-ee27359ac2b0">
-                    <parameter name="numQuestions" idRef="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                </mappedParameter>
-                <mappedParameter name="currentQuestionText" idRef="f71a2ced-dcdf-1004-8037-ee27359ac2b0">
-                    <parameter name="currentQuestionText" idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                </mappedParameter>
-                <mappedParameter name="numQuestions" idRef="f71a2ce8-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0">
-                    <parameter name="numQuestions" idRef="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                </mappedParameter>
-                <mappedParameter name="currentQuestionIndex" idRef="f71a2ce5-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0">
-                    <parameter name="currentQuestionIndex" idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                </mappedParameter>
-                <mappedParameter name="questionAnswers" idRef="f71a2cef-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0">
-                    <parameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                </mappedParameter>
-                <mappedParameter name="currentQuestionText" idRef="f71a2cec-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0">
-                    <parameter name="currentQuestionText" idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                </mappedParameter>
-            </interfacemappings>
-        </mappings>
-        <intermediateobjects>
-            <parameter id="f71a2ce6-dcdf-1004-8037-ee27359ac2b0" name="currentQuestionIndex">
-                <currentType value="Integer"/>
-                <data>
-                    <dataobject type="Integer">
-                        <quantity magnitude="0" unit="No_Unit"/>
-                    </dataobject>
-                </data>
-            </parameter>
-            <parameter id="f71a2ce9-dcdf-1004-8037-ee27359ac2b0" name="numQuestions">
-                <isConstant value="true"/>
-                <currentType value="Integer"/>
-                <data>
-                    <dataobject type="Integer">
-                        <quantity magnitude="419" unit="No_Unit"/>
-                    </dataobject>
-                </data>
-            </parameter>
-            <parameter id="f71a2ced-dcdf-1004-8037-ee27359ac2b0" name="currentQuestionText">
-                <currentType value="Text"/>
-                <data>
-                    <dataobject type="Text"><![CDATA[]]></dataobject>
-                </data>
-            </parameter>
-            <parameter id="f71a2cf0-dcdf-1004-8037-ee27359ac2b0" name="questionAnswers">
-                <currentType value="Vector"/>
-                <data>
-                    <dataobject type="Vector">
-                        <unit>No_Unit</unit>
-                        <rowVector>false</rowVector>
-                        <initialValue type="integer">2</initialValue>
-                        <fixedSize>false</fixedSize>
-                        <data type="integer">2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</data>
-                    </dataobject>
-                </data>
-            </parameter>
-        </intermediateobjects>
+        <mappings/>
+        <intermediateobjects/>
     </mappingsandintermediates>
     <lookupdata>
-        <objectmap>
-            <relation name="GetNextQuestion Relation" idRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <relation name="GetNextQuestion Relation" idRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-            <parameter name="numQuestions" idRef="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <parameter name="numQuestions" idRef="f71a2ce8-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-            <parameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <parameter name="questionAnswers" idRef="f71a2cef-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-            <parameter name="currentQuestionIndex" idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <parameter name="currentQuestionIndex" idRef="f71a2ce5-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-            <parameter name="currentQuestionText" idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <parameter name="currentQuestionText" idRef="f71a2cec-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdf-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-        </objectmap>
+        <objectmap/>
         <viewobjectmap/>
-        <relationobjectmap>
-            <parameter name="numQuestions" idRef="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <parameter name="numQuestions" idRef="f71a2ce9-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-            <parameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <parameter name="questionAnswers" idRef="f71a2cf0-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-            <parameter name="currentQuestionIndex" idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <parameter name="currentQuestionIndex" idRef="f71a2ce6-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-            <parameter name="currentQuestionText" idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0" description="key"/>
-            <parameter name="currentQuestionText" idRef="f71a2ced-dcdf-1004-8037-ee27359ac2b0" description="value"/>
-        </relationobjectmap>
+        <relationobjectmap/>
     </lookupdata>
 </modelinterface>

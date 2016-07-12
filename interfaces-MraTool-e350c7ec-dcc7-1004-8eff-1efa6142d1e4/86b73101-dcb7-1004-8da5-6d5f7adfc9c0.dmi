@@ -84,10 +84,10 @@
             <filter id="INPUTS_FILTER" name="Inputs">
                 <parameters>
                     <parameter name="answer5Str" idRef="a007e520-dcc3-1004-842d-7926bbd9ac50"/>
-                    <parameter name="answer2Str" idRef="a007e51d-dcc3-1004-842d-7926bbd9ac50"/>
-                    <parameter name="answer1Str" idRef="a007e51c-dcc3-1004-842d-7926bbd9ac50"/>
-                    <parameter name="answer3Str" idRef="a007e51e-dcc3-1004-842d-7926bbd9ac50"/>
                     <parameter name="answer4Str" idRef="a007e51f-dcc3-1004-842d-7926bbd9ac50"/>
+                    <parameter name="answer3Str" idRef="a007e51e-dcc3-1004-842d-7926bbd9ac50"/>
+                    <parameter name="answer1Str" idRef="a007e51c-dcc3-1004-842d-7926bbd9ac50"/>
+                    <parameter name="answer2Str" idRef="a007e51d-dcc3-1004-842d-7926bbd9ac50"/>
                 </parameters>
             </filter>
             <filter id="OUTPUTS_FILTER" name="Outputs">
