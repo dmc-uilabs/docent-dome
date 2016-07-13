@@ -1,3 +1,12 @@
+Is the Technology Readiness at TRL 1 or greater?
+Is the Technology Readiness at TRL 2 or greater?
+Is the Technology Readiness at TRL 3 or greater?
+Is the Technology Readiness at TRL 4 or greater?
+Is the Technology Readiness at TRL 5 or greater?
+Is the Technology Readiness at TRL 6 or greater?
+Is the Technology Readiness at TRL 7 or 8?
+Is the Technology Readiness at TRL 8 or 9?
+Is the Technology Readiness at TRL 9?
 Is the Technology Readiness at TRL 9?
 Have potential manufacturing sources been identified for technology needs (Understand state of the art)?
 Have industrial base capabilities and gaps/risks been identified for key technologies, components, and/or key processes?
