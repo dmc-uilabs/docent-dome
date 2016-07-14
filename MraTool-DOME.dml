@@ -101,7 +101,7 @@
             <currentType value="Integer"/>
             <data>
                 <dataobject type="Integer">
-                    <quantity magnitude="6" unit="No_Unit"/>
+                    <quantity magnitude="5" unit="No_Unit"/>
                 </dataobject>
             </data>
         </parameter>
@@ -134,9 +134,9 @@
                 <dataobject type="Vector">
                     <unit>No_Unit</unit>
                     <rowVector>false</rowVector>
-                    <initialValue type="integer">1</initialValue>
+                    <initialValue type="integer">0</initialValue>
                     <fixedSize>false</fixedSize>
-                    <data type="integer">0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                    <data type="integer">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
                 </dataobject>
             </data>
         </parameter>
@@ -174,7 +174,7 @@
                     <rowVector>false</rowVector>
                     <initialValue type="integer">0</initialValue>
                     <fixedSize>false</fixedSize>
-                    <data type="integer">0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                    <data type="integer">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
                 </dataobject>
             </data>
         </parameter>
@@ -322,7 +322,7 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
                     <currentType value="Integer"/>
                     <data>
                         <dataobject type="Integer">
-                            <quantity magnitude="6" unit="No_Unit"/>
+                            <quantity magnitude="5" unit="No_Unit"/>
                         </dataobject>
                     </data>
                 </parameter>
@@ -334,7 +334,7 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
                             <rowVector>false</rowVector>
                             <initialValue type="integer">0</initialValue>
                             <fixedSize>false</fixedSize>
-                            <data type="integer">0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                            <data type="integer">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
                         </dataobject>
                     </data>
                 </parameter>
@@ -400,19 +400,24 @@ if answer1Num == 1 and answer2Num == 1 and answer3Num == 1 and answer4Num == 1 a
                     </data>
                 </parameter>
             </parameters>
-            <body><![CDATA[CONST_UNDEFINED = 0
-CONST_YES = 1
-CONST_NO = 2
-CONST_NOT_APPLICABLE  = 3
+            <body><![CDATA[ANSWER_UNDEFINED = 0
+ANSWER_YES = 1
+ANSWER_NO = 2
+ANSWER_NOT_APPLICABLE  = 3
+ANSWER_SKIPPED = 4
 
-#
+############################################
 # Calculates the MRL level of a sub thread
-#
+############################################
 def calculateMrlLevels(subThreadNum):
   for index in range(0, numSubThreads):
     currentLevel = targetLevel.getValue()
     subThreadLevels.setItem(index, getSubThreadLevel(index, currentLevel))
 
+############################################
+# Determines the subThreadLevel for the 
+# given subThread
+############################################
 def getSubThreadLevel(subThreadNum, level):
   boolFoundUndefined = False
   boolFoundYes = False
@@ -430,30 +435,30 @@ def getSubThreadLevel(subThreadNum, level):
     if answerLevel == level and answerSubThreadNum == subThreadNum:
       answerVal = questionAnswers.getItem(index)
       print "Answer:", answerVal
-      if answerVal == CONST_UNDEFINED:
+      if answerVal == ANSWER_UNDEFINED:
         boolFoundUndefined = True
-      if answerVal == CONST_YES:
+      if answerVal == ANSWER_YES:
         boolFoundYes = True
-      if answerVal == CONST_NO:
+      if answerVal == ANSWER_NO:
         boolFoundNo = True
-      if answerVal == CONST_NOT_APPLICABLE:
+      if answerVal == ANSWER_NOT_APPLICABLE:
         boolFoundNotApplicable = True
   
   if(boolFoundUndefined):
     print "Undefined"
-    return CONST_UNDEFINED
+    return ANSWER_UNDEFINED
   if(boolFoundNo):
     print "No"
-    return CONST_NO
+    return ANSWER_NO
   if(boolFoundYes):
     print "Yes"
-    return CONST_YES
+    return ANSWER_YES
   print "Didn't find anything"
-  return CONST_UNDEFINED
+  return ANSWER_UNDEFINED
 
-#
+############################################
 # Main code starts here
-#
+############################################
 calculateMrlLevels(0)]]></body>
             <dependencies>
                 <dependency idRef="dded74d8-dcd9-1004-862b-517ed13a8a94">
@@ -499,9 +504,9 @@ calculateMrlLevels(0)]]></body>
                         <dataobject type="Vector">
                             <unit>No_Unit</unit>
                             <rowVector>false</rowVector>
-                            <initialValue type="integer">1</initialValue>
+                            <initialValue type="integer">4</initialValue>
                             <fixedSize>false</fixedSize>
-                            <data type="integer">0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                            <data type="integer">0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
                         </dataobject>
                     </data>
                 </parameter>
@@ -535,7 +540,7 @@ calculateMrlLevels(0)]]></body>
                             <rowVector>false</rowVector>
                             <initialValue type="integer">0</initialValue>
                             <fixedSize>false</fixedSize>
-                            <data type="integer">0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+                            <data type="integer">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
                         </dataobject>
                     </data>
                 </parameter>
@@ -578,16 +583,23 @@ calculateMrlLevels(0)]]></body>
                     </data>
                 </parameter>
             </parameters>
-            <body><![CDATA[CONST_UNDEFINED = 0
-CONST_YES = 1
-CONST_NO = 2
-CONST_NOT_APPLICABLE  = 3
+            <body><![CDATA[ANSWER_UNDEFINED = 0
+ANSWER_YES = 1
+ANSWER_NO = 2
+ANSWER_NOT_APPLICABLE  = 3
+ANSWER_SKIPPED = 4
 
-#
+STATUS_UNDEFINED = 5
+STATUS_YES = 6
+STATUS_NO = 7
+STATUS_NOT_APPLICABLE  = 8
+STATUS_SKIPPED = 9
+
+############################################
 # Extracts the text of the 
 # question for the given index
 # out of the question file
-#
+############################################
 def getQuestionText(questionIndex):
   inFile = open(questionModelFile.getFilePath(), "r")
   counter = 0
@@ -597,37 +609,90 @@ def getQuestionText(questionIndex):
     counter = counter + 1
   return ""
 
+############################################
+# Returns the index of the next
+# question to be displayed in the
+# questionnaire
+# Returns -1 if all questions are answered
+############################################
 def getNextQuestionIndex(localMrl, localSubThread):
-  for index in range(numQuestions):
-    if localMrl == questionLevels.getItem(index):
-      if localSubThread == questionSubThreads.getItem(index):
-        if questionAnswers.getItem(index) == CONST_NO:
-          return getNextQuestionIndex(localMrl - 1)
-        if questionAnswers.getItem(index) == CONST_UNDEFINED:
-          return index
-  if localSubThread < numSubThreads-1:
-    currentSubThread.setValue(localSubThread+1)
-    return getNextQuestionIndex(localMrl, localSubThread+1)
-  else:
-    return 0
+  foundNo = False
+  foundSkipped = False
+  foundNotApplicable = False
+  foundYes = False
 
+  # Get the index of all questions at this thead level
+  subThreadLevelIndexes = getSubThreadLevelIndexes(localMrl, localSubThread)
+
+  # Loop through the indexes
+  for index in subThreadLevelIndexes:
+    if questionAnswers.getItem(index) == ANSWER_UNDEFINED:
+      return index
+    if questionAnswers.getItem(index) == ANSWER_NO:
+      foundNo = True
+    if questionAnswers.getItem(index) == ANSWER_SKIPPED:
+      foundSkipped = True
+    if questionAnswers.getItem(index) == ANSWER_NOT_APPLICABLE:
+      foundNotApplicable = True
+    if questionAnswers.getItem(index) == ANSWER_YES:
+      foundYes = True
+
+  # Drop one level if a No was found
+  if foundNo:
+    if localMrl > 0:
+      return getNextQuestionIndex(localMrl -1, localSubThread)
+    else:
+      return -1
+  
+  # Go up one level if all questions answered yes
+  # Only if none were skipped
+  # Only go up one level beyond target
+  if foundYes and not foundSkipped:
+    if localMrl < targetLevel.getValue() + 1:
+      return getNextQuestionIndex(localMrl + 1, localSubThread)
+
+  # At this point, all questions have been answered or 
+  # skipped, and we are at the appropriate level
+  # Move on to the next thread
+  if localSubThread < numSubThreads - 1:
+    return getNextQuestionIndex(localMrl, localSubThread + 1)
+  else:
+    return -1  
+  
+############################################
+# Returns a list of indexes for questions
+# for the given subThread and level
+# May return an empty list if
+# no questions exist for this subThread and level
+############################################
+def getSubThreadLevelIndexes(localMrl, localSubThread):
+  subThreadLevelIndexes = []
+  for index in range(numQuestions):
+    if localMrl == questionLevels.getItem(index) and localSubThread == questionSubThreads.getItem(index):
+      subThreadLevelIndexes.append(index)
+  return subThreadLevelIndexes
+
+  
+############################################
+# Main code starts here
+############################################
 nextQuestionIndex = getNextQuestionIndex(targetLevel.getValue(), currentSubThread.getValue())
 currentQuestionText = getQuestionText(nextQuestionIndex)
 currentQuestionIndex = nextQuestionIndex]]></body>
             <dependencies>
-                <dependency idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0">
+                <dependency idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0">
                     <parameter name="numQuestions" idRef="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                    <parameter name="questionModelFile" idRef="6a065049-dce2-1004-878a-925efe028f06" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="questionLevels" idRef="f5a5ba95-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="subThreadLevels" idRef="f5a5ba96-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="targetLevel" idRef="f5a5ba97-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="questionSubThreads" idRef="f5a5ba98-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="currentSubThread" idRef="f5a5ba9a-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                 </dependency>
-                <dependency idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0">
+                <dependency idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0">
                     <parameter name="numQuestions" idRef="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
+                    <parameter name="questionModelFile" idRef="6a065049-dce2-1004-878a-925efe028f06" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="questionLevels" idRef="f5a5ba95-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="subThreadLevels" idRef="f5a5ba96-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
                     <parameter name="targetLevel" idRef="f5a5ba97-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
@@ -683,74 +748,76 @@ currentQuestionIndex = nextQuestionIndex]]></body>
     </contexts>
     <mappings>
         <modelMappings>
-            <mappedParameter name="answer2Str" idRef="a007e4b2-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="demo2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-            </mappedParameter>
-            <mappedParameter name="demo3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="answer3Str" idRef="a007e4b4-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
-            </mappedParameter>
-            <mappedParameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                <parameter name="questionAnswers" idRef="dded74d9-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            <mappedParameter name="demo1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="answer1Str" idRef="a007e4b0-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
             </mappedParameter>
             <mappedParameter name="answer4Str" idRef="a007e4b6-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
                 <parameter name="demo4Str" idRef="01647e17-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="questionModelFile" idRef="6a065049-dce2-1004-878a-925efe028f06" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
-                <parameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="questionAnswers" idRef="dded74d9-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="demo1Str" idRef="01647e0e-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="answer1Str" idRef="a007e4b0-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+            <mappedParameter name="questionSubThreads" idRef="dded74d6-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="questionSubThreads" idRef="dded74db-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+                <parameter name="questionSubThreads" idRef="f5a5ba98-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
             </mappedParameter>
-            <mappedParameter name="currentQuestionIndex" idRef="f71a2ce3-dcdf-1004-8037-ee27359ac2b0" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="currentQuestionIndex" idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-            </mappedParameter>
-            <mappedParameter name="demoMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="mrl" idRef="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
-            </mappedParameter>
-            <mappedParameter name="subThreadLevels" idRef="dded74d7-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="subThreadLevels" idRef="dded74d8-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
-                <parameter name="subThreadLevels" idRef="f5a5ba96-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-            </mappedParameter>
-            <mappedParameter name="currentSubThread" idRef="f5a5ba99-dce3-1004-85bc-49eb9ab8e382" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="currentSubThread" idRef="f5a5ba9a-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-            </mappedParameter>
-            <mappedParameter name="scope" idRef="dded74dc-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
-                <parameter name="scope" idRef="dded74bc-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-            </mappedParameter>
-            <mappedParameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
-                <parameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-            </mappedParameter>
-            <mappedParameter name="questionLevels" idRef="dded74d5-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="questionLevels" idRef="f5a5ba95-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
-                <parameter name="questionLevels" idRef="dded74da-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
-            </mappedParameter>
-            <mappedParameter name="targetLevel" idRef="f5a5ba97-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
-                <parameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
-            </mappedParameter>
-            <mappedParameter name="questionSubThreads" idRef="dded74db-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
-                <parameter name="questionSubThreads" idRef="dded74d6-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="demo2Str" idRef="01647e11-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="answer2Str" idRef="a007e4b2-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
             </mappedParameter>
             <mappedParameter name="numQuestions" idRef="f71a2ce7-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
                 <parameter name="numQuestions" idRef="dded74bb-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="answer5Str" idRef="a007e4b8-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
-                <parameter name="demo5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="targetLevel" idRef="ab18b1a7-dcc9-1004-8ee2-6faaf762a6ed" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="targetLevel" idRef="f5a5ba97-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
+                <parameter name="targetLevel" idRef="ab18b1a8-dcc9-1004-8ee2-6faaf762a6ed" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
             </mappedParameter>
-            <mappedParameter name="currentQuestionText" idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
-                <parameter name="currentQuestionText" idRef="f71a2cea-dcdf-1004-8037-ee27359ac2b0" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="questionAnswers" idRef="f71a2cee-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
+                <parameter name="questionAnswers" idRef="dded74d2-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="questionSubThreads" idRef="dded74d6-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="questionSubThreads" idRef="f5a5ba98-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
+            <mappedParameter name="questionLevels" idRef="dded74da-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="questionLevels" idRef="dded74d5-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="numSubThreads" idRef="52a09e05-dce4-1004-83a9-42b553fe92e7" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
-                <parameter name="numSubThreads" idRef="dded74ba-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            <mappedParameter name="scope" idRef="dded74bc-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="scope" idRef="dded74dc-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </mappedParameter>
+            <mappedParameter name="numQuestions" idRef="dded74bb-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="numQuestions" idRef="dded74dd-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            </mappedParameter>
+            <mappedParameter name="answer3Str" idRef="a007e4b4-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="demo3Str" idRef="01647e14-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="demo5Str" idRef="01647e1a-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="answer5Str" idRef="a007e4b8-dcc3-1004-842d-7926bbd9ac50" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0"/>
+            </mappedParameter>
+            <mappedParameter name="questionLevels" idRef="f5a5ba95-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
+                <parameter name="questionLevels" idRef="dded74d5-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="subThreadLevels" idRef="f5a5ba96-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
+                <parameter name="subThreadLevels" idRef="dded74d7-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="currentQuestionText" idRef="f71a2cea-dcdf-1004-8037-ee27359ac2b0" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="currentQuestionText" idRef="f71a2ceb-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
+            </mappedParameter>
+            <mappedParameter name="currentQuestionIndex" idRef="f71a2ce4-dcdf-1004-8037-ee27359ac2b0" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
+                <parameter name="currentQuestionIndex" idRef="f71a2ce3-dcdf-1004-8037-ee27359ac2b0" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="mrl" idRef="86b730fe-dcb7-1004-8da5-6d5f7adfc9c0" idRelationRef="86b730f3-dcb7-1004-8da5-6d5f7adfc9c0">
+                <parameter name="demoMrl" idRef="01647e1d-dcc6-1004-8ebf-63ccdaa7c18a" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="questionModelFile" idRef="6a065049-dce2-1004-878a-925efe028f06" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
+                <parameter name="questionModelFile" idRef="c5087ece-dcc7-1004-8f30-7ddbaa41ec41" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="subThreadLevels" idRef="dded74d8-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
+                <parameter name="subThreadLevels" idRef="dded74d7-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
+            </mappedParameter>
+            <mappedParameter name="currentSubThread" idRef="f5a5ba9a-dce3-1004-85bc-49eb9ab8e382" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0">
+                <parameter name="currentSubThread" idRef="f5a5ba99-dce3-1004-85bc-49eb9ab8e382" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
             <mappedParameter name="numSubThreads" idRef="dded74de-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41">
                 <parameter name="numSubThreads" idRef="dded74ba-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4"/>
             </mappedParameter>
-            <mappedParameter name="numQuestions" idRef="dded74bb-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
-                <parameter name="numQuestions" idRef="dded74dd-dcd9-1004-862b-517ed13a8a94" idRelationRef="c5087ec0-dcc7-1004-8f30-7ddbaa41ec41"/>
+            <mappedParameter name="numSubThreads" idRef="dded74ba-dcd9-1004-862b-517ed13a8a94" idModelRef="e350c7ec-dcc7-1004-8eff-1efa6142d1e4">
+                <parameter name="numSubThreads" idRef="52a09e05-dce4-1004-83a9-42b553fe92e7" idRelationRef="f71a2cdb-dcdf-1004-8037-ee27359ac2b0"/>
             </mappedParameter>
         </modelMappings>
     </mappings>
