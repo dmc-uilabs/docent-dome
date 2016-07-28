@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="1a9c0c2d-dcf6-1004-82d9-544f43268ad7" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <parameters>
+        <parameter id="87955477-dd02-1004-82f8-df84630ee904" name="input">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8795547a-dd02-1004-82f8-df84630ee904" name="output">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8795547d-dd02-1004-82f8-df84630ee904" name="targetLevel">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="87955480-dd02-1004-82f8-df84630ee904" name="currentSubThread">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="87955486-dd02-1004-82f8-df84630ee904" name="currentQuestionIndex">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="87955489-dd02-1004-82f8-df84630ee904" name="currentQuestionText">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="87955478-dd02-1004-82f8-df84630ee904" name="input">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8795547b-dd02-1004-82f8-df84630ee904" name="output">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8795547e-dd02-1004-82f8-df84630ee904" name="targetLevel">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="87955481-dd02-1004-82f8-df84630ee904" name="currentSubThread">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="87955487-dd02-1004-82f8-df84630ee904" name="currentQuestionIndex">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="8795548a-dd02-1004-82f8-df84630ee904" name="currentQuestionText">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <visualizations/>
+    <relations/>
+    <contexts>
+        <context id="87955470-dd02-1004-82f8-df84630ee904" name="Inputs">
+            <modelobjects>
+                <parameter name="input" idRef="87955477-dd02-1004-82f8-df84630ee904"/>
+                <parameter name="targetLevel" idRef="8795547d-dd02-1004-82f8-df84630ee904"/>
+                <parameter name="currentSubThread" idRef="87955480-dd02-1004-82f8-df84630ee904"/>
+            </modelobjects>
+        </context>
+        <context id="87955472-dd02-1004-82f8-df84630ee904" name="Outputs">
+            <modelobjects>
+                <parameter name="output" idRef="8795547a-dd02-1004-82f8-df84630ee904"/>
+                <parameter name="currentQuestionIndex" idRef="87955486-dd02-1004-82f8-df84630ee904"/>
+                <parameter name="currentQuestionText" idRef="87955489-dd02-1004-82f8-df84630ee904"/>
+            </modelobjects>
+        </context>
+        <context id="IFACE_MODEL_CXT" name="Model View">
+            <modelobjects>
+                <context name="Inputs" idRef="87955470-dd02-1004-82f8-df84630ee904"/>
+                <context name="Outputs" idRef="87955472-dd02-1004-82f8-df84630ee904"/>
+            </modelobjects>
+        </context>
+    </contexts>
+    <views>
+        <view name="Build View">
+            <context id="IFACE_BUILD_CXT" name="Build View">
+                <modelobjects>
+                    <parameter name="input" idRef="87955478-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="output" idRef="8795547b-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="targetLevel" idRef="8795547e-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="currentSubThread" idRef="87955481-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="currentQuestionIndex" idRef="87955487-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="currentQuestionText" idRef="8795548a-dd02-1004-82f8-df84630ee904"/>
+                </modelobjects>
+            </context>
+        </view>
+        <view name="Interface Causality View">
+            <filter id="INPUTS_FILTER" name="Inputs">
+                <parameters>
+                    <parameter name="input" idRef="87955478-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="targetLevel" idRef="8795547e-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="currentSubThread" idRef="87955481-dd02-1004-82f8-df84630ee904"/>
+                </parameters>
+            </filter>
+            <filter id="OUTPUTS_FILTER" name="Outputs">
+                <parameters>
+                    <parameter name="currentQuestionIndex" idRef="87955487-dd02-1004-82f8-df84630ee904" causality="Result"/>
+                    <parameter name="currentQuestionText" idRef="8795548a-dd02-1004-82f8-df84630ee904" causality="Result"/>
+                    <parameter name="output" idRef="8795547b-dd02-1004-82f8-df84630ee904" causality="Result"/>
+                </parameters>
+            </filter>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+        </view>
+    </views>
+    <directedGraph id="1a9c0c2d-dcf6-1004-82d9-544f43268ad7">
+        <nodes>
+            <node idRef="87955478-dd02-1004-82f8-df84630ee904"/>
+            <node idRef="8795547b-dd02-1004-82f8-df84630ee904"/>
+            <node idRef="8795547e-dd02-1004-82f8-df84630ee904"/>
+            <node idRef="87955481-dd02-1004-82f8-df84630ee904"/>
+            <node idRef="87955487-dd02-1004-82f8-df84630ee904"/>
+            <node idRef="8795548a-dd02-1004-82f8-df84630ee904"/>
+        </nodes>
+        <arcs>
+            <from idRef="87955478-dd02-1004-82f8-df84630ee904">
+                <to idRef="8795547b-dd02-1004-82f8-df84630ee904"/>
+                <to idRef="87955487-dd02-1004-82f8-df84630ee904"/>
+                <to idRef="8795548a-dd02-1004-82f8-df84630ee904"/>
+            </from>
+            <from idRef="8795547e-dd02-1004-82f8-df84630ee904">
+                <to idRef="87955487-dd02-1004-82f8-df84630ee904"/>
+                <to idRef="8795548a-dd02-1004-82f8-df84630ee904"/>
+            </from>
+            <from idRef="87955481-dd02-1004-82f8-df84630ee904">
+                <to idRef="87955487-dd02-1004-82f8-df84630ee904"/>
+                <to idRef="8795548a-dd02-1004-82f8-df84630ee904"/>
+            </from>
+        </arcs>
+    </directedGraph>
+    <interfaceToRelParamMap>
+        <iToRpMap relParamId="87955478-dd02-1004-82f8-df84630ee904" ifaceId="87955476-dd02-1004-82f8-df84630ee904"/>
+        <iToRpMap relParamId="8795547b-dd02-1004-82f8-df84630ee904" ifaceId="87955479-dd02-1004-82f8-df84630ee904"/>
+        <iToRpMap relParamId="8795547e-dd02-1004-82f8-df84630ee904" ifaceId="8795547c-dd02-1004-82f8-df84630ee904"/>
+        <iToRpMap relParamId="87955481-dd02-1004-82f8-df84630ee904" ifaceId="8795547f-dd02-1004-82f8-df84630ee904"/>
+        <iToRpMap relParamId="87955487-dd02-1004-82f8-df84630ee904" ifaceId="87955485-dd02-1004-82f8-df84630ee904"/>
+        <iToRpMap relParamId="8795548a-dd02-1004-82f8-df84630ee904" ifaceId="87955488-dd02-1004-82f8-df84630ee904"/>
+    </interfaceToRelParamMap>
+</modelinterface>

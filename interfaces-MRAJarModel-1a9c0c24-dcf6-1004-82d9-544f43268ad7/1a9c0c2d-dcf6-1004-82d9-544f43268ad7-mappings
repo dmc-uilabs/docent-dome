@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="1a9c0c2d-dcf6-1004-82d9-544f43268ad7" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="output" idRef="8795547b-dd02-1004-82f8-df84630ee904">
+                    <parameter name="output" idRef="87955479-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="currentSubThread" idRef="87955481-dd02-1004-82f8-df84630ee904">
+                    <parameter name="currentSubThread" idRef="8795547f-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="currentQuestionIndex" idRef="87955487-dd02-1004-82f8-df84630ee904">
+                    <parameter name="currentQuestionIndex" idRef="87955485-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="targetLevel" idRef="8795547e-dd02-1004-82f8-df84630ee904">
+                    <parameter name="targetLevel" idRef="8795547c-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="input" idRef="87955478-dd02-1004-82f8-df84630ee904">
+                    <parameter name="input" idRef="87955476-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="currentQuestionText" idRef="8795548a-dd02-1004-82f8-df84630ee904">
+                    <parameter name="currentQuestionText" idRef="87955488-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="output" idRef="8795547a-dd02-1004-82f8-df84630ee904">
+                    <parameter name="output" idRef="87955479-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="currentSubThread" idRef="87955480-dd02-1004-82f8-df84630ee904">
+                    <parameter name="currentSubThread" idRef="8795547f-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="currentQuestionIndex" idRef="87955486-dd02-1004-82f8-df84630ee904">
+                    <parameter name="currentQuestionIndex" idRef="87955485-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="currentQuestionText" idRef="87955489-dd02-1004-82f8-df84630ee904">
+                    <parameter name="currentQuestionText" idRef="87955488-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="input" idRef="87955477-dd02-1004-82f8-df84630ee904">
+                    <parameter name="input" idRef="87955476-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+                <mappedParameter name="targetLevel" idRef="8795547d-dd02-1004-82f8-df84630ee904">
+                    <parameter name="targetLevel" idRef="8795547c-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="currentQuestionText" idRef="87955488-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7" description="key"/>
+            <parameter name="currentQuestionText" idRef="87955489-dd02-1004-82f8-df84630ee904" description="value"/>
+            <context name="Inputs" idRef="8795546f-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7" description="key"/>
+            <context name="Inputs" idRef="87955470-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="output" idRef="87955479-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7" description="key"/>
+            <parameter name="output" idRef="8795547a-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="currentQuestionIndex" idRef="87955485-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7" description="key"/>
+            <parameter name="currentQuestionIndex" idRef="87955486-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="input" idRef="87955476-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7" description="key"/>
+            <parameter name="input" idRef="87955477-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="currentSubThread" idRef="8795547f-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7" description="key"/>
+            <parameter name="currentSubThread" idRef="87955480-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="targetLevel" idRef="8795547c-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7" description="key"/>
+            <parameter name="targetLevel" idRef="8795547d-dd02-1004-82f8-df84630ee904" description="value"/>
+            <context name="Outputs" idRef="87955471-dd02-1004-82f8-df84630ee904" idModelRef="1a9c0c24-dcf6-1004-82d9-544f43268ad7" description="key"/>
+            <context name="Outputs" idRef="87955472-dd02-1004-82f8-df84630ee904" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="output" idRef="8795547a-dd02-1004-82f8-df84630ee904" description="key"/>
+            <parameter name="output" idRef="8795547b-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="currentSubThread" idRef="87955480-dd02-1004-82f8-df84630ee904" description="key"/>
+            <parameter name="currentSubThread" idRef="87955481-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="currentQuestionIndex" idRef="87955486-dd02-1004-82f8-df84630ee904" description="key"/>
+            <parameter name="currentQuestionIndex" idRef="87955487-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="currentQuestionText" idRef="87955489-dd02-1004-82f8-df84630ee904" description="key"/>
+            <parameter name="currentQuestionText" idRef="8795548a-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="input" idRef="87955477-dd02-1004-82f8-df84630ee904" description="key"/>
+            <parameter name="input" idRef="87955478-dd02-1004-82f8-df84630ee904" description="value"/>
+            <parameter name="targetLevel" idRef="8795547d-dd02-1004-82f8-df84630ee904" description="key"/>
+            <parameter name="targetLevel" idRef="8795547e-dd02-1004-82f8-df84630ee904" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>
