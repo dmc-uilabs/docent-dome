@@ -139,16 +139,16 @@
         <view name="Interface Causality View">
             <filter id="INPUTS_FILTER" name="Inputs">
                 <parameters>
-                    <parameter name="input" idRef="87955478-dd02-1004-82f8-df84630ee904"/>
-                    <parameter name="targetLevel" idRef="8795547e-dd02-1004-82f8-df84630ee904"/>
                     <parameter name="currentSubThread" idRef="87955481-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="targetLevel" idRef="8795547e-dd02-1004-82f8-df84630ee904"/>
+                    <parameter name="input" idRef="87955478-dd02-1004-82f8-df84630ee904"/>
                 </parameters>
             </filter>
             <filter id="OUTPUTS_FILTER" name="Outputs">
                 <parameters>
+                    <parameter name="output" idRef="8795547b-dd02-1004-82f8-df84630ee904" causality="Result"/>
                     <parameter name="currentQuestionIndex" idRef="87955487-dd02-1004-82f8-df84630ee904" causality="Result"/>
                     <parameter name="currentQuestionText" idRef="8795548a-dd02-1004-82f8-df84630ee904" causality="Result"/>
-                    <parameter name="output" idRef="8795547b-dd02-1004-82f8-df84630ee904" causality="Result"/>
                 </parameters>
             </filter>
             <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
