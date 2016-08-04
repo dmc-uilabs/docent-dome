@@ -90,12 +90,12 @@
     </contexts>
     <mappings>
         <modelMappings>
-            <mappedParameter name="currentSubThread" idRef="8795547f-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">currentSubThread</mappedParameter>
-            <mappedParameter name="input" idRef="87955476-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">input</mappedParameter>
-            <mappedParameter name="currentQuestionIndex" idRef="87955485-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">currentQuestionIndex</mappedParameter>
             <mappedParameter name="targetLevel" idRef="8795547c-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">targetLevel</mappedParameter>
-            <mappedParameter name="output" idRef="87955479-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">output</mappedParameter>
+            <mappedParameter name="currentQuestionIndex" idRef="87955485-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">currentQuestionIndex</mappedParameter>
             <mappedParameter name="currentQuestionText" idRef="87955488-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">currentQuestionText</mappedParameter>
+            <mappedParameter name="input" idRef="87955476-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">input</mappedParameter>
+            <mappedParameter name="currentSubThread" idRef="8795547f-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">currentSubThread</mappedParameter>
+            <mappedParameter name="output" idRef="87955479-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904">output</mappedParameter>
         </modelMappings>
     </mappings>
     <dependencies>
@@ -105,21 +105,21 @@
             <parameter name="targetLevel" idRef="8795547c-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904"/>
             <parameter name="currentSubThread" idRef="8795547f-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904"/>
         </dependency>
-        <dependency idRef="87955479-dd02-1004-82f8-df84630ee904">
-            <parameter name="input" idRef="87955476-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904"/>
-        </dependency>
         <dependency idRef="87955488-dd02-1004-82f8-df84630ee904">
             <parameter name="MRAjar" idRef="1a9c0c36-dcf6-1004-82d9-544f43268ad7" idModelRef="879554b9-dd02-1004-82f8-df84630ee904"/>
             <parameter name="input" idRef="87955476-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904"/>
             <parameter name="targetLevel" idRef="8795547c-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904"/>
             <parameter name="currentSubThread" idRef="8795547f-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904"/>
         </dependency>
+        <dependency idRef="87955479-dd02-1004-82f8-df84630ee904">
+            <parameter name="input" idRef="87955476-dd02-1004-82f8-df84630ee904" idModelRef="879554b9-dd02-1004-82f8-df84630ee904"/>
+        </dependency>
     </dependencies>
     <setup>
         <parameter id="Class to Instantiate" name="Class to Instantiate">
             <currentType value="String"/>
             <data>
-                <dataobject type="String">mra.MRA</dataobject>
+                <dataobject type="String">mra.DomeMRA</dataobject>
             </data>
         </parameter>
     </setup>
