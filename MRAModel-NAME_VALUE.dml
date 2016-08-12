@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="PluginModel" id="c94180a8-dd1c-1004-8b19-af9f0f15ab21" name="MRA Name Value Model" pluginType="NAME_VALUE">
+    <modelinfo>
+        <version>0.0.0</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="c94180ba-dd1c-1004-8b19-af9f0f15ab21" name="inValue">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="1" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="c94180bd-dd1c-1004-8b19-af9f0f15ab21" name="targetLevel">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" name="coreFile">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>/home/cameron/workspace/mrafrontend/app/core/core.js</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="5750888e-dd20-1004-881f-725e9bf89549" name="currentLevel">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="57508891-dd20-1004-881f-725e9bf89549" name="nextQuestion">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="57508896-dd20-1004-881f-725e9bf89549" name="domeInterfaceFile">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>/home/cameron/workspace/mrafrontend/app/core/domeInterface.js</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="currentLevel" idRef="5750888e-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="targetLevel" idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="nextQuestion" idRef="57508891-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files"/>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">inValue</mappedParameter>
+            <mappedParameter name="nextQuestion" idRef="57508891-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">nextQuestion</mappedParameter>
+            <mappedParameter name="currentLevel" idRef="5750888e-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">currentLevel</mappedParameter>
+            <mappedParameter name="targetLevel" idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetLevel</mappedParameter>
+        </modelMappings>
+    </mappings>
+    <dependencies>
+        <dependency idRef="57508891-dd20-1004-881f-725e9bf89549">
+            <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+        </dependency>
+        <dependency idRef="5750888e-dd20-1004-881f-725e9bf89549">
+            <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+        </dependency>
+        <dependency idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21">
+            <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+        </dependency>
+    </dependencies>
+    <setup>
+        <parameter id="input file location" name="input file location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>in.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="output file location" name="output file location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>out.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="executable location" name="executable location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>/usr/bin/node</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="command line arguments" name="command line arguments">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">domeInterface.js</dataobject>
+            </data>
+        </parameter>
+    </setup>
+    <auxfiles>
+        <auxfile id="57508897-dd20-1004-881f-725e9bf89549" name="domeInterfaceFile">
+            <isMainModelFile value="true"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>domeInterface.js</file>
+        </auxfile>
+        <auxfile id="575088a9-dd20-1004-881f-725e9bf89549" name="coreFile">
+            <isMainModelFile value="false"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>core.js</file>
+        </auxfile>
+    </auxfiles>
+</model>

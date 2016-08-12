@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="6d8dad56-dd20-1004-8470-5ac15d25b737" name="CustomInterface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="targetLevel" idRef="6d8dad5d-dd20-1004-8470-5ac15d25b737">
+                    <parameter name="targetLevel" idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="nextQuestion" idRef="6d8dad5e-dd20-1004-8470-5ac15d25b737">
+                    <parameter name="nextQuestion" idRef="57508891-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="inValue" idRef="6d8dad5b-dd20-1004-8470-5ac15d25b737">
+                    <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="currentLevel" idRef="6d8dad5c-dd20-1004-8470-5ac15d25b737">
+                    <parameter name="currentLevel" idRef="5750888e-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+</modelinterface>
