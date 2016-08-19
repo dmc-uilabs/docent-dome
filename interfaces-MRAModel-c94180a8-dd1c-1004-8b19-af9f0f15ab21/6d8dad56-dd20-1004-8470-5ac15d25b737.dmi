@@ -60,9 +60,9 @@
             </filter>
             <filter id="OUTPUTS_FILTER" name="Outputs">
                 <parameters>
-                    <parameter name="currentLevel" idRef="6d8dad5c-dd20-1004-8470-5ac15d25b737" causality="Result"/>
                     <parameter name="targetLevel" idRef="6d8dad5d-dd20-1004-8470-5ac15d25b737" causality="Result"/>
                     <parameter name="nextQuestion" idRef="6d8dad5e-dd20-1004-8470-5ac15d25b737" causality="Result"/>
+                    <parameter name="currentLevel" idRef="6d8dad5c-dd20-1004-8470-5ac15d25b737" causality="Result"/>
                 </parameters>
             </filter>
             <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>

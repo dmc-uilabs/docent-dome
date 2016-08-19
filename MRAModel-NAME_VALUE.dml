@@ -2,7 +2,7 @@
 
 <model type="PluginModel" id="c94180a8-dd1c-1004-8b19-af9f0f15ab21" name="MRA Name Value Model" pluginType="NAME_VALUE">
     <modelinfo>
-        <version>0.0.0</version>
+        <version>0.0.1</version>
     </modelinfo>
     <parameters>
         <parameter id="c94180ba-dd1c-1004-8b19-af9f0f15ab21" name="inValue">
@@ -53,6 +53,15 @@
                 </dataobject>
             </data>
         </parameter>
+        <parameter id="93e3ad04-dd2c-1004-8b0a-b691055d92bf" name="criteriaFile">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>/home/cameron/workspace/mrafrontend/assets/criteriaQuestions.json</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
     </parameters>
     <contexts>
         <context id="BUILD_CXT" name="Build View">
@@ -63,14 +72,18 @@
                 <parameter name="nextQuestion" idRef="57508891-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             </modelobjects>
         </context>
-        <context id="FILE_CXT" name="Files"/>
+        <context id="FILE_CXT" name="Files">
+            <modelobjects>
+                <parameter name="criteriaFile" idRef="93e3ad04-dd2c-1004-8b0a-b691055d92bf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            </modelobjects>
+        </context>
     </contexts>
     <mappings>
         <modelMappings>
-            <mappedParameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">inValue</mappedParameter>
             <mappedParameter name="nextQuestion" idRef="57508891-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">nextQuestion</mappedParameter>
-            <mappedParameter name="currentLevel" idRef="5750888e-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">currentLevel</mappedParameter>
             <mappedParameter name="targetLevel" idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetLevel</mappedParameter>
+            <mappedParameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">inValue</mappedParameter>
+            <mappedParameter name="currentLevel" idRef="5750888e-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">currentLevel</mappedParameter>
         </modelMappings>
     </mappings>
     <dependencies>
@@ -79,12 +92,12 @@
             <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
         </dependency>
-        <dependency idRef="5750888e-dd20-1004-881f-725e9bf89549">
+        <dependency idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21">
             <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
         </dependency>
-        <dependency idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21">
+        <dependency idRef="5750888e-dd20-1004-881f-725e9bf89549">
             <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
@@ -130,13 +143,13 @@
             <isMainModelFile value="true"/>
             <isExcuteOnServer value="true"/>
             <fileType>file:///</fileType>
-            <file>domeInterface.js</file>
+            <file>/home/cameron/workspace/mrafrontend/app/core/domeInterface.js</file>
         </auxfile>
         <auxfile id="575088a9-dd20-1004-881f-725e9bf89549" name="coreFile">
             <isMainModelFile value="false"/>
             <isExcuteOnServer value="true"/>
             <fileType>file:///</fileType>
-            <file>core.js</file>
+            <file>/home/cameron/workspace/mrafrontend/app/core/core-browserify.js</file>
         </auxfile>
     </auxfiles>
 </model>
