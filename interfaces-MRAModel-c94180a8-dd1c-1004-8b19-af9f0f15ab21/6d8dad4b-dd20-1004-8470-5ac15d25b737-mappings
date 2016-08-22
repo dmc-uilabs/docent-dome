@@ -6,12 +6,121 @@
         <defaultinterface/>
     </interfaceinfo>
     <mappingsandintermediates>
-        <mappings/>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953">
+                    <parameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="currentLevel" idRef="7c2c4682-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="currentLevel" idRef="7c2c4680-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf">
+                    <parameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="targetLevel" idRef="7c2c4679-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="nextQuestionIndex" idRef="7c2c467f-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="nextQuestionIndex" idRef="7c2c467d-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="criteria" idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="criteria" idRef="7c2c4683-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf">
+                    <parameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="nextQuestion" idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="nextQuestion" idRef="7c2c467a-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953">
+                    <parameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="currentLevel" idRef="7c2c4681-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="currentLevel" idRef="7c2c4680-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="nextQuestionIndex" idRef="7c2c467e-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="nextQuestionIndex" idRef="7c2c467d-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="functionToCall" idRef="7c2c4675-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="targetLevel" idRef="7c2c4678-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="teamMembers" idRef="b03e482d-dd34-1004-805f-42099899dcaf">
+                    <parameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="nextQuestion" idRef="7c2c467b-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="nextQuestion" idRef="7c2c467a-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="targetDate" idRef="47d82a2a-dd34-1004-8d9c-1a039e44f953">
+                    <parameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="version" idRef="b03e4830-dd34-1004-805f-42099899dcaf">
+                    <parameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="criteria" idRef="7c2c4684-dd2e-1004-8431-63bc9d81ddd0">
+                    <parameter name="criteria" idRef="7c2c4683-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+                <mappedParameter name="scope" idRef="47d82a2d-dd34-1004-8d9c-1a039e44f953">
+                    <parameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
         <intermediateobjects/>
     </mappingsandintermediates>
     <lookupdata>
-        <objectmap/>
-        <viewobjectmap/>
+        <objectmap>
+            <parameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="scope" idRef="47d82a2d-dd34-1004-8d9c-1a039e44f953" description="value"/>
+            <parameter name="nextQuestionIndex" idRef="7c2c467d-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="nextQuestionIndex" idRef="7c2c467e-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="version" idRef="b03e4830-dd34-1004-805f-42099899dcaf" description="value"/>
+            <context name="outputs" idRef="7c2c461e-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <context name="outputs" idRef="7c2c461f-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <context name="inputs" idRef="7c2c461c-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <context name="inputs" idRef="7c2c461d-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="targetLevel" idRef="7c2c4678-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="targetDate" idRef="47d82a2a-dd34-1004-8d9c-1a039e44f953" description="value"/>
+            <parameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="teamMembers" idRef="b03e482d-dd34-1004-805f-42099899dcaf" description="value"/>
+            <parameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="functionToCall" idRef="7c2c4675-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="nextQuestion" idRef="7c2c467a-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="nextQuestion" idRef="7c2c467b-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="currentLevel" idRef="7c2c4680-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="currentLevel" idRef="7c2c4681-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="criteria" idRef="7c2c4683-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21" description="key"/>
+            <parameter name="criteria" idRef="7c2c4684-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="currentLevel" idRef="7c2c4681-dd2e-1004-8431-63bc9d81ddd0" description="key"/>
+            <parameter name="currentLevel" idRef="7c2c4682-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="nextQuestionIndex" idRef="7c2c467e-dd2e-1004-8431-63bc9d81ddd0" description="key"/>
+            <parameter name="nextQuestionIndex" idRef="7c2c467f-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="functionToCall" idRef="7c2c4675-dd2e-1004-8431-63bc9d81ddd0" description="key"/>
+            <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="targetLevel" idRef="7c2c4678-dd2e-1004-8431-63bc9d81ddd0" description="key"/>
+            <parameter name="targetLevel" idRef="7c2c4679-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="teamMembers" idRef="b03e482d-dd34-1004-805f-42099899dcaf" description="key"/>
+            <parameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf" description="value"/>
+            <parameter name="nextQuestion" idRef="7c2c467b-dd2e-1004-8431-63bc9d81ddd0" description="key"/>
+            <parameter name="nextQuestion" idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="targetDate" idRef="47d82a2a-dd34-1004-8d9c-1a039e44f953" description="key"/>
+            <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953" description="value"/>
+            <parameter name="version" idRef="b03e4830-dd34-1004-805f-42099899dcaf" description="key"/>
+            <parameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf" description="value"/>
+            <parameter name="criteria" idRef="7c2c4684-dd2e-1004-8431-63bc9d81ddd0" description="key"/>
+            <parameter name="criteria" idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0" description="value"/>
+            <parameter name="scope" idRef="47d82a2d-dd34-1004-8d9c-1a039e44f953" description="key"/>
+            <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953" description="value"/>
+        </viewobjectmap>
         <relationobjectmap/>
     </lookupdata>
 </modelinterface>

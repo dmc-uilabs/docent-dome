@@ -2,25 +2,9 @@
 
 <model type="PluginModel" id="c94180a8-dd1c-1004-8b19-af9f0f15ab21" name="MRA Name Value Model" pluginType="NAME_VALUE">
     <modelinfo>
-        <version>0.0.1</version>
+        <version>0.0.0</version>
     </modelinfo>
     <parameters>
-        <parameter id="c94180ba-dd1c-1004-8b19-af9f0f15ab21" name="inValue">
-            <currentType value="Integer"/>
-            <data>
-                <dataobject type="Integer">
-                    <quantity magnitude="1" unit="No_Unit"/>
-                </dataobject>
-            </data>
-        </parameter>
-        <parameter id="c94180bd-dd1c-1004-8b19-af9f0f15ab21" name="targetLevel">
-            <currentType value="Integer"/>
-            <data>
-                <dataobject type="Integer">
-                    <quantity magnitude="0" unit="No_Unit"/>
-                </dataobject>
-            </data>
-        </parameter>
         <parameter id="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" name="coreFile">
             <currentType value="File"/>
             <data>
@@ -28,20 +12,6 @@
                     <filePath>/home/cameron/workspace/mrafrontend/app/core/core.js</filePath>
                     <fileType>Binary</fileType>
                 </dataobject>
-            </data>
-        </parameter>
-        <parameter id="5750888e-dd20-1004-881f-725e9bf89549" name="currentLevel">
-            <currentType value="Integer"/>
-            <data>
-                <dataobject type="Integer">
-                    <quantity magnitude="0" unit="No_Unit"/>
-                </dataobject>
-            </data>
-        </parameter>
-        <parameter id="57508891-dd20-1004-881f-725e9bf89549" name="nextQuestion">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String"></dataobject>
             </data>
         </parameter>
         <parameter id="57508896-dd20-1004-881f-725e9bf89549" name="domeInterfaceFile">
@@ -53,7 +23,61 @@
                 </dataobject>
             </data>
         </parameter>
-        <parameter id="93e3ad04-dd2c-1004-8b0a-b691055d92bf" name="criteriaFile">
+        <parameter id="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" name="functionToCall">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">exportValues</dataobject>
+            </data>
+        </parameter>
+        <parameter id="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" name="targetLevel">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="6" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="7c2c467a-dd2e-1004-8431-63bc9d81ddd0" name="nextQuestion">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="7c2c467d-dd2e-1004-8431-63bc9d81ddd0" name="nextQuestionIndex">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="7c2c4680-dd2e-1004-8431-63bc9d81ddd0" name="currentLevel">
+            <currentType value="Integer"/>
+            <data>
+                <dataobject type="Integer">
+                    <quantity magnitude="0" unit="No_Unit"/>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="7c2c4683-dd2e-1004-8431-63bc9d81ddd0" name="criteria">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="47d82a29-dd34-1004-8d9c-1a039e44f953" name="targetDate">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">10/21/2016</dataobject>
+            </data>
+        </parameter>
+        <parameter id="47d82a2c-dd34-1004-8d9c-1a039e44f953" name="scope">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">The scope of this assessment is...</dataobject>
+            </data>
+        </parameter>
+        <parameter id="47d82a38-dd34-1004-8d9c-1a039e44f953" name="criteriaFile">
             <currentType value="File"/>
             <data>
                 <dataobject type="File">
@@ -62,45 +86,108 @@
                 </dataobject>
             </data>
         </parameter>
+        <parameter id="b03e482c-dd34-1004-805f-42099899dcaf" name="teamMembers">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="b03e482f-dd34-1004-805f-42099899dcaf" name="version">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
     </parameters>
     <contexts>
+        <context id="7c2c461c-dd2e-1004-8431-63bc9d81ddd0" name="inputs">
+            <modelobjects>
+                <parameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            </modelobjects>
+        </context>
+        <context id="7c2c461e-dd2e-1004-8431-63bc9d81ddd0" name="outputs">
+            <modelobjects>
+                <parameter name="nextQuestion" idRef="7c2c467a-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="nextQuestionIndex" idRef="7c2c467d-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="currentLevel" idRef="7c2c4680-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="criteria" idRef="7c2c4683-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            </modelobjects>
+        </context>
         <context id="BUILD_CXT" name="Build View">
             <modelobjects>
-                <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
-                <parameter name="currentLevel" idRef="5750888e-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
-                <parameter name="targetLevel" idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
-                <parameter name="nextQuestion" idRef="57508891-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <context name="inputs" idRef="7c2c461c-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <context name="outputs" idRef="7c2c461e-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             </modelobjects>
         </context>
         <context id="FILE_CXT" name="Files">
             <modelobjects>
-                <parameter name="criteriaFile" idRef="93e3ad04-dd2c-1004-8b0a-b691055d92bf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+                <parameter name="criteriaFile" idRef="47d82a38-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             </modelobjects>
         </context>
     </contexts>
     <mappings>
         <modelMappings>
-            <mappedParameter name="nextQuestion" idRef="57508891-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">nextQuestion</mappedParameter>
-            <mappedParameter name="targetLevel" idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetLevel</mappedParameter>
-            <mappedParameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">inValue</mappedParameter>
-            <mappedParameter name="currentLevel" idRef="5750888e-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">currentLevel</mappedParameter>
+            <mappedParameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">scope</mappedParameter>
+            <mappedParameter name="nextQuestionIndex" idRef="7c2c467d-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">nextQuestionIndex</mappedParameter>
+            <mappedParameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">version</mappedParameter>
+            <mappedParameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetLevel</mappedParameter>
+            <mappedParameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetDate</mappedParameter>
+            <mappedParameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">teamMembers</mappedParameter>
+            <mappedParameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">functionToCall</mappedParameter>
+            <mappedParameter name="nextQuestion" idRef="7c2c467a-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">nextQuestion</mappedParameter>
+            <mappedParameter name="currentLevel" idRef="7c2c4680-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">currentLevel</mappedParameter>
+            <mappedParameter name="criteria" idRef="7c2c4683-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">criteria</mappedParameter>
         </modelMappings>
     </mappings>
     <dependencies>
-        <dependency idRef="57508891-dd20-1004-881f-725e9bf89549">
-            <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+        <dependency idRef="7c2c467d-dd2e-1004-8431-63bc9d81ddd0">
             <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="criteriaFile" idRef="47d82a38-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
         </dependency>
-        <dependency idRef="c94180bd-dd1c-1004-8b19-af9f0f15ab21">
-            <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+        <dependency idRef="7c2c467a-dd2e-1004-8431-63bc9d81ddd0">
             <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="criteriaFile" idRef="47d82a38-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
         </dependency>
-        <dependency idRef="5750888e-dd20-1004-881f-725e9bf89549">
-            <parameter name="inValue" idRef="c94180ba-dd1c-1004-8b19-af9f0f15ab21" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+        <dependency idRef="7c2c4680-dd2e-1004-8431-63bc9d81ddd0">
             <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
             <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="criteriaFile" idRef="47d82a38-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+        </dependency>
+        <dependency idRef="7c2c4683-dd2e-1004-8431-63bc9d81ddd0">
+            <parameter name="coreFile" idRef="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="domeInterfaceFile" idRef="57508896-dd20-1004-881f-725e9bf89549" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="criteriaFile" idRef="47d82a38-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
+            <parameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21"/>
         </dependency>
     </dependencies>
     <setup>
@@ -149,7 +236,13 @@
             <isMainModelFile value="false"/>
             <isExcuteOnServer value="true"/>
             <fileType>file:///</fileType>
-            <file>/home/cameron/workspace/mrafrontend/app/core/core-browserify.js</file>
+            <file>/home/cameron/workspace/mrafrontend/app/core/core.js</file>
+        </auxfile>
+        <auxfile id="47d82a39-dd34-1004-8d9c-1a039e44f953" name="criteriaFile">
+            <isMainModelFile value="false"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>/home/cameron/workspace/mrafrontend/assets/criteriaQuestions.json</file>
         </auxfile>
     </auxfiles>
 </model>
