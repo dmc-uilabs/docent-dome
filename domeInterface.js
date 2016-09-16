@@ -1,1 +1,0 @@
-/home/cameron/workspace/mrafrontend/app/core/domeInterface.js

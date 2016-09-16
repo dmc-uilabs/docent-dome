@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<model type="PluginModel" id="c94180a8-dd1c-1004-8b19-af9f0f15ab21" name="MRA Name Value Model" pluginType="NAME_VALUE">
+<model type="PluginModel" id="c94180a8-dd1c-1004-8b19-af9f0f15ab21" name="Manufacturing Readiness Assessment" pluginType="NAME_VALUE">
     <modelinfo>
-        <version>0.0.0</version>
+        <version>0.0.1</version>
     </modelinfo>
     <parameters>
         <parameter id="2f24104f-dd20-1004-8c57-9b8ba1ffe56e" name="coreFile">
@@ -132,16 +132,16 @@
     </contexts>
     <mappings>
         <modelMappings>
-            <mappedParameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">scope</mappedParameter>
             <mappedParameter name="nextQuestionIndex" idRef="7c2c467d-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">nextQuestionIndex</mappedParameter>
-            <mappedParameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">version</mappedParameter>
-            <mappedParameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetLevel</mappedParameter>
-            <mappedParameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetDate</mappedParameter>
-            <mappedParameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">teamMembers</mappedParameter>
-            <mappedParameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">functionToCall</mappedParameter>
             <mappedParameter name="nextQuestion" idRef="7c2c467a-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">nextQuestion</mappedParameter>
             <mappedParameter name="currentLevel" idRef="7c2c4680-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">currentLevel</mappedParameter>
+            <mappedParameter name="targetDate" idRef="47d82a29-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetDate</mappedParameter>
+            <mappedParameter name="functionToCall" idRef="7c2c4674-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">functionToCall</mappedParameter>
+            <mappedParameter name="teamMembers" idRef="b03e482c-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">teamMembers</mappedParameter>
+            <mappedParameter name="targetLevel" idRef="7c2c4677-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">targetLevel</mappedParameter>
             <mappedParameter name="criteria" idRef="7c2c4683-dd2e-1004-8431-63bc9d81ddd0" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">criteria</mappedParameter>
+            <mappedParameter name="version" idRef="b03e482f-dd34-1004-805f-42099899dcaf" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">version</mappedParameter>
+            <mappedParameter name="scope" idRef="47d82a2c-dd34-1004-8d9c-1a039e44f953" idModelRef="c94180a8-dd1c-1004-8b19-af9f0f15ab21">scope</mappedParameter>
         </modelMappings>
     </mappings>
     <dependencies>
@@ -213,7 +213,7 @@
             <currentType value="File"/>
             <data>
                 <dataobject type="File">
-                    <filePath>/usr/bin/node</filePath>
+                    <filePath>/usr/local/bin/node</filePath>
                     <fileType>Binary</fileType>
                 </dataobject>
             </data>
@@ -242,7 +242,7 @@
             <isMainModelFile value="false"/>
             <isExcuteOnServer value="true"/>
             <fileType>file:///</fileType>
-            <file>/home/cameron/workspace/mrafrontend/assets/criteriaQuestions.json</file>
+            <file>/home/cameron/workspace/mrafrontend/app/core/criteriaQuestions.js</file>
         </auxfile>
     </auxfiles>
 </model>

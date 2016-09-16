@@ -187,19 +187,19 @@
         <view name="Interface Causality View">
             <filter id="INPUTS_FILTER" name="Inputs">
                 <parameters>
-                    <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
                     <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
                     <parameter name="targetLevel" idRef="7c2c4679-dd2e-1004-8431-63bc9d81ddd0"/>
-                    <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
                     <parameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
                     <parameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf"/>
+                    <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
+                    <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
                 </parameters>
             </filter>
             <filter id="OUTPUTS_FILTER" name="Outputs">
                 <parameters>
+                    <parameter name="criteria" idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
                     <parameter name="nextQuestionIndex" idRef="7c2c467f-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
                     <parameter name="nextQuestion" idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
-                    <parameter name="criteria" idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
                     <parameter name="currentLevel" idRef="7c2c4682-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
                 </parameters>
             </filter>
