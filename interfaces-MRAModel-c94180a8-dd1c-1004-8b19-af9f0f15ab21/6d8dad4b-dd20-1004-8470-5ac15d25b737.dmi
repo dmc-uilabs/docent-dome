@@ -65,7 +65,7 @@
         <parameter id="d05e630f-dd88-1004-8bdd-44b440cccfb6" name="inputTemplate">
             <currentType value="String"/>
             <data>
-                <dataobject type="String">&lt;style&gt;{{cssText}}&lt;/style&gt;&lt;div&gt; &lt;div align='center' class = 'well well-sm'&gt; Show Levels &lt;form&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-init='mrl_all=true' ng-model='mrl_all'&gt;All&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_0'&gt;1&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_1'&gt;2&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_2'&gt;3&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_3'&gt;4&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_4'&gt;5&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_5'&gt;6&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_6'&gt;7&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_7'&gt;8&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_8'&gt;9&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_9'&gt;10&lt;/label&gt; &lt;/form&gt; &lt;/div&gt; &lt;table class='table table-responsive' style='max-width:800px;' id='blackLinks' align='center'&gt; &lt;th&gt;&lt;/th&gt; &lt;th align='center'&gt;Thread&lt;/th&gt;&lt;th&gt;Sub Thread&lt;/th&gt; &lt;th ng-show='mrl_0 || mrl_all'&gt;1&lt;/th&gt; &lt;th ng-show='mrl_1 || mrl_all'&gt;2&lt;/th&gt; &lt;th ng-show='mrl_2 || mrl_all'&gt;3&lt;/th&gt; &lt;th ng-show='mrl_3 || mrl_all'&gt;4&lt;/th&gt; &lt;th ng-show='mrl_4 || mrl_all'&gt;5&lt;/th&gt; &lt;th ng-show='mrl_5 || mrl_all'&gt;6&lt;/th&gt; &lt;th ng-show='mrl_6 || mrl_all'&gt;7&lt;/th&gt; &lt;th ng-show='mrl_7 || mrl_all'&gt;8&lt;/th&gt; &lt;th ng-show='mrl_8 || mrl_all'&gt;9&lt;/th&gt; &lt;th ng-show='mrl_9 || mrl_all'&gt;10&lt;/th&gt; {{#each threads}} &lt;tr&gt;&lt;td rowspan={{numSubThreads}}&gt; &lt;button type='button' class='btn btn-default btn-xs' ng-click='showThread_{{threadId}} = true' ng-show='!showThread_{{threadId}}'&gt;&lt;font color='green'&gt;&lt;span class='glyphicon glyphicon-plus'&gt;&lt;/span&gt;&lt;/button&gt; &lt;button type='buttton' class='btn btn-default btn-xs' ng-click='showThread_{{threadId}} = false' ng-show='showThread_{{threadId}}'&gt;&lt;font color='blue'&gt;&lt;span class='glyphicon glyphicon-minus'&gt;&lt;/span&gt;&lt;/button&gt;&lt;/td&gt; &lt;td rowspan={{numSubThreads}}&gt;&lt;a href ng-click='showThread_{{threadId}} = !showThread_{{threadId}}'&gt;{{name}}&lt;/a&gt;&lt;/td&gt; {{#each subThreads}}{{#if @index}}&lt;tr&gt;{{/if}}&lt;td ng-show='showThread_{{../threadId}}'&gt;&lt;h5&gt;{{name}}&lt;/h5&gt;&lt;/td&gt; {{#each subThreadLevels}} &lt;td ng-show='showThread_{{../../threadId}} &amp;&amp; (mrl_{{@index}} || mrl_all)'&gt;&lt;h5&gt;{{criteriaText}}&lt;/h5&gt;&lt;/td&gt;{{/each}}&lt;/tr&gt;{{/each}}{{/each}} &lt;/table&gt; &lt;input type='hidden' id='currentPage' value='criteriaPage'&gt; &lt;/div&gt;</dataobject>
+                <dataobject type="String">&lt;div class='header' id='header'&gt;Manufacturing Readiness Assessment&lt;/div&gt;&lt;div&gt;&lt;div&gt; &lt;div class='container'&gt; &lt;div class='row'&gt; &lt;div class='col-sm-6'&gt; &lt;h3&gt;Start New Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start a new assessment. You will be required to setup team members and permissions.&lt;/p&gt; &lt;hr&gt; &lt;div id='formContainer'&gt; &lt;form name='start' novalidate role='form'&gt; &lt;div class='form-group'&gt; &lt;label for='addteam'&gt;Add Team Members:&lt;/label&gt; &lt;div id='addteam'&gt; &lt;button class='btn btn-primary btn-large' ng-click='addTeamMember()'&gt;&lt;i class='fa fa-user-plus' aria-hidden='true'&gt;&lt;/i&gt; Add&lt;/button&gt; &lt;div id='team'&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='scope'&gt;Scope:&lt;/label&gt; &lt;span ng-show='scopeRequired'&gt;{{scopeRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='scope' ng-model='formInfo.scope'&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='location'&gt;Location:&lt;/label&gt; &lt;span ng-show='locationRequired'&gt;{{locationRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='location' ng-model='formInfo.location'&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='location'&gt;Target Date:&lt;/label&gt; &lt;span ng-show='dateRequired'&gt;{{dateRequired}}&lt;/span&gt; &lt;input type='date' class='form-control' id='targetDate' ng-model='formInfo.targetDate'&gt; &lt;br&gt; &lt;div class='form-group'&gt; &lt;label for='mrl'&gt;Target MRL:&lt;/label&gt; &lt;span ng-show='targetMRLRequired'&gt;{{targetMRLRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='targetLevel' ng-model='formInfo.targetMRL'&gt; &lt;option title='1'&gt;1&lt;/option&gt; &lt;option title='2'&gt;2&lt;/option&gt; &lt;option title='3'&gt;3&lt;/option&gt; &lt;option title='4'&gt;4&lt;/option&gt; &lt;option title='5'&gt;5&lt;/option&gt; &lt;option title='6'&gt;6&lt;/option&gt; &lt;option title='7'&gt;7&lt;/option&gt; &lt;option title='8'&gt;8&lt;/option&gt; &lt;option title='9'&gt;9&lt;/option&gt; &lt;option title='10'&gt;10&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='version'&gt;Deskbook Version:&lt;/label&gt; &lt;span ng-show='versionRequired'&gt;{{versionRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' ng-model='formInfo.version'&gt; &lt;option title='v2.3'&gt;V2.3 - August 2015&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;/div&gt; &lt;br&gt; &lt;br&gt; &lt;button class='btn btn-primary btn-large' ng-click='functionToCall="getQuestionnairePage"; run()'&gt;Start&lt;/button&gt; &lt;/form&gt; &lt;br&gt; &lt;br&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-sm-6'&gt; &lt;h3&gt;Continue Existing Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start working on an existing assessment. You will be required to import or sync your assessment data.&lt;/p&gt; &lt;br&gt; &lt;button style='display:inline;' type='button' class='btn btn-primary' href='#'&gt;Help Importing&lt;/button&gt; &lt;button style='display:inline;' type='button' class='btn btn-success' ng-click='import()'&gt;Import Assessment&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;input type='hidden' id='currentPage' value='startPage'&gt; &lt;/div&gt;</dataobject>
             </data>
         </parameter>
         <parameter id="d05e6312-dd88-1004-8bdd-44b440cccfb6" name="outputTemplate">
@@ -102,12 +102,6 @@
             <currentType value="String"/>
             <data>
                 <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="1649421d-dda9-1004-8227-088d16b2f8a0" name="cssText">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">body.mra{ font-size:16px; font-family:Roboto,Arial,sans-serif; color:#121212; height: 100%; background-color: #EFECED; } div.header{ position: relative; text-align:center; top: 0px; width:100%; color: #FFFFFF; background-color: #071239; padding: 10px; } div.footer{ text-align:center; position:fixed; bottom: 0px; width:100%; color: #FFFFFF; background-color: #071239; padding: 10px; } div.innerHeader{ margin: auto; width: 950px; } div.info{ position:fixed; top: 0; right: 0; width: 250px; border-radius: 4px; color: #FFFFFF; background-color: #555555; padding: 3px 10px; } div.enterdata{ margin: auto; position: relative; width: 950px; padding: 25px; background-color: #FFFFFF; } div.question{ margin: auto; position: relative; width: 950px; padding: 25px; } div.questionButtons{ text-align: center; width: 100%; } table.criteriaTable{ display: block; overflow: scroll; } .centerAligned{ margin: auto; width: 950px; text-align: center; } .rightAligned { float: right; } .leftAligned { float: left; } .topAligned { top: 0; display:inline-block; } .buttonRounded{ background-color: #505F90; border-radius: 4px; border: none; color: white; font-size: 16px; padding: 3px 10px; margin: 5px; } .answerDropDown{ font-size: 16px; display: inline-block; } .buttonPlus{ background:url(/images/ic_add_box_white_24dp_2x.png); } .buttonAttach{ background:url(/images/ic_attach_file_white_24dp_2x.png); background-color: #505F90; width: 24px; height: 24px; } .textInputLarge{ width: 900px; height: 300px; } .textInputMedium{ width: 900px; height: 200px; } table{ background-color: #FFFFFF; text-align: left; } th{ background-color: #071239; text-align: left; color: #FFFFFF; padding: 5px; } td{ padding: 5px; } td.blue{ background-color: #008CBA; } td.green{ background-color: #4CAF50; } td.red{ background-color: #f44336; } a:link{ color: white; } a:visited{ color: white; } #blackLinks a:link{ color: black; } #blackLinks a:visited{ color: black; } .glyphicon { font-size:25px; }</dataobject>
             </data>
         </parameter>
         <parameter id="22fd0b4b-ddb3-1004-84c0-f2ce94b6efde" name="answerValue">
@@ -178,6 +172,12 @@
                 </dataobject>
             </data>
         </parameter>
+        <parameter id="a3a6b714-ddbb-1004-8b4a-b24a9369e7bf" name="cssText">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">body.mra{ font-size:16px; font-family:Roboto,Arial,sans-serif; color:#121212; height: 100%; background-color: #EFECED; } div.header{ position: relative; text-align:center; top: 0px; width:100%; color: #FFFFFF; background-color: #071239; padding: 10px; } div.footer{ text-align:center; position:fixed; bottom: 0px; width:100%; color: #FFFFFF; background-color: #071239; padding: 10px; } div.innerHeader{ margin: auto; width: 950px; } div.info{ position:fixed; top: 0; right: 0; width: 250px; border-radius: 4px; color: #FFFFFF; background-color: #555555; padding: 3px 10px; } div.enterdata{ margin: auto; position: relative; width: 950px; padding: 25px; background-color: #FFFFFF; } div.question{ margin: auto; position: relative; width: 950px; padding: 25px; } div.questionButtons{ text-align: center; width: 100%; } table.criteriaTable{ display: block; overflow: scroll; } .centerAligned{ margin: auto; width: 950px; text-align: center; } .rightAligned { float: right; } .leftAligned { float: left; } .topAligned { top: 0; display:inline-block; } .buttonRounded{ background-color: #505F90; border-radius: 4px; border: none; color: white; font-size: 16px; padding: 3px 10px; margin: 5px; } .answerDropDown{ font-size: 16px; display: inline-block; } .buttonPlus{ background:url(/images/ic_add_box_white_24dp_2x.png); } .buttonAttach{ background:url(/images/ic_attach_file_white_24dp_2x.png); background-color: #505F90; width: 24px; height: 24px; } .textInputLarge{ width: 900px; height: 300px; } .textInputMedium{ width: 900px; height: 200px; } table{ background-color: #FFFFFF; text-align: left; } th{ background-color: #071239; text-align: left; color: #FFFFFF; padding: 5px; } td{ padding: 5px; } td.blue{ background-color: #008CBA; } td.green{ background-color: #4CAF50; } td.red{ background-color: #f44336; } a:link{ color: white; } a:visited{ color: white; } #blackLinks a:link{ color: black; } #blackLinks a:visited{ color: black; } .glyphicon { font-size:25px; }</dataobject>
+            </data>
+        </parameter>
         <parameter id="7c2c4676-dd2e-1004-8431-63bc9d81ddd0" name="functionToCall">
             <currentType value="String"/>
             <data>
@@ -185,10 +185,10 @@
             </data>
         </parameter>
         <parameter id="7c2c4679-dd2e-1004-8431-63bc9d81ddd0" name="targetLevel">
-            <currentType value="Integer"/>
+            <currentType value="Real"/>
             <data>
-                <dataobject type="Integer">
-                    <quantity magnitude="6" unit="No_Unit"/>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
                 </dataobject>
             </data>
         </parameter>
@@ -237,7 +237,7 @@
         <parameter id="d05e6310-dd88-1004-8bdd-44b440cccfb6" name="inputTemplate">
             <currentType value="String"/>
             <data>
-                <dataobject type="String">&lt;style&gt;{{cssText}}&lt;/style&gt;&lt;div&gt; &lt;div align='center' class = 'well well-sm'&gt; Show Levels &lt;form&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-init='mrl_all=true' ng-model='mrl_all'&gt;All&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_0'&gt;1&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_1'&gt;2&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_2'&gt;3&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_3'&gt;4&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_4'&gt;5&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_5'&gt;6&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_6'&gt;7&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_7'&gt;8&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_8'&gt;9&lt;/label&gt; &lt;label class='checkbox-inline'&gt;&lt;input type='checkbox' ng-model='mrl_9'&gt;10&lt;/label&gt; &lt;/form&gt; &lt;/div&gt; &lt;table class='table table-responsive' style='max-width:800px;' id='blackLinks' align='center'&gt; &lt;th&gt;&lt;/th&gt; &lt;th align='center'&gt;Thread&lt;/th&gt;&lt;th&gt;Sub Thread&lt;/th&gt; &lt;th ng-show='mrl_0 || mrl_all'&gt;1&lt;/th&gt; &lt;th ng-show='mrl_1 || mrl_all'&gt;2&lt;/th&gt; &lt;th ng-show='mrl_2 || mrl_all'&gt;3&lt;/th&gt; &lt;th ng-show='mrl_3 || mrl_all'&gt;4&lt;/th&gt; &lt;th ng-show='mrl_4 || mrl_all'&gt;5&lt;/th&gt; &lt;th ng-show='mrl_5 || mrl_all'&gt;6&lt;/th&gt; &lt;th ng-show='mrl_6 || mrl_all'&gt;7&lt;/th&gt; &lt;th ng-show='mrl_7 || mrl_all'&gt;8&lt;/th&gt; &lt;th ng-show='mrl_8 || mrl_all'&gt;9&lt;/th&gt; &lt;th ng-show='mrl_9 || mrl_all'&gt;10&lt;/th&gt; {{#each threads}} &lt;tr&gt;&lt;td rowspan={{numSubThreads}}&gt; &lt;button type='button' class='btn btn-default btn-xs' ng-click='showThread_{{threadId}} = true' ng-show='!showThread_{{threadId}}'&gt;&lt;font color='green'&gt;&lt;span class='glyphicon glyphicon-plus'&gt;&lt;/span&gt;&lt;/button&gt; &lt;button type='buttton' class='btn btn-default btn-xs' ng-click='showThread_{{threadId}} = false' ng-show='showThread_{{threadId}}'&gt;&lt;font color='blue'&gt;&lt;span class='glyphicon glyphicon-minus'&gt;&lt;/span&gt;&lt;/button&gt;&lt;/td&gt; &lt;td rowspan={{numSubThreads}}&gt;&lt;a href ng-click='showThread_{{threadId}} = !showThread_{{threadId}}'&gt;{{name}}&lt;/a&gt;&lt;/td&gt; {{#each subThreads}}{{#if @index}}&lt;tr&gt;{{/if}}&lt;td ng-show='showThread_{{../threadId}}'&gt;&lt;h5&gt;{{name}}&lt;/h5&gt;&lt;/td&gt; {{#each subThreadLevels}} &lt;td ng-show='showThread_{{../../threadId}} &amp;&amp; (mrl_{{@index}} || mrl_all)'&gt;&lt;h5&gt;{{criteriaText}}&lt;/h5&gt;&lt;/td&gt;{{/each}}&lt;/tr&gt;{{/each}}{{/each}} &lt;/table&gt; &lt;input type='hidden' id='currentPage' value='criteriaPage'&gt; &lt;/div&gt;</dataobject>
+                <dataobject type="String">&lt;div class='header' id='header'&gt;Manufacturing Readiness Assessment&lt;/div&gt;&lt;div&gt;&lt;div&gt; &lt;div class='container'&gt; &lt;div class='row'&gt; &lt;div class='col-sm-6'&gt; &lt;h3&gt;Start New Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start a new assessment. You will be required to setup team members and permissions.&lt;/p&gt; &lt;hr&gt; &lt;div id='formContainer'&gt; &lt;form name='start' novalidate role='form'&gt; &lt;div class='form-group'&gt; &lt;label for='addteam'&gt;Add Team Members:&lt;/label&gt; &lt;div id='addteam'&gt; &lt;button class='btn btn-primary btn-large' ng-click='addTeamMember()'&gt;&lt;i class='fa fa-user-plus' aria-hidden='true'&gt;&lt;/i&gt; Add&lt;/button&gt; &lt;div id='team'&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='scope'&gt;Scope:&lt;/label&gt; &lt;span ng-show='scopeRequired'&gt;{{scopeRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='scope' ng-model='formInfo.scope'&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='location'&gt;Location:&lt;/label&gt; &lt;span ng-show='locationRequired'&gt;{{locationRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='location' ng-model='formInfo.location'&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='location'&gt;Target Date:&lt;/label&gt; &lt;span ng-show='dateRequired'&gt;{{dateRequired}}&lt;/span&gt; &lt;input type='date' class='form-control' id='targetDate' ng-model='formInfo.targetDate'&gt; &lt;br&gt; &lt;div class='form-group'&gt; &lt;label for='mrl'&gt;Target MRL:&lt;/label&gt; &lt;span ng-show='targetMRLRequired'&gt;{{targetMRLRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='targetLevel' ng-model='formInfo.targetMRL'&gt; &lt;option title='1'&gt;1&lt;/option&gt; &lt;option title='2'&gt;2&lt;/option&gt; &lt;option title='3'&gt;3&lt;/option&gt; &lt;option title='4'&gt;4&lt;/option&gt; &lt;option title='5'&gt;5&lt;/option&gt; &lt;option title='6'&gt;6&lt;/option&gt; &lt;option title='7'&gt;7&lt;/option&gt; &lt;option title='8'&gt;8&lt;/option&gt; &lt;option title='9'&gt;9&lt;/option&gt; &lt;option title='10'&gt;10&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='version'&gt;Deskbook Version:&lt;/label&gt; &lt;span ng-show='versionRequired'&gt;{{versionRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' ng-model='formInfo.version'&gt; &lt;option title='v2.3'&gt;V2.3 - August 2015&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;/div&gt; &lt;br&gt; &lt;br&gt; &lt;button class='btn btn-primary btn-large' ng-click='functionToCall="getQuestionnairePage"; run()'&gt;Start&lt;/button&gt; &lt;/form&gt; &lt;br&gt; &lt;br&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-sm-6'&gt; &lt;h3&gt;Continue Existing Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start working on an existing assessment. You will be required to import or sync your assessment data.&lt;/p&gt; &lt;br&gt; &lt;button style='display:inline;' type='button' class='btn btn-primary' href='#'&gt;Help Importing&lt;/button&gt; &lt;button style='display:inline;' type='button' class='btn btn-success' ng-click='import()'&gt;Import Assessment&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;input type='hidden' id='currentPage' value='startPage'&gt; &lt;/div&gt;</dataobject>
             </data>
         </parameter>
         <parameter id="d05e6313-dd88-1004-8bdd-44b440cccfb6" name="outputTemplate">
@@ -276,12 +276,6 @@
                 <dataobject type="String">default</dataobject>
             </data>
         </parameter>
-        <parameter id="1649421e-dda9-1004-8227-088d16b2f8a0" name="cssText">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">body.mra{ font-size:16px; font-family:Roboto,Arial,sans-serif; color:#121212; height: 100%; background-color: #EFECED; } div.header{ position: relative; text-align:center; top: 0px; width:100%; color: #FFFFFF; background-color: #071239; padding: 10px; } div.footer{ text-align:center; position:fixed; bottom: 0px; width:100%; color: #FFFFFF; background-color: #071239; padding: 10px; } div.innerHeader{ margin: auto; width: 950px; } div.info{ position:fixed; top: 0; right: 0; width: 250px; border-radius: 4px; color: #FFFFFF; background-color: #555555; padding: 3px 10px; } div.enterdata{ margin: auto; position: relative; width: 950px; padding: 25px; background-color: #FFFFFF; } div.question{ margin: auto; position: relative; width: 950px; padding: 25px; } div.questionButtons{ text-align: center; width: 100%; } table.criteriaTable{ display: block; overflow: scroll; } .centerAligned{ margin: auto; width: 950px; text-align: center; } .rightAligned { float: right; } .leftAligned { float: left; } .topAligned { top: 0; display:inline-block; } .buttonRounded{ background-color: #505F90; border-radius: 4px; border: none; color: white; font-size: 16px; padding: 3px 10px; margin: 5px; } .answerDropDown{ font-size: 16px; display: inline-block; } .buttonPlus{ background:url(/images/ic_add_box_white_24dp_2x.png); } .buttonAttach{ background:url(/images/ic_attach_file_white_24dp_2x.png); background-color: #505F90; width: 24px; height: 24px; } .textInputLarge{ width: 900px; height: 300px; } .textInputMedium{ width: 900px; height: 200px; } table{ background-color: #FFFFFF; text-align: left; } th{ background-color: #071239; text-align: left; color: #FFFFFF; padding: 5px; } td{ padding: 5px; } td.blue{ background-color: #008CBA; } td.green{ background-color: #4CAF50; } td.red{ background-color: #f44336; } a:link{ color: white; } a:visited{ color: white; } #blackLinks a:link{ color: black; } #blackLinks a:visited{ color: black; } .glyphicon { font-size:25px; }</dataobject>
-            </data>
-        </parameter>
         <parameter id="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde" name="answerValue">
             <currentType value="String"/>
             <data>
@@ -295,26 +289,26 @@
             </data>
         </parameter>
         <parameter id="22fd0b52-ddb3-1004-84c0-f2ce94b6efde" name="technicalRisk">
-            <currentType value="Integer"/>
+            <currentType value="Real"/>
             <data>
-                <dataobject type="Integer">
-                    <quantity magnitude="0" unit="No_Unit"/>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
                 </dataobject>
             </data>
         </parameter>
         <parameter id="22fd0b55-ddb3-1004-84c0-f2ce94b6efde" name="costRisk">
-            <currentType value="Integer"/>
+            <currentType value="Real"/>
             <data>
-                <dataobject type="Integer">
-                    <quantity magnitude="0" unit="No_Unit"/>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
                 </dataobject>
             </data>
         </parameter>
         <parameter id="22fd0b58-ddb3-1004-84c0-f2ce94b6efde" name="scheduleRisk">
-            <currentType value="Integer"/>
+            <currentType value="Real"/>
             <data>
-                <dataobject type="Integer">
-                    <quantity magnitude="0" unit="No_Unit"/>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
                 </dataobject>
             </data>
         </parameter>
@@ -343,11 +337,17 @@
             </data>
         </parameter>
         <parameter id="22fd0b67-ddb3-1004-84c0-f2ce94b6efde" name="questionId">
-            <currentType value="Integer"/>
+            <currentType value="Real"/>
             <data>
-                <dataobject type="Integer">
-                    <quantity magnitude="0" unit="No_Unit"/>
+                <dataobject type="Real">
+                    <quantity magnitude="0.0" unit="No_Unit"/>
                 </dataobject>
+            </data>
+        </parameter>
+        <parameter id="a3a6b715-ddbb-1004-8b4a-b24a9369e7bf" name="cssText">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">body.mra{ font-size:16px; font-family:Roboto,Arial,sans-serif; color:#121212; height: 100%; background-color: #EFECED; } div.header{ position: relative; text-align:center; top: 0px; width:100%; color: #FFFFFF; background-color: #071239; padding: 10px; } div.footer{ text-align:center; position:fixed; bottom: 0px; width:100%; color: #FFFFFF; background-color: #071239; padding: 10px; } div.innerHeader{ margin: auto; width: 950px; } div.info{ position:fixed; top: 0; right: 0; width: 250px; border-radius: 4px; color: #FFFFFF; background-color: #555555; padding: 3px 10px; } div.enterdata{ margin: auto; position: relative; width: 950px; padding: 25px; background-color: #FFFFFF; } div.question{ margin: auto; position: relative; width: 950px; padding: 25px; } div.questionButtons{ text-align: center; width: 100%; } table.criteriaTable{ display: block; overflow: scroll; } .centerAligned{ margin: auto; width: 950px; text-align: center; } .rightAligned { float: right; } .leftAligned { float: left; } .topAligned { top: 0; display:inline-block; } .buttonRounded{ background-color: #505F90; border-radius: 4px; border: none; color: white; font-size: 16px; padding: 3px 10px; margin: 5px; } .answerDropDown{ font-size: 16px; display: inline-block; } .buttonPlus{ background:url(/images/ic_add_box_white_24dp_2x.png); } .buttonAttach{ background:url(/images/ic_attach_file_white_24dp_2x.png); background-color: #505F90; width: 24px; height: 24px; } .textInputLarge{ width: 900px; height: 300px; } .textInputMedium{ width: 900px; height: 200px; } table{ background-color: #FFFFFF; text-align: left; } th{ background-color: #071239; text-align: left; color: #FFFFFF; padding: 5px; } td{ padding: 5px; } td.blue{ background-color: #008CBA; } td.green{ background-color: #4CAF50; } td.red{ background-color: #f44336; } a:link{ color: white; } a:visited{ color: white; } #blackLinks a:link{ color: black; } #blackLinks a:visited{ color: black; } .glyphicon { font-size:25px; }</dataobject>
             </data>
         </parameter>
     </parameters>
@@ -369,7 +369,6 @@
                 <parameter name="currentPage" idRef="1649419b-dda9-1004-8227-088d16b2f8a0"/>
                 <parameter name="assumptions" idRef="164941aa-dda9-1004-8227-088d16b2f8a0"/>
                 <parameter name="notes" idRef="164941ad-dda9-1004-8227-088d16b2f8a0"/>
-                <parameter name="cssText" idRef="1649421d-dda9-1004-8227-088d16b2f8a0"/>
                 <parameter name="answerValue" idRef="22fd0b4b-ddb3-1004-84c0-f2ce94b6efde"/>
                 <parameter name="evidence" idRef="22fd0b4e-ddb3-1004-84c0-f2ce94b6efde"/>
                 <parameter name="technicalRisk" idRef="22fd0b51-ddb3-1004-84c0-f2ce94b6efde"/>
@@ -387,6 +386,7 @@
                 <parameter name="definitions" idRef="7c2c467b-dd2e-1004-8431-63bc9d81ddd0"/>
                 <parameter name="assessment" idRef="7c2c4684-dd2e-1004-8431-63bc9d81ddd0"/>
                 <parameter name="outputTemplate" idRef="d05e6312-dd88-1004-8bdd-44b440cccfb6"/>
+                <parameter name="cssText" idRef="a3a6b714-ddbb-1004-8b4a-b24a9369e7bf"/>
             </modelobjects>
         </context>
         <context id="IFACE_MODEL_CXT" name="Model View">
@@ -416,7 +416,6 @@
                     <parameter name="threads" idRef="05b67a29-dd9f-1004-8ae5-61b81791a1d2"/>
                     <parameter name="assumptions" idRef="164941ab-dda9-1004-8227-088d16b2f8a0"/>
                     <parameter name="notes" idRef="164941ae-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="cssText" idRef="1649421e-dda9-1004-8227-088d16b2f8a0"/>
                     <parameter name="answerValue" idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="evidence" idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="technicalRisk" idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde"/>
@@ -427,46 +426,50 @@
                     <parameter name="whatAction" idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="documentation" idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="questionId" idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="cssText" idRef="a3a6b715-ddbb-1004-8b4a-b24a9369e7bf"/>
                 </modelobjects>
             </context>
         </view>
         <view name="Interface Causality View">
             <filter id="INPUTS_FILTER" name="Inputs">
                 <parameters>
-                    <parameter name="assumptions" idRef="164941ab-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="answerValue" idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="notes" idRef="164941ae-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="questionId" idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="location" idRef="d05e630d-dd88-1004-8bdd-44b440cccfb6"/>
-                    <parameter name="evidence" idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="reason" idRef="22fd0b5e-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="technicalRisk" idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
                     <parameter name="inputTemplate" idRef="d05e6310-dd88-1004-8bdd-44b440cccfb6"/>
-                    <parameter name="currentPage" idRef="1649419c-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="whatAction" idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf"/>
+                    <parameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
                     <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
                     <parameter name="costRisk" idRef="22fd0b55-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
-                    <parameter name="acronyms" idRef="05b67a0e-dd9f-1004-8ae5-61b81791a1d2"/>
-                    <parameter name="scheduleRisk" idRef="22fd0b58-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="targetLevel" idRef="7c2c4679-dd2e-1004-8431-63bc9d81ddd0"/>
                     <parameter name="completionDate" idRef="22fd0b5b-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
-                    <parameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf"/>
-                    <parameter name="cssText" idRef="1649421e-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="documentation" idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="technicalRisk" idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="whatAction" idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="questionId" idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="threads" idRef="05b67a29-dd9f-1004-8ae5-61b81791a1d2"/>
+                    <parameter name="currentPage" idRef="1649419c-dda9-1004-8227-088d16b2f8a0"/>
+                    <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
+                    <parameter name="notes" idRef="164941ae-dda9-1004-8227-088d16b2f8a0"/>
+                    <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
+                    <parameter name="answerValue" idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="scheduleRisk" idRef="22fd0b58-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="assumptions" idRef="164941ab-dda9-1004-8227-088d16b2f8a0"/>
+                    <parameter name="documentation" idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="targetLevel" idRef="7c2c4679-dd2e-1004-8431-63bc9d81ddd0"/>
+                    <parameter name="acronyms" idRef="05b67a0e-dd9f-1004-8ae5-61b81791a1d2"/>
+                    <parameter name="evidence" idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="location" idRef="d05e630d-dd88-1004-8bdd-44b440cccfb6"/>
+                    <parameter name="reason" idRef="22fd0b5e-ddb3-1004-84c0-f2ce94b6efde"/>
                 </parameters>
             </filter>
             <filter id="OUTPUTS_FILTER" name="Outputs">
                 <parameters>
                     <parameter name="assessment" idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
-                    <parameter name="outputTemplate" idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6" causality="Result"/>
                     <parameter name="definitions" idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
+                    <parameter name="outputTemplate" idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6" causality="Result"/>
                 </parameters>
             </filter>
-            <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
+            <filter id="INDETERMINATES_FILTER" name="Indeterminates">
+                <parameters>
+                    <parameter name="cssText" idRef="a3a6b715-ddbb-1004-8b4a-b24a9369e7bf"/>
+                </parameters>
+            </filter>
         </view>
     </views>
     <directedGraph id="6d8dad4b-dd20-1004-8470-5ac15d25b737">
@@ -476,7 +479,6 @@
             <node idRef="1649419c-dda9-1004-8227-088d16b2f8a0"/>
             <node idRef="164941ab-dda9-1004-8227-088d16b2f8a0"/>
             <node idRef="164941ae-dda9-1004-8227-088d16b2f8a0"/>
-            <node idRef="1649421e-dda9-1004-8227-088d16b2f8a0"/>
             <node idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
             <node idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
             <node idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde"/>
@@ -493,6 +495,7 @@
             <node idRef="7c2c4679-dd2e-1004-8431-63bc9d81ddd0"/>
             <node idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
             <node idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
+            <node idRef="a3a6b715-ddbb-1004-8b4a-b24a9369e7bf"/>
             <node idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
             <node idRef="b03e4831-dd34-1004-805f-42099899dcaf"/>
             <node idRef="d05e630d-dd88-1004-8bdd-44b440cccfb6"/>
@@ -521,11 +524,6 @@
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
             </from>
             <from idRef="164941ae-dda9-1004-8227-088d16b2f8a0">
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
-            </from>
-            <from idRef="1649421e-dda9-1004-8227-088d16b2f8a0">
                 <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
                 <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
@@ -628,7 +626,6 @@
         <iToRpMap relParamId="1649419c-dda9-1004-8227-088d16b2f8a0" ifaceId="1649419a-dda9-1004-8227-088d16b2f8a0"/>
         <iToRpMap relParamId="164941ab-dda9-1004-8227-088d16b2f8a0" ifaceId="164941a9-dda9-1004-8227-088d16b2f8a0"/>
         <iToRpMap relParamId="164941ae-dda9-1004-8227-088d16b2f8a0" ifaceId="164941ac-dda9-1004-8227-088d16b2f8a0"/>
-        <iToRpMap relParamId="1649421e-dda9-1004-8227-088d16b2f8a0" ifaceId="1649421c-dda9-1004-8227-088d16b2f8a0"/>
         <iToRpMap relParamId="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde" ifaceId="22fd0b4a-ddb3-1004-84c0-f2ce94b6efde"/>
         <iToRpMap relParamId="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde" ifaceId="22fd0b4d-ddb3-1004-84c0-f2ce94b6efde"/>
         <iToRpMap relParamId="22fd0b52-ddb3-1004-84c0-f2ce94b6efde" ifaceId="22fd0b50-ddb3-1004-84c0-f2ce94b6efde"/>
@@ -645,6 +642,7 @@
         <iToRpMap relParamId="7c2c4679-dd2e-1004-8431-63bc9d81ddd0" ifaceId="7c2c4677-dd2e-1004-8431-63bc9d81ddd0"/>
         <iToRpMap relParamId="7c2c467c-dd2e-1004-8431-63bc9d81ddd0" ifaceId="7c2c467a-dd2e-1004-8431-63bc9d81ddd0"/>
         <iToRpMap relParamId="7c2c4685-dd2e-1004-8431-63bc9d81ddd0" ifaceId="7c2c4683-dd2e-1004-8431-63bc9d81ddd0"/>
+        <iToRpMap relParamId="a3a6b715-ddbb-1004-8b4a-b24a9369e7bf" ifaceId="a3a6b713-ddbb-1004-8b4a-b24a9369e7bf"/>
         <iToRpMap relParamId="b03e482e-dd34-1004-805f-42099899dcaf" ifaceId="b03e482c-dd34-1004-805f-42099899dcaf"/>
         <iToRpMap relParamId="b03e4831-dd34-1004-805f-42099899dcaf" ifaceId="b03e482f-dd34-1004-805f-42099899dcaf"/>
         <iToRpMap relParamId="d05e630d-dd88-1004-8bdd-44b440cccfb6" ifaceId="d05e630b-dd88-1004-8bdd-44b440cccfb6"/>
