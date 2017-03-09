@@ -12,18 +12,6 @@
                 <dataobject type="String">getQuestionnairePage</dataobject>
             </data>
         </parameter>
-        <parameter id="7c2c467b-dd2e-1004-8431-63bc9d81ddd0" name="definitions">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="7c2c4684-dd2e-1004-8431-63bc9d81ddd0" name="assessment">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="47d82a2a-dd34-1004-8d9c-1a039e44f953" name="targetDate">
             <currentType value="String"/>
             <data>
@@ -57,7 +45,7 @@
         <parameter id="d05e630f-dd88-1004-8bdd-44b440cccfb6" name="inputTemplate">
             <currentType value="String"/>
             <data>
-                <dataobject type="String">&lt;style&gt;{{startCss}}&lt;/style&gt;&lt;div id="mra_style"&gt;&lt;link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'&gt;&lt;script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js' integrity='sha256-c3RzsUWg+y2XljunEQS0LqWdQ04X1D3j22fd/8JCAKw=' crossorigin='anonymous'&gt;&lt;/script&gt;&lt;div class='container-fluid'&gt; &lt;div class='row'&gt; &lt;div class='col-xs-12 mra_navigationbar'&gt; &lt;div class='mra_navigationtitle'&gt; &lt;h4&gt;DOCENT&lt;/h4&gt; &lt;/div&gt; &lt;div class="mra_navigationitem mra_dropdown" onmouseover="if (typeof(updateActionPersonWithCurrent) == 'function') {updateActionPersonWithCurrent();}"&gt; &lt;a href="javascript:void(0)"&gt;Help&lt;/a&gt;&lt;span class="caret" style='color:white;'&gt;&lt;/span&gt; &lt;div class='mra_dropdowncontent'&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getCriteriaPage")' ng-click='run()'&gt;Criteria&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getDefinitionsPage")' ng-click='run()'&gt;Definitions&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getAcronymsPage")' ng-click='run()'&gt;Acronyms&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getHelpPage")' ng-click='run()'&gt;Help&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="mra_navigationitem mra_dropdown" ng-show='"{{outputPage}}"!="startPage" || {{#if outAssessmentPath}}true{{else}}false{{/if}}' onmouseover="if (typeof(updateActionPersonWithCurrent) == 'function') {updateActionPersonWithCurrent();}"&gt; &lt;a href="javascript:void(0)"&gt;Assessment&lt;/a&gt;&lt;span class="caret" style='color:white;'&gt;&lt;/span&gt; &lt;div class='mra_dropdowncontent'&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getStartPage")' ng-show='"{{outputPage}}"!="startPage"' ng-click='run()'&gt;Start&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getMmpPage")' ng-click='run()'&gt;Action Items&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getDashboardPage")' ng-click='run()'&gt;Dashboard&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getReviewPage")' ng-click='run()'&gt;Review&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;Navigate&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getSkippedPage")' ng-click='run()'&gt;Skipped Questions&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNotApplicablePage")' ng-click='run()'&gt;N/A Questions&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("saveAssessment")' ng-click='run()'&gt;Save&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='mra_assess_level_date' ng-show='"{{outputPage}}"=="questionnairePage"||"{{outputPage}}"=="mmpPage"||"{{outputPage}}"=="dashboardPage"||"{{outputPage}}"=="reviewPage"'&gt; &lt;span&gt;Target MRL:&amp;nbsp{{assessment.targetLevel}}&lt;/span&gt; &lt;br&gt; &lt;span&gt;Target Date:&amp;nbsp{{assessment.targetDate}}&lt;/span&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-xs-12 mra_infobar'&gt; {{#if question.threadName}} &lt;a href onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;{{question.threadName}}&lt;/a&gt; / &lt;a class='mra_breadcrumbs_active' href onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;{{question.subThreadName}}&lt;/a&gt; {{/if}} {{#unless question.threadName}} {{/unless}} &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&lt;input type='hidden' id='functionToCall' value='getStartPage'/&gt;&lt;input type='hidden' id='dmcProjectId' value='\{{projectData.id}}' /&gt;{{#if outputPage}} &lt;span ng-if='"{{outputPage}}"!="startPage"'&gt;&lt;input type='hidden' id='inAssessmentPath' value='{{outAssessmentPath}}'/&gt;&lt;/span&gt;{{/if}}&lt;div&gt; &lt;div class='mra_max_width_container'&gt; &lt;div class='row'&gt; &lt;div class='col-sm-6'&gt; &lt;div class="mra_panel"&gt; &lt;div class='row'&gt; &lt;div class='col-xs-12'&gt; &lt;h3&gt;Start New Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start a new assessment.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='row' ng-init='mrl_teamMemberArray=["0"];mrl_numTeamMembers=1'&gt; &lt;div class='col-xs-12'&gt; &lt;label for='addteam'&gt;Add Team Members:&lt;/label&gt; {{#each assessment.teamMembers}} &lt;div style="margin-bottom: 10px;" class='row'&gt; &lt;div class="col-xs-2"&gt; {{#if @first}} &lt;span class="input-group-btn"&gt; &lt;button style="height: 32px; text-align: center;" class='btn btn-success btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.push(mrl_numTeamMembers);mrl_numTeamMembers=mrl_numTeamMembers+1' style='margin-top:10px'&gt; &amp;#x2795; &lt;/button&gt; &lt;/span&gt; {{/if}} &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberName{{@index}}' value='{{name}}'&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberRole{{@index}}' value='{{role}}'&gt; &lt;/div&gt; &lt;/div&gt; {{/each}} &lt;div style="margin-bottom: 10px;" class='row' ng-repeat='x in mrl_teamMemberArray'&gt; &lt;div class="col-xs-2"&gt; &lt;span class="input-group-btn"&gt; {{#unless assessment.teamMembers}} &lt;button style="height: 32px; text-align: center;" ng-show='$first' class='btn btn-success btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.push(mrl_numTeamMembers);mrl_numTeamMembers=mrl_numTeamMembers+1' style='margin-top:10px'&gt; &amp;#x2795; &lt;/button&gt; &lt;button style="height: 32px; text-align: center;" ng-show='$last &amp;&amp; mrl_teamMemberArray.length &gt; 1' class='btn btn-danger btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.splice(-1);mrl_numTeamMembers=mrl_numTeamMembers-1' style='margin-top:10px'&gt; &amp;#x2796; &lt;/button&gt; {{/unless}} {{#if assessment.teamMembers}} &lt;button style="height: 32px; text-align: center;" ng-show='($last &amp;&amp; mrl_teamMemberArray.length &gt; 1) || mrl_teamMemberArray.length == 1' class='btn btn-danger btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.splice(-1);mrl_numTeamMembers=mrl_numTeamMembers-1' style='margin-top:10px'&gt; &amp;#x2796; &lt;/button&gt; {{/if}} &lt;/span&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberName' placeholder="Name"&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberRole' placeholder="Role"&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;p&gt; &lt;label for='scope'&gt;Scope:&lt;/label&gt; &lt;span ng-show='scopeRequired'&gt;{{scopeRequired}}&lt;/span&gt; &lt;textarea class='form-control' id='scope' rows='2'&gt;{{assessment.scope}}&lt;/textarea&gt; &lt;/p&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='mrl'&gt;Target MRL:&lt;/label&gt; &lt;span ng-show='targetMRLRequired'&gt;{{targetMRLRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='targetLevel' ng-init='init_level="{{assessment.targetLevel}}"' ng-model='init_level'&gt; &lt;option value=1&gt;1&lt;/option&gt; &lt;option value=2&gt;2&lt;/option&gt; &lt;option value=3&gt;3&lt;/option&gt; &lt;option value=4&gt;4&lt;/option&gt; &lt;option value=5&gt;5&lt;/option&gt; &lt;option value=6&gt;6&lt;/option&gt; &lt;option value=7&gt;7&lt;/option&gt; &lt;option value=8&gt;8&lt;/option&gt; &lt;option value=9&gt;9&lt;/option&gt; &lt;option value=10&gt;10&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='date'&gt;Date to achieve Target MRL:&lt;/label&gt; &lt;span ng-show='dateRequired'&gt;{{dateRequired}}&lt;/span&gt; &lt;input type='date' class='form-control' id='targetDate' value='{{assessment.targetDate}}'&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='location'&gt;Location:&lt;/label&gt; &lt;span ng-show='locationRequired'&gt;{{locationRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='location' value='{{assessment.location}}'&gt;&lt;/input&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='version'&gt;Deskbook Version:&lt;/label&gt; &lt;span ng-show='versionRequired'&gt;{{versionRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='version'&gt; &lt;option title='v2.4' value='1' selected='selected'&gt;V2.4 - August 2015&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; {{#unless isRunningInElectron}} &lt;div class='form-group'&gt; &lt;label for='assessmentName'&gt;Name of Assessment:&lt;/label&gt; &lt;span ng-show='assessmentNameRequired'&gt;{{assessmentNameRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='inAssessmentPath' value='{{outAssessmentPath}}'&gt;&lt;/input&gt; &lt;/div&gt; {{/unless}} &lt;div id="startButtonWrapper" style="border-top: 1px solid transparent; width:60px;"&gt; &lt;button id="startButton" class='btn btn-primary btn-large' style='margin-bottom:5px' onclick='$("#teamMemberNames").val(JSON.stringify($("[id^=mrl_teamMemberName]").map(function(){return $(this).val();}).get()));$("#teamMemberRoles").val(JSON.stringify($("[id^=mrl_teamMemberRole]").map(function(){return $(this).val();}).get()));$("#functionToCall").val("saveStartGetQuestionnairePage")' ng-click='run()'&gt;Start&lt;/button&gt; &lt;/div&gt; &lt;br&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-sm-6'&gt; &lt;div class="mra_panel"&gt; &lt;h3&gt;Continue Existing Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start working on an existing assessment. You will be required to import your assessment data.&lt;/p&gt; &lt;br&gt; &lt;button style='display:inline;' type='button' class='btn btn-primary' style='margin-bottom:10px' onclick='$("#functionToCall").val("getHelpPage")' ng-click='run()'&gt;Help Importing&lt;/button&gt; &lt;button style='display:inline;' type='button' class='btn btn-success' style='margin-bottom:10px' onclick='$("#functionToCall").val("startPageImportAssessment")' ng-click='run()'&gt;Import Assessment&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;input type='hidden' id='inputPage' value='startPage'/&gt; &lt;input type='hidden' id='teamMemberNames' value=''/&gt; &lt;input type='hidden' id='teamMemberRoles' value=''/&gt;&lt;/div&gt;{{#unless assessment.versionId}} &lt;script&gt; $(document).ready(function() { var startButton = document.getElementById('startButton'); var startButtonWrapper = document.getElementById('startButtonWrapper'); startButton.disabled = true; var formFields = getFormFieldsToValidate(); var highlightPerformed = false; document.onkeyup = function() { if (highlightPerformed) { highlightMissingFields(formFields) }; enableStartButtonIfValid(startButton, formFields); }; document.onclick = function() { if (highlightPerformed) { highlightMissingFields(formFields) }; enableStartButtonIfValid(startButton, formFields); }; startButtonWrapper.onmouseover = function(){ if (startButton.disabled) { highlightPerformed = true; highlightMissingFields(formFields); } }; }); function getFormFieldsToValidate() { var targetDateField = document.getElementById('targetDate'); var targetLevelField = document.getElementById('targetLevel'); var deskbookVersionField = document.getElementById('version'); return [targetDateField, targetLevelField, deskbookVersionField]; } function enableStartButtonIfValid(button, formFields) { button.disabled = !validateFields(formFields); }; function validateFields(formFields) { var validationResult = returnInvalidIDs(formFields); return validationResult.length == 0; }; function returnInvalidIDs(formFields) { var validationResult = []; for (var i=0; i &lt; formFields.length; i++){ var field = formFields[i]; if (field.id == 'targetLevel' || field.id == 'version'){ if (isNaN(field.value)){ validationResult.push(field); } } if (field.id == 'targetDate'){ if (isNaN(Date.parse(field.value))){ validationResult.push(field); } } } return validationResult; }; function highlightMissingFields(formFields) { var invalidFields = returnInvalidIDs(formFields); for (var i=0; i &lt; formFields.length; i++) { formFields[i].style.background = 'initial'; } for (var j=0; j &lt; invalidFields.length; j++) { invalidFields[j].style.background = 'pink'; } }; &lt;/script&gt;{{/unless}}&lt;div class='mra_footer'&gt;&lt;/div&gt;&lt;/div&gt;</dataobject>
+                <dataobject type="String">&lt;style&gt;{{startCss}}&lt;/style&gt;&lt;div id="mra_style"&gt;&lt;link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'&gt;&lt;script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js' integrity='sha256-c3RzsUWg+y2XljunEQS0LqWdQ04X1D3j22fd/8JCAKw=' crossorigin='anonymous'&gt;&lt;/script&gt;&lt;div class='container-fluid'&gt; &lt;div class='row'&gt; &lt;div class='col-xs-12 mra_navigationbar'&gt; &lt;div class='mra_navigationtitle'&gt; &lt;h4&gt;DOCENT&lt;/h4&gt; &lt;/div&gt; &lt;div class="mra_navigationitem mra_dropdown" onmouseover="if (typeof(updateActionPersonWithCurrent) == 'function') {updateActionPersonWithCurrent();}"&gt; &lt;a href="javascript:void(0)"&gt;Help&lt;/a&gt;&lt;span class="caret" style='color:white;'&gt;&lt;/span&gt; &lt;div class='mra_dropdowncontent'&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getCriteriaPage")' ng-click='run()'&gt;Criteria&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getDefinitionsPage")' ng-click='run()'&gt;Definitions&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getAcronymsPage")' ng-click='run()'&gt;Acronyms&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getHelpPage")' ng-click='run()'&gt;Help&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="mra_navigationitem mra_dropdown" ng-show='"{{mraOutputs.outputPage}}"!="startPage" || {{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onmouseover="if (typeof(updateActionPersonWithCurrent) == 'function') {updateActionPersonWithCurrent();}"&gt; &lt;a href="javascript:void(0)"&gt;Assessment&lt;/a&gt;&lt;span class="caret" style='color:white;'&gt;&lt;/span&gt; &lt;div class='mra_dropdowncontent'&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getStartPage")' ng-show='"{{mraOutputs.outputPage}}"!="startPage"' ng-click='run()'&gt;Start&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNextQuestionnairePage")' ng-show='"{{mraOutputs.outputPage}}"!="startPage"' ng-click='run()'&gt;Continue&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getMmpPage")' ng-click='run()'&gt;Action Items&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getDashboardPage")' ng-click='run()'&gt;Dashboard&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getReviewPage")' ng-click='run()'&gt;Review&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;Navigate&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getSkippedPage")' ng-click='run()'&gt;Skipped Questions&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNotApplicablePage")' ng-click='run()'&gt;N/A Questions&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("saveAssessment")' ng-click='run()'&gt;Save&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='mra_assess_level_date' ng-show='"{{mraOutputs.outputPage}}"=="questionnairePage"||"{{mraOutputs.outputPage}}"=="mmpPage"||"{{mraOutputs.outputPage}}"=="dashboardPage"||"{{mraOutputs.outputPage}}"=="reviewPage"'&gt; &lt;span&gt;Target MRL:&amp;nbsp{{mraOutputs.assessment.targetLevel}}&lt;/span&gt; &lt;br&gt; &lt;span&gt;Target Date:&amp;nbsp{{mraOutputs.assessment.targetDate}}&lt;/span&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-xs-12 mra_infobar'&gt; {{#if mraOutputs.question.threadName}} &lt;a href onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;{{mraOutputs.question.threadName}}&lt;/a&gt; / &lt;a class='mra_breadcrumbs_active' href onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;{{mraOutputs.question.subThreadName}}&lt;/a&gt; &lt;span style="float: right;"&gt;Level: {{mraOutputs.question.mrlLevel}}&lt;/span&gt; {{/if}} {{#unless mraOutputs.question.threadName}} {{/unless}} &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&lt;input type='hidden' id='functionToCall' value='getStartPage'/&gt;&lt;input type='hidden' id='dmcProjectId' value='\{{projectData.id}}' /&gt;{{#if mraOutputs.outputPage}} &lt;span ng-if='"{{mraOutputs.outputPage}}"!="startPage"'&gt;&lt;input type='hidden' id='inAssessmentPath' value='{{mraOutputs.outAssessmentPath}}'/&gt;&lt;/span&gt;{{/if}}&lt;div&gt; &lt;div class='mra_max_width_container'&gt; &lt;div class='row'&gt; &lt;div class='col-sm-6'&gt; &lt;div class="mra_panel"&gt; &lt;div class='row'&gt; &lt;div class='col-xs-12'&gt; &lt;h3&gt;Start New Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start a new assessment.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='row' ng-init='mrl_teamMemberArray=["0"];mrl_numTeamMembers=1'&gt; &lt;div class='col-xs-12'&gt; &lt;label for='addteam'&gt;Add Team Members:&lt;/label&gt; {{#each mraOutputs.assessment.teamMembers}} &lt;div style="margin-bottom: 10px;" class='row'&gt; &lt;div class="col-xs-2"&gt; {{#if @first}} &lt;span class="input-group-btn"&gt; &lt;button style="height: 32px; text-align: center;" class='btn btn-success btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.push(mrl_numTeamMembers);mrl_numTeamMembers=mrl_numTeamMembers+1' style='margin-top:10px'&gt; &amp;#x2795; &lt;/button&gt; &lt;/span&gt; {{/if}} &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberName{{@index}}' value='{{name}}'&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberRole{{@index}}' value='{{role}}'&gt; &lt;/div&gt; &lt;/div&gt; {{/each}} &lt;div style="margin-bottom: 10px;" class='row' ng-repeat='x in mrl_teamMemberArray'&gt; &lt;div class="col-xs-2"&gt; &lt;span class="input-group-btn"&gt; {{#unless mraOutputs.assessment.teamMembers}} &lt;button style="height: 32px; text-align: center;" ng-show='$first' class='btn btn-success btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.push(mrl_numTeamMembers);mrl_numTeamMembers=mrl_numTeamMembers+1' style='margin-top:10px'&gt; &amp;#x2795; &lt;/button&gt; &lt;button style="height: 32px; text-align: center;" ng-show='$last &amp;&amp; mrl_teamMemberArray.length &gt; 1' class='btn btn-danger btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.splice(-1);mrl_numTeamMembers=mrl_numTeamMembers-1' style='margin-top:10px'&gt; &amp;#x2796; &lt;/button&gt; {{/unless}} {{#if mraOutputs.assessment.teamMembers}} &lt;button style="height: 32px; text-align: center;" ng-show='($last &amp;&amp; mrl_teamMemberArray.length &gt; 1) || mrl_teamMemberArray.length == 1' class='btn btn-danger btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.splice(-1);mrl_numTeamMembers=mrl_numTeamMembers-1' style='margin-top:10px'&gt; &amp;#x2796; &lt;/button&gt; {{/if}} &lt;/span&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberName' placeholder="Name"&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberRole' placeholder="Role"&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;p&gt; &lt;label for='scope'&gt;Scope:&lt;/label&gt; &lt;span ng-show='scopeRequired'&gt;{{scopeRequired}}&lt;/span&gt; &lt;textarea class='form-control' id='scope' rows='2'&gt;{{mraOutputs.assessment.scope}}&lt;/textarea&gt; &lt;/p&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='mrl'&gt;Target MRL:&lt;/label&gt; &lt;span ng-show='targetMRLRequired'&gt;{{targetMRLRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='targetLevel' ng-init='init_level="{{mraOutputs.assessment.targetLevel}}"' ng-model='init_level'&gt; &lt;option value=1&gt;1&lt;/option&gt; &lt;option value=2&gt;2&lt;/option&gt; &lt;option value=3&gt;3&lt;/option&gt; &lt;option value=4&gt;4&lt;/option&gt; &lt;option value=5&gt;5&lt;/option&gt; &lt;option value=6&gt;6&lt;/option&gt; &lt;option value=7&gt;7&lt;/option&gt; &lt;option value=8&gt;8&lt;/option&gt; &lt;option value=9&gt;9&lt;/option&gt; &lt;option value=10&gt;10&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='date'&gt;Date to achieve Target MRL:&lt;/label&gt; &lt;span ng-show='dateRequired'&gt;{{dateRequired}}&lt;/span&gt; &lt;input type='date' class='form-control' id='targetDate' value='{{mraOutputs.assessment.targetDate}}'&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='location'&gt;Location:&lt;/label&gt; &lt;span ng-show='locationRequired'&gt;{{locationRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='location' value='{{mraOutputs.assessment.location}}'&gt;&lt;/input&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='version'&gt;Deskbook Version:&lt;/label&gt; &lt;span ng-show='versionRequired'&gt;{{versionRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='version'&gt; &lt;option title='v2.4' value='1' selected='selected'&gt;V2.4 - August 2015&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; {{#unless mraOutputs.isRunningInElectron}} &lt;div class='form-group'&gt; &lt;label for='assessmentName'&gt;Name of Assessment:&lt;/label&gt; &lt;span ng-show='assessmentNameRequired'&gt;{{assessmentNameRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='inAssessmentPath' value='{{mraOutputs.outAssessmentPath}}'&gt;&lt;/input&gt; &lt;/div&gt; {{/unless}} &lt;div id="startButtonWrapper" style="border-top: 1px solid transparent; width:60px;"&gt; &lt;button id="startButton" class='btn btn-primary btn-large' style='margin-bottom:5px' onclick='$("#teamMemberNames").val(JSON.stringify($("[id^=mrl_teamMemberName]").map(function(){return $(this).val();}).get()));$("#teamMemberRoles").val(JSON.stringify($("[id^=mrl_teamMemberRole]").map(function(){return $(this).val();}).get()));$("#functionToCall").val("saveStartGetQuestionnairePage")' ng-click='run()'&gt;Start&lt;/button&gt; &lt;/div&gt; &lt;br&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-sm-6'&gt; &lt;div class="mra_panel"&gt; &lt;h3&gt;Continue Existing Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start working on an existing assessment. You will be required to import your assessment data.&lt;/p&gt; &lt;br&gt; &lt;button style='display:inline;' type='button' class='btn btn-primary' style='margin-bottom:10px' onclick='$("#functionToCall").val("getHelpPage")' ng-click='run()'&gt;Help Importing&lt;/button&gt; &lt;button style='display:inline;' type='button' class='btn btn-success' style='margin-bottom:10px' onclick='$("#functionToCall").val("startPageImportAssessment")' ng-click='run()'&gt;Import Assessment&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;input type='hidden' id='inputPage' value='startPage'/&gt; &lt;input type='hidden' id='teamMemberNames' value=''/&gt; &lt;input type='hidden' id='teamMemberRoles' value=''/&gt;&lt;/div&gt;{{#unless assessment.versionId}} &lt;script&gt; $(document).ready(function() { var startButton = document.getElementById('startButton'); var startButtonWrapper = document.getElementById('startButtonWrapper'); startButton.disabled = true; var formFields = getFormFieldsToValidate(); var highlightPerformed = false; document.onkeyup = function() { if (highlightPerformed) { highlightMissingFields(formFields) }; enableStartButtonIfValid(startButton, formFields); }; document.onclick = function() { if (highlightPerformed) { highlightMissingFields(formFields) }; enableStartButtonIfValid(startButton, formFields); }; startButtonWrapper.onmouseover = function(){ if (startButton.disabled) { highlightPerformed = true; highlightMissingFields(formFields); } }; }); function getFormFieldsToValidate() { var targetDateField = document.getElementById('targetDate'); var targetLevelField = document.getElementById('targetLevel'); var deskbookVersionField = document.getElementById('version'); return [targetDateField, targetLevelField, deskbookVersionField]; } function enableStartButtonIfValid(button, formFields) { button.disabled = !validateFields(formFields); }; function validateFields(formFields) { var validationResult = returnInvalidIDs(formFields); return validationResult.length == 0; }; function returnInvalidIDs(formFields) { var validationResult = []; for (var i=0; i &lt; formFields.length; i++){ var field = formFields[i]; if (field.id == 'targetLevel' || field.id == 'version'){ if (isNaN(field.value)){ validationResult.push(field); } } if (field.id == 'targetDate'){ if (isNaN(Date.parse(field.value))){ validationResult.push(field); } } } return validationResult; }; function highlightMissingFields(formFields) { var invalidFields = returnInvalidIDs(formFields); for (var i=0; i &lt; formFields.length; i++) { formFields[i].style.background = 'initial'; } for (var j=0; j &lt; invalidFields.length; j++) { invalidFields[j].style.background = 'pink'; } }; &lt;/script&gt;{{/unless}}&lt;div class='mra_footer'&gt;&lt;/div&gt;&lt;/div&gt;</dataobject>
             </data>
         </parameter>
         <parameter id="d05e6312-dd88-1004-8bdd-44b440cccfb6" name="outputTemplate">
@@ -152,58 +140,16 @@
                 </dataobject>
             </data>
         </parameter>
-        <parameter id="05bda340-ddbf-1004-836e-c69a1b569f28" name="question">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="4574f81c-ddc1-1004-8983-53f15f6af3f1" name="startCss">
             <currentType value="String"/>
             <data>
                 <dataobject type="String">body.mra{ font-family:Roboto,Arial,sans-serif; color:#121212; height: 100%; background-color: #EFECED; } div.mra_header{ font-size: 16px; color: #FFFFFF; background-color: #607d8b; padding: 10px; } div.mra_infobar{ margin-bottom: 20px; min-height: 25px; color: white; padding: 3px 25px 0px 25px; background-color: #455a64; -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75); box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75); } div.mra_infobar a{ color: white; } div.mra_navigationbar{ z-index: 1; margin: auto; background-color: #607d8b; -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75); box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75); } div.mra_navigationitem{ padding-left: 300px; display: inline-flex; height: 46px; line-height: 46px; min-width: 70px; padding: 0px 10px; transition: background .2s; color: white; } div.mra_dropdown a{ transition: background .2s; } div.mra_navigationtitle{ margin: auto; color: white; font-size: 1.4em; display: inline-block; height: 46px; line-height: 46px; min-width: 70px; padding: 0px 10px; } div.mra_assess_level_date{ color: white; display: inline-block; height: 46px; line-height: 23px; min-width: 70px; float: right; } div.mra_assess_level_date div{ text-size: .5em; } div.mra_navigationitem a{ text-decoration: none; color: white; display: inline-block; margin: auto; } div.mra_navigationitem:hover{ background: #546e7a; } div.mra_dropdowncontent a:hover{ background: #cfd8dc; } div.mra_dropdown{ display: inline-block; } div.mra_dropdowncontent{ display: none; position: absolute; background-color: #eceff1; min-width: 100px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); } div.mra_dropdown a{ display: inline-block; } div.mra_dropdowncontent a{ color: black; padding: 3px 6px; text-decoration: none; display: block; text-align: left; } div.mra_dropdown:hover .mra_dropdowncontent{ display: block; position: absolute; z-index: 1; } div.mra_breadcrumbs{ color: #FFFFFF; background-color: #002D54; padding: 3px; margin: 0px -10px; } a.mra_breadcrumbs_active{ opacity: 0.5; } /*New material style*/ div.mra_panel{ margin-bottom: 30px; width: 100%; max-width: 1400px; margin: auto; padding: 20px; background: white; border-radius: 5px; -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); -moz-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); box-shadow: 0px 3px 6px rgba(0,0,0,0.16); } .mra_max_width_container { max-width: 1400px; margin: auto; padding: 0px 25px; } .mra_vertical_align { display: inline-block; vertical-align: middle; float: none; } #mra_style button{ border: none; -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.16); -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.16); box-shadow: 0px 2px 2px rgba(0,0,0,0.16); border-radius: 4px; } #mra_style table{ -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.16); -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.16); box-shadow: 0px 0px 5px rgba(0,0,0,0.16); background-color: white; } #mra_style th{ color: black; background-color: #eceff1; font-weight: bold; } #mra_style td{ background-color: white; color: #212121; border-top: none; } #mra_style #answerValue{ max-width: 120px; } td.t-centered, th.t-centered{ text-align: center; vertical-align: middle; } td.dash + td.dash, th.dash + th.dash { border-left: 1px solid #e1e7ea; min-width: 41px; } tr.dash + tr.dash { border-top: 1px solid #e1e7ea; min-width: 41px; } .mra_divider{ width: 100%; height: 1px; background-color: lightgrey; margin: auto; margin-top: 20px; margin-bottom: 20px; } .mra_arrow_down { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid black; display: inline-block; } .mra_arrow_right { width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid black; display: inline-block; } #mra_style table.mra_divided_table{ background: #eceff1; } #mra_style table.mra_divided_table{ background: #eceff1; } #mra_style table.mra_divided_table td{ background: #cfd8dc; -webkit-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4); -moz-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4); box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4); } #mra_style table.mra_divided_table td.mra_divided_table_top_level{ background: #eceff1; -webkit-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0); -moz-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0); box-shadow: 40px 40px 0px 0px rgba(0,0,0,0); } #mrl_milestone_table{ margin-top: 50px; position: relative; z-index: 0; } #mra_style .btn-primary{ background: #546e7a; } #mra_style .btn-success{ background: #546e7a; } #mra_style .btn-primary:hover{ background: #607d8b; } #mra_style .btn-success:hover{ background: #607d8b; } #mra_style .mra-btn-circle{ border-radius: 50%; height: 32px; width: 32px; } /*END New material style*/ .mra-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } /*CSS for rendering "milestone" tags on criteria page*/ .mrl_ms_level_locator{ position: absolute; left: -21px; top: -30px; } .mrl_ms_level{ position: absolute; z-index: 100; } .mra_arrow_box{ display: block; width: 40px; text-align: center; font-size: .8em; position: relative; background: #90a4ae; border-radius: 3px; padding: 5px 10px; } .mra_arrow_box_arrow_down { position: absolute; left: 10px; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #90a4ae; } div.innerHeader{ margin: auto; width: 950px; } div.info{ position:fixed; top: 0; right: 0; width: 250px; border-radius: 4px; color: #FFFFFF; background-color: #555555; padding: 3px 10px; } div.enterdata{ margin: auto; position: relative; width: 950px; padding: 25px; background-color: #FFFFFF; } div.question{ margin: auto; position: relative; width: 950px; padding: 25px; } div.questionButtons{ text-align: center; width: 100%; } table.criteriaTable{ display: block; overflow: scroll; } .centerAligned{ margin: auto; width: 950px; text-align: center; } .rightAligned { float: right; } .leftAligned { float: left; } .topAligned { top: 0; display:inline-block; } .buttonRounded{ background-color: #505F90; border-radius: 4px; border: none; color: white; font-size: 16px; padding: 3px 10px; margin: 5px; } .answerDropDown{ font-size: 16px; display: inline-block; } .mraTable{ background-color: #FFFFFF; text-align: left; } th{ font-size:14px; background-color: #0E5492; text-align: left; color: #FFFFFF; padding: 5px; } td{ padding: 5px; } td.blue{ background-color: #008CBA; } td.green{ background-color: #4CAF50; } td.red{ background-color: #f44336; } #blackLinks a:link{ color: black; } #blackLinks a:visited{ color: black; } .glyphicon { font-size:20px; }</dataobject>
             </data>
         </parameter>
-        <parameter id="64fc4850-ddc1-1004-82fa-6be88504bb6f" name="mraCss">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="1bd486e5-ddc3-1004-86d4-5f9a71f2ecd1" name="acronyms">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="1bd486eb-ddc3-1004-86d4-5f9a71f2ecd1" name="threads">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="1ff6a322-ddc7-1004-855a-622c736adf44" name="outputPage">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="36c72afc-ddc9-1004-8475-fc018442a52c" name="actionPlan">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="40163caf-ddd1-1004-8561-183aa7efb3fb" name="inThreads">
             <currentType value="String"/>
             <data>
                 <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="9e7144a9-ddd5-1004-82a9-e90eb905be31" name="threadStatus">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
             </data>
         </parameter>
         <parameter id="11fc3fa1-de16-1004-8ba7-7e7ff1bfb148" name="inAssessmentPath">
@@ -244,25 +190,7 @@
                 </dataobject>
             </data>
         </parameter>
-        <parameter id="25cd9ca8-de1a-1004-8a13-5151e3e3cff9" name="navigation">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="e16ec716-de1d-1004-886c-d13d17f58736" name="questionVisitList">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="06a305d3-de46-1004-82cb-090645fce541" name="outAssessmentPath">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="06a305d6-de46-1004-82cb-090645fce541" name="answerInfo">
             <currentType value="String"/>
             <data>
                 <dataobject type="String">default</dataobject>
@@ -274,28 +202,10 @@
                 <dataobject type="String"></dataobject>
             </data>
         </parameter>
-        <parameter id="696c6067-de64-1004-8280-105d8b4dad5c" name="reviewInfo">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="358c2ae7-de72-1004-8ba8-caf1ca4b8e64" name="answersCSV">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="46c151a1-de7a-1004-8818-83fc652da2ba" name="attachmentId">
             <currentType value="String"/>
             <data>
                 <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="46c151ff-de7a-1004-8818-83fc652da2ba" name="assessmentNames">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
             </data>
         </parameter>
         <parameter id="5a6def9c-de7e-1004-8d63-4919b48fd46c" name="dmcProjectId">
@@ -322,28 +232,16 @@
                 <dataobject type="String">0</dataobject>
             </data>
         </parameter>
-        <parameter id="261a121e-debd-1004-8d73-d2d2fecf9a2d" name="isRunningInElectron">
+        <parameter id="e8e9f01d-dec2-1004-8382-b9252180f3c0" name="mraOutputs">
             <currentType value="String"/>
             <data>
-                <dataobject type="String">false</dataobject>
+                <dataobject type="String"></dataobject>
             </data>
         </parameter>
         <parameter id="7c2c4676-dd2e-1004-8431-63bc9d81ddd0" name="functionToCall">
             <currentType value="String"/>
             <data>
                 <dataobject type="String">getQuestionnairePage</dataobject>
-            </data>
-        </parameter>
-        <parameter id="7c2c467c-dd2e-1004-8431-63bc9d81ddd0" name="definitions">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="7c2c4685-dd2e-1004-8431-63bc9d81ddd0" name="assessment">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
             </data>
         </parameter>
         <parameter id="47d82a2b-dd34-1004-8d9c-1a039e44f953" name="targetDate">
@@ -379,7 +277,7 @@
         <parameter id="d05e6310-dd88-1004-8bdd-44b440cccfb6" name="inputTemplate">
             <currentType value="String"/>
             <data>
-                <dataobject type="String">&lt;style&gt;{{startCss}}&lt;/style&gt;&lt;div id="mra_style"&gt;&lt;link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'&gt;&lt;script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js' integrity='sha256-c3RzsUWg+y2XljunEQS0LqWdQ04X1D3j22fd/8JCAKw=' crossorigin='anonymous'&gt;&lt;/script&gt;&lt;div class='container-fluid'&gt; &lt;div class='row'&gt; &lt;div class='col-xs-12 mra_navigationbar'&gt; &lt;div class='mra_navigationtitle'&gt; &lt;h4&gt;DOCENT&lt;/h4&gt; &lt;/div&gt; &lt;div class="mra_navigationitem mra_dropdown" onmouseover="if (typeof(updateActionPersonWithCurrent) == 'function') {updateActionPersonWithCurrent();}"&gt; &lt;a href="javascript:void(0)"&gt;Help&lt;/a&gt;&lt;span class="caret" style='color:white;'&gt;&lt;/span&gt; &lt;div class='mra_dropdowncontent'&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getCriteriaPage")' ng-click='run()'&gt;Criteria&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getDefinitionsPage")' ng-click='run()'&gt;Definitions&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getAcronymsPage")' ng-click='run()'&gt;Acronyms&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getHelpPage")' ng-click='run()'&gt;Help&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="mra_navigationitem mra_dropdown" ng-show='"{{outputPage}}"!="startPage" || {{#if outAssessmentPath}}true{{else}}false{{/if}}' onmouseover="if (typeof(updateActionPersonWithCurrent) == 'function') {updateActionPersonWithCurrent();}"&gt; &lt;a href="javascript:void(0)"&gt;Assessment&lt;/a&gt;&lt;span class="caret" style='color:white;'&gt;&lt;/span&gt; &lt;div class='mra_dropdowncontent'&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getStartPage")' ng-show='"{{outputPage}}"!="startPage"' ng-click='run()'&gt;Start&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getMmpPage")' ng-click='run()'&gt;Action Items&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getDashboardPage")' ng-click='run()'&gt;Dashboard&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getReviewPage")' ng-click='run()'&gt;Review&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;Navigate&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getSkippedPage")' ng-click='run()'&gt;Skipped Questions&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNotApplicablePage")' ng-click='run()'&gt;N/A Questions&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("saveAssessment")' ng-click='run()'&gt;Save&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='mra_assess_level_date' ng-show='"{{outputPage}}"=="questionnairePage"||"{{outputPage}}"=="mmpPage"||"{{outputPage}}"=="dashboardPage"||"{{outputPage}}"=="reviewPage"'&gt; &lt;span&gt;Target MRL:&amp;nbsp{{assessment.targetLevel}}&lt;/span&gt; &lt;br&gt; &lt;span&gt;Target Date:&amp;nbsp{{assessment.targetDate}}&lt;/span&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-xs-12 mra_infobar'&gt; {{#if question.threadName}} &lt;a href onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;{{question.threadName}}&lt;/a&gt; / &lt;a class='mra_breadcrumbs_active' href onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;{{question.subThreadName}}&lt;/a&gt; {{/if}} {{#unless question.threadName}} {{/unless}} &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&lt;input type='hidden' id='functionToCall' value='getStartPage'/&gt;&lt;input type='hidden' id='dmcProjectId' value='\{{projectData.id}}' /&gt;{{#if outputPage}} &lt;span ng-if='"{{outputPage}}"!="startPage"'&gt;&lt;input type='hidden' id='inAssessmentPath' value='{{outAssessmentPath}}'/&gt;&lt;/span&gt;{{/if}}&lt;div&gt; &lt;div class='mra_max_width_container'&gt; &lt;div class='row'&gt; &lt;div class='col-sm-6'&gt; &lt;div class="mra_panel"&gt; &lt;div class='row'&gt; &lt;div class='col-xs-12'&gt; &lt;h3&gt;Start New Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start a new assessment.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='row' ng-init='mrl_teamMemberArray=["0"];mrl_numTeamMembers=1'&gt; &lt;div class='col-xs-12'&gt; &lt;label for='addteam'&gt;Add Team Members:&lt;/label&gt; {{#each assessment.teamMembers}} &lt;div style="margin-bottom: 10px;" class='row'&gt; &lt;div class="col-xs-2"&gt; {{#if @first}} &lt;span class="input-group-btn"&gt; &lt;button style="height: 32px; text-align: center;" class='btn btn-success btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.push(mrl_numTeamMembers);mrl_numTeamMembers=mrl_numTeamMembers+1' style='margin-top:10px'&gt; &amp;#x2795; &lt;/button&gt; &lt;/span&gt; {{/if}} &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberName{{@index}}' value='{{name}}'&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberRole{{@index}}' value='{{role}}'&gt; &lt;/div&gt; &lt;/div&gt; {{/each}} &lt;div style="margin-bottom: 10px;" class='row' ng-repeat='x in mrl_teamMemberArray'&gt; &lt;div class="col-xs-2"&gt; &lt;span class="input-group-btn"&gt; {{#unless assessment.teamMembers}} &lt;button style="height: 32px; text-align: center;" ng-show='$first' class='btn btn-success btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.push(mrl_numTeamMembers);mrl_numTeamMembers=mrl_numTeamMembers+1' style='margin-top:10px'&gt; &amp;#x2795; &lt;/button&gt; &lt;button style="height: 32px; text-align: center;" ng-show='$last &amp;&amp; mrl_teamMemberArray.length &gt; 1' class='btn btn-danger btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.splice(-1);mrl_numTeamMembers=mrl_numTeamMembers-1' style='margin-top:10px'&gt; &amp;#x2796; &lt;/button&gt; {{/unless}} {{#if assessment.teamMembers}} &lt;button style="height: 32px; text-align: center;" ng-show='($last &amp;&amp; mrl_teamMemberArray.length &gt; 1) || mrl_teamMemberArray.length == 1' class='btn btn-danger btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.splice(-1);mrl_numTeamMembers=mrl_numTeamMembers-1' style='margin-top:10px'&gt; &amp;#x2796; &lt;/button&gt; {{/if}} &lt;/span&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberName' placeholder="Name"&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberRole' placeholder="Role"&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;p&gt; &lt;label for='scope'&gt;Scope:&lt;/label&gt; &lt;span ng-show='scopeRequired'&gt;{{scopeRequired}}&lt;/span&gt; &lt;textarea class='form-control' id='scope' rows='2'&gt;{{assessment.scope}}&lt;/textarea&gt; &lt;/p&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='mrl'&gt;Target MRL:&lt;/label&gt; &lt;span ng-show='targetMRLRequired'&gt;{{targetMRLRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='targetLevel' ng-init='init_level="{{assessment.targetLevel}}"' ng-model='init_level'&gt; &lt;option value=1&gt;1&lt;/option&gt; &lt;option value=2&gt;2&lt;/option&gt; &lt;option value=3&gt;3&lt;/option&gt; &lt;option value=4&gt;4&lt;/option&gt; &lt;option value=5&gt;5&lt;/option&gt; &lt;option value=6&gt;6&lt;/option&gt; &lt;option value=7&gt;7&lt;/option&gt; &lt;option value=8&gt;8&lt;/option&gt; &lt;option value=9&gt;9&lt;/option&gt; &lt;option value=10&gt;10&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='date'&gt;Date to achieve Target MRL:&lt;/label&gt; &lt;span ng-show='dateRequired'&gt;{{dateRequired}}&lt;/span&gt; &lt;input type='date' class='form-control' id='targetDate' value='{{assessment.targetDate}}'&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='location'&gt;Location:&lt;/label&gt; &lt;span ng-show='locationRequired'&gt;{{locationRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='location' value='{{assessment.location}}'&gt;&lt;/input&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='version'&gt;Deskbook Version:&lt;/label&gt; &lt;span ng-show='versionRequired'&gt;{{versionRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='version'&gt; &lt;option title='v2.4' value='1' selected='selected'&gt;V2.4 - August 2015&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; {{#unless isRunningInElectron}} &lt;div class='form-group'&gt; &lt;label for='assessmentName'&gt;Name of Assessment:&lt;/label&gt; &lt;span ng-show='assessmentNameRequired'&gt;{{assessmentNameRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='inAssessmentPath' value='{{outAssessmentPath}}'&gt;&lt;/input&gt; &lt;/div&gt; {{/unless}} &lt;div id="startButtonWrapper" style="border-top: 1px solid transparent; width:60px;"&gt; &lt;button id="startButton" class='btn btn-primary btn-large' style='margin-bottom:5px' onclick='$("#teamMemberNames").val(JSON.stringify($("[id^=mrl_teamMemberName]").map(function(){return $(this).val();}).get()));$("#teamMemberRoles").val(JSON.stringify($("[id^=mrl_teamMemberRole]").map(function(){return $(this).val();}).get()));$("#functionToCall").val("saveStartGetQuestionnairePage")' ng-click='run()'&gt;Start&lt;/button&gt; &lt;/div&gt; &lt;br&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-sm-6'&gt; &lt;div class="mra_panel"&gt; &lt;h3&gt;Continue Existing Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start working on an existing assessment. You will be required to import your assessment data.&lt;/p&gt; &lt;br&gt; &lt;button style='display:inline;' type='button' class='btn btn-primary' style='margin-bottom:10px' onclick='$("#functionToCall").val("getHelpPage")' ng-click='run()'&gt;Help Importing&lt;/button&gt; &lt;button style='display:inline;' type='button' class='btn btn-success' style='margin-bottom:10px' onclick='$("#functionToCall").val("startPageImportAssessment")' ng-click='run()'&gt;Import Assessment&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;input type='hidden' id='inputPage' value='startPage'/&gt; &lt;input type='hidden' id='teamMemberNames' value=''/&gt; &lt;input type='hidden' id='teamMemberRoles' value=''/&gt;&lt;/div&gt;{{#unless assessment.versionId}} &lt;script&gt; $(document).ready(function() { var startButton = document.getElementById('startButton'); var startButtonWrapper = document.getElementById('startButtonWrapper'); startButton.disabled = true; var formFields = getFormFieldsToValidate(); var highlightPerformed = false; document.onkeyup = function() { if (highlightPerformed) { highlightMissingFields(formFields) }; enableStartButtonIfValid(startButton, formFields); }; document.onclick = function() { if (highlightPerformed) { highlightMissingFields(formFields) }; enableStartButtonIfValid(startButton, formFields); }; startButtonWrapper.onmouseover = function(){ if (startButton.disabled) { highlightPerformed = true; highlightMissingFields(formFields); } }; }); function getFormFieldsToValidate() { var targetDateField = document.getElementById('targetDate'); var targetLevelField = document.getElementById('targetLevel'); var deskbookVersionField = document.getElementById('version'); return [targetDateField, targetLevelField, deskbookVersionField]; } function enableStartButtonIfValid(button, formFields) { button.disabled = !validateFields(formFields); }; function validateFields(formFields) { var validationResult = returnInvalidIDs(formFields); return validationResult.length == 0; }; function returnInvalidIDs(formFields) { var validationResult = []; for (var i=0; i &lt; formFields.length; i++){ var field = formFields[i]; if (field.id == 'targetLevel' || field.id == 'version'){ if (isNaN(field.value)){ validationResult.push(field); } } if (field.id == 'targetDate'){ if (isNaN(Date.parse(field.value))){ validationResult.push(field); } } } return validationResult; }; function highlightMissingFields(formFields) { var invalidFields = returnInvalidIDs(formFields); for (var i=0; i &lt; formFields.length; i++) { formFields[i].style.background = 'initial'; } for (var j=0; j &lt; invalidFields.length; j++) { invalidFields[j].style.background = 'pink'; } }; &lt;/script&gt;{{/unless}}&lt;div class='mra_footer'&gt;&lt;/div&gt;&lt;/div&gt;</dataobject>
+                <dataobject type="String">&lt;style&gt;{{startCss}}&lt;/style&gt;&lt;div id="mra_style"&gt;&lt;link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'&gt;&lt;script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js' integrity='sha256-c3RzsUWg+y2XljunEQS0LqWdQ04X1D3j22fd/8JCAKw=' crossorigin='anonymous'&gt;&lt;/script&gt;&lt;div class='container-fluid'&gt; &lt;div class='row'&gt; &lt;div class='col-xs-12 mra_navigationbar'&gt; &lt;div class='mra_navigationtitle'&gt; &lt;h4&gt;DOCENT&lt;/h4&gt; &lt;/div&gt; &lt;div class="mra_navigationitem mra_dropdown" onmouseover="if (typeof(updateActionPersonWithCurrent) == 'function') {updateActionPersonWithCurrent();}"&gt; &lt;a href="javascript:void(0)"&gt;Help&lt;/a&gt;&lt;span class="caret" style='color:white;'&gt;&lt;/span&gt; &lt;div class='mra_dropdowncontent'&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getCriteriaPage")' ng-click='run()'&gt;Criteria&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getDefinitionsPage")' ng-click='run()'&gt;Definitions&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getAcronymsPage")' ng-click='run()'&gt;Acronyms&lt;/a&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getHelpPage")' ng-click='run()'&gt;Help&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class="mra_navigationitem mra_dropdown" ng-show='"{{mraOutputs.outputPage}}"!="startPage" || {{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onmouseover="if (typeof(updateActionPersonWithCurrent) == 'function') {updateActionPersonWithCurrent();}"&gt; &lt;a href="javascript:void(0)"&gt;Assessment&lt;/a&gt;&lt;span class="caret" style='color:white;'&gt;&lt;/span&gt; &lt;div class='mra_dropdowncontent'&gt; &lt;a href class='mra_dropdownitem' onclick='$("#functionToCall").val("getStartPage")' ng-show='"{{mraOutputs.outputPage}}"!="startPage"' ng-click='run()'&gt;Start&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNextQuestionnairePage")' ng-show='"{{mraOutputs.outputPage}}"!="startPage"' ng-click='run()'&gt;Continue&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getMmpPage")' ng-click='run()'&gt;Action Items&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getDashboardPage")' ng-click='run()'&gt;Dashboard&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getReviewPage")' ng-click='run()'&gt;Review&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;Navigate&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getSkippedPage")' ng-click='run()'&gt;Skipped Questions&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("getNotApplicablePage")' ng-click='run()'&gt;N/A Questions&lt;/a&gt; &lt;a href class='mra_dropdownitem' ng-show='{{#if mraOutputs.outAssessmentPath}}true{{else}}false{{/if}}' onclick='$("#functionToCall").val("saveAssessment")' ng-click='run()'&gt;Save&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='mra_assess_level_date' ng-show='"{{mraOutputs.outputPage}}"=="questionnairePage"||"{{mraOutputs.outputPage}}"=="mmpPage"||"{{mraOutputs.outputPage}}"=="dashboardPage"||"{{mraOutputs.outputPage}}"=="reviewPage"'&gt; &lt;span&gt;Target MRL:&amp;nbsp{{mraOutputs.assessment.targetLevel}}&lt;/span&gt; &lt;br&gt; &lt;span&gt;Target Date:&amp;nbsp{{mraOutputs.assessment.targetDate}}&lt;/span&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-xs-12 mra_infobar'&gt; {{#if mraOutputs.question.threadName}} &lt;a href onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;{{mraOutputs.question.threadName}}&lt;/a&gt; / &lt;a class='mra_breadcrumbs_active' href onclick='$("#functionToCall").val("getNavigationPage")' ng-click='run()'&gt;{{mraOutputs.question.subThreadName}}&lt;/a&gt; &lt;span style="float: right;"&gt;Level: {{mraOutputs.question.mrlLevel}}&lt;/span&gt; {{/if}} {{#unless mraOutputs.question.threadName}} {{/unless}} &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&lt;input type='hidden' id='functionToCall' value='getStartPage'/&gt;&lt;input type='hidden' id='dmcProjectId' value='\{{projectData.id}}' /&gt;{{#if mraOutputs.outputPage}} &lt;span ng-if='"{{mraOutputs.outputPage}}"!="startPage"'&gt;&lt;input type='hidden' id='inAssessmentPath' value='{{mraOutputs.outAssessmentPath}}'/&gt;&lt;/span&gt;{{/if}}&lt;div&gt; &lt;div class='mra_max_width_container'&gt; &lt;div class='row'&gt; &lt;div class='col-sm-6'&gt; &lt;div class="mra_panel"&gt; &lt;div class='row'&gt; &lt;div class='col-xs-12'&gt; &lt;h3&gt;Start New Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start a new assessment.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='row' ng-init='mrl_teamMemberArray=["0"];mrl_numTeamMembers=1'&gt; &lt;div class='col-xs-12'&gt; &lt;label for='addteam'&gt;Add Team Members:&lt;/label&gt; {{#each mraOutputs.assessment.teamMembers}} &lt;div style="margin-bottom: 10px;" class='row'&gt; &lt;div class="col-xs-2"&gt; {{#if @first}} &lt;span class="input-group-btn"&gt; &lt;button style="height: 32px; text-align: center;" class='btn btn-success btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.push(mrl_numTeamMembers);mrl_numTeamMembers=mrl_numTeamMembers+1' style='margin-top:10px'&gt; &amp;#x2795; &lt;/button&gt; &lt;/span&gt; {{/if}} &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberName{{@index}}' value='{{name}}'&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberRole{{@index}}' value='{{role}}'&gt; &lt;/div&gt; &lt;/div&gt; {{/each}} &lt;div style="margin-bottom: 10px;" class='row' ng-repeat='x in mrl_teamMemberArray'&gt; &lt;div class="col-xs-2"&gt; &lt;span class="input-group-btn"&gt; {{#unless mraOutputs.assessment.teamMembers}} &lt;button style="height: 32px; text-align: center;" ng-show='$first' class='btn btn-success btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.push(mrl_numTeamMembers);mrl_numTeamMembers=mrl_numTeamMembers+1' style='margin-top:10px'&gt; &amp;#x2795; &lt;/button&gt; &lt;button style="height: 32px; text-align: center;" ng-show='$last &amp;&amp; mrl_teamMemberArray.length &gt; 1' class='btn btn-danger btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.splice(-1);mrl_numTeamMembers=mrl_numTeamMembers-1' style='margin-top:10px'&gt; &amp;#x2796; &lt;/button&gt; {{/unless}} {{#if mraOutputs.assessment.teamMembers}} &lt;button style="height: 32px; text-align: center;" ng-show='($last &amp;&amp; mrl_teamMemberArray.length &gt; 1) || mrl_teamMemberArray.length == 1' class='btn btn-danger btn-sm mra-btn-circle' ng-click='mrl_teamMemberArray.splice(-1);mrl_numTeamMembers=mrl_numTeamMembers-1' style='margin-top:10px'&gt; &amp;#x2796; &lt;/button&gt; {{/if}} &lt;/span&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberName' placeholder="Name"&gt; &lt;/div&gt; &lt;div class="col-xs-5"&gt; &lt;input class="form-control" type='text' id='mrl_teamMemberRole' placeholder="Role"&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;p&gt; &lt;label for='scope'&gt;Scope:&lt;/label&gt; &lt;span ng-show='scopeRequired'&gt;{{scopeRequired}}&lt;/span&gt; &lt;textarea class='form-control' id='scope' rows='2'&gt;{{mraOutputs.assessment.scope}}&lt;/textarea&gt; &lt;/p&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='mrl'&gt;Target MRL:&lt;/label&gt; &lt;span ng-show='targetMRLRequired'&gt;{{targetMRLRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='targetLevel' ng-init='init_level="{{mraOutputs.assessment.targetLevel}}"' ng-model='init_level'&gt; &lt;option value=1&gt;1&lt;/option&gt; &lt;option value=2&gt;2&lt;/option&gt; &lt;option value=3&gt;3&lt;/option&gt; &lt;option value=4&gt;4&lt;/option&gt; &lt;option value=5&gt;5&lt;/option&gt; &lt;option value=6&gt;6&lt;/option&gt; &lt;option value=7&gt;7&lt;/option&gt; &lt;option value=8&gt;8&lt;/option&gt; &lt;option value=9&gt;9&lt;/option&gt; &lt;option value=10&gt;10&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='date'&gt;Date to achieve Target MRL:&lt;/label&gt; &lt;span ng-show='dateRequired'&gt;{{dateRequired}}&lt;/span&gt; &lt;input type='date' class='form-control' id='targetDate' value='{{mraOutputs.assessment.targetDate}}'&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='location'&gt;Location:&lt;/label&gt; &lt;span ng-show='locationRequired'&gt;{{locationRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='location' value='{{mraOutputs.assessment.location}}'&gt;&lt;/input&gt; &lt;/div&gt; &lt;div class='form-group'&gt; &lt;label for='version'&gt;Deskbook Version:&lt;/label&gt; &lt;span ng-show='versionRequired'&gt;{{versionRequired}}&lt;/span&gt; &lt;select class='selectpicker form-control' id='version'&gt; &lt;option title='v2.4' value='1' selected='selected'&gt;V2.4 - August 2015&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; {{#unless mraOutputs.isRunningInElectron}} &lt;div class='form-group'&gt; &lt;label for='assessmentName'&gt;Name of Assessment:&lt;/label&gt; &lt;span ng-show='assessmentNameRequired'&gt;{{assessmentNameRequired}}&lt;/span&gt; &lt;input type='text' class='form-control' id='inAssessmentPath' value='{{mraOutputs.outAssessmentPath}}'&gt;&lt;/input&gt; &lt;/div&gt; {{/unless}} &lt;div id="startButtonWrapper" style="border-top: 1px solid transparent; width:60px;"&gt; &lt;button id="startButton" class='btn btn-primary btn-large' style='margin-bottom:5px' onclick='$("#teamMemberNames").val(JSON.stringify($("[id^=mrl_teamMemberName]").map(function(){return $(this).val();}).get()));$("#teamMemberRoles").val(JSON.stringify($("[id^=mrl_teamMemberRole]").map(function(){return $(this).val();}).get()));$("#functionToCall").val("saveStartGetQuestionnairePage")' ng-click='run()'&gt;Start&lt;/button&gt; &lt;/div&gt; &lt;br&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='col-sm-6'&gt; &lt;div class="mra_panel"&gt; &lt;h3&gt;Continue Existing Assessment&lt;/h3&gt; &lt;p&gt;Use this option to start working on an existing assessment. You will be required to import your assessment data.&lt;/p&gt; &lt;br&gt; &lt;button style='display:inline;' type='button' class='btn btn-primary' style='margin-bottom:10px' onclick='$("#functionToCall").val("getHelpPage")' ng-click='run()'&gt;Help Importing&lt;/button&gt; &lt;button style='display:inline;' type='button' class='btn btn-success' style='margin-bottom:10px' onclick='$("#functionToCall").val("startPageImportAssessment")' ng-click='run()'&gt;Import Assessment&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;input type='hidden' id='inputPage' value='startPage'/&gt; &lt;input type='hidden' id='teamMemberNames' value=''/&gt; &lt;input type='hidden' id='teamMemberRoles' value=''/&gt;&lt;/div&gt;{{#unless assessment.versionId}} &lt;script&gt; $(document).ready(function() { var startButton = document.getElementById('startButton'); var startButtonWrapper = document.getElementById('startButtonWrapper'); startButton.disabled = true; var formFields = getFormFieldsToValidate(); var highlightPerformed = false; document.onkeyup = function() { if (highlightPerformed) { highlightMissingFields(formFields) }; enableStartButtonIfValid(startButton, formFields); }; document.onclick = function() { if (highlightPerformed) { highlightMissingFields(formFields) }; enableStartButtonIfValid(startButton, formFields); }; startButtonWrapper.onmouseover = function(){ if (startButton.disabled) { highlightPerformed = true; highlightMissingFields(formFields); } }; }); function getFormFieldsToValidate() { var targetDateField = document.getElementById('targetDate'); var targetLevelField = document.getElementById('targetLevel'); var deskbookVersionField = document.getElementById('version'); return [targetDateField, targetLevelField, deskbookVersionField]; } function enableStartButtonIfValid(button, formFields) { button.disabled = !validateFields(formFields); }; function validateFields(formFields) { var validationResult = returnInvalidIDs(formFields); return validationResult.length == 0; }; function returnInvalidIDs(formFields) { var validationResult = []; for (var i=0; i &lt; formFields.length; i++){ var field = formFields[i]; if (field.id == 'targetLevel' || field.id == 'version'){ if (isNaN(field.value)){ validationResult.push(field); } } if (field.id == 'targetDate'){ if (isNaN(Date.parse(field.value))){ validationResult.push(field); } } } return validationResult; }; function highlightMissingFields(formFields) { var invalidFields = returnInvalidIDs(formFields); for (var i=0; i &lt; formFields.length; i++) { formFields[i].style.background = 'initial'; } for (var j=0; j &lt; invalidFields.length; j++) { invalidFields[j].style.background = 'pink'; } }; &lt;/script&gt;{{/unless}}&lt;div class='mra_footer'&gt;&lt;/div&gt;&lt;/div&gt;</dataobject>
             </data>
         </parameter>
         <parameter id="d05e6313-dd88-1004-8bdd-44b440cccfb6" name="outputTemplate">
@@ -474,58 +372,16 @@
                 </dataobject>
             </data>
         </parameter>
-        <parameter id="05bda341-ddbf-1004-836e-c69a1b569f28" name="question">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="4574f81d-ddc1-1004-8983-53f15f6af3f1" name="startCss">
             <currentType value="String"/>
             <data>
                 <dataobject type="String">body.mra{ font-family:Roboto,Arial,sans-serif; color:#121212; height: 100%; background-color: #EFECED; } div.mra_header{ font-size: 16px; color: #FFFFFF; background-color: #607d8b; padding: 10px; } div.mra_infobar{ margin-bottom: 20px; min-height: 25px; color: white; padding: 3px 25px 0px 25px; background-color: #455a64; -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75); box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.75); } div.mra_infobar a{ color: white; } div.mra_navigationbar{ z-index: 1; margin: auto; background-color: #607d8b; -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75); box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75); } div.mra_navigationitem{ padding-left: 300px; display: inline-flex; height: 46px; line-height: 46px; min-width: 70px; padding: 0px 10px; transition: background .2s; color: white; } div.mra_dropdown a{ transition: background .2s; } div.mra_navigationtitle{ margin: auto; color: white; font-size: 1.4em; display: inline-block; height: 46px; line-height: 46px; min-width: 70px; padding: 0px 10px; } div.mra_assess_level_date{ color: white; display: inline-block; height: 46px; line-height: 23px; min-width: 70px; float: right; } div.mra_assess_level_date div{ text-size: .5em; } div.mra_navigationitem a{ text-decoration: none; color: white; display: inline-block; margin: auto; } div.mra_navigationitem:hover{ background: #546e7a; } div.mra_dropdowncontent a:hover{ background: #cfd8dc; } div.mra_dropdown{ display: inline-block; } div.mra_dropdowncontent{ display: none; position: absolute; background-color: #eceff1; min-width: 100px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); } div.mra_dropdown a{ display: inline-block; } div.mra_dropdowncontent a{ color: black; padding: 3px 6px; text-decoration: none; display: block; text-align: left; } div.mra_dropdown:hover .mra_dropdowncontent{ display: block; position: absolute; z-index: 1; } div.mra_breadcrumbs{ color: #FFFFFF; background-color: #002D54; padding: 3px; margin: 0px -10px; } a.mra_breadcrumbs_active{ opacity: 0.5; } /*New material style*/ div.mra_panel{ margin-bottom: 30px; width: 100%; max-width: 1400px; margin: auto; padding: 20px; background: white; border-radius: 5px; -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); -moz-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); box-shadow: 0px 3px 6px rgba(0,0,0,0.16); } .mra_max_width_container { max-width: 1400px; margin: auto; padding: 0px 25px; } .mra_vertical_align { display: inline-block; vertical-align: middle; float: none; } #mra_style button{ border: none; -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.16); -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.16); box-shadow: 0px 2px 2px rgba(0,0,0,0.16); border-radius: 4px; } #mra_style table{ -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.16); -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.16); box-shadow: 0px 0px 5px rgba(0,0,0,0.16); background-color: white; } #mra_style th{ color: black; background-color: #eceff1; font-weight: bold; } #mra_style td{ background-color: white; color: #212121; border-top: none; } #mra_style #answerValue{ max-width: 120px; } td.t-centered, th.t-centered{ text-align: center; vertical-align: middle; } td.dash + td.dash, th.dash + th.dash { border-left: 1px solid #e1e7ea; min-width: 41px; } tr.dash + tr.dash { border-top: 1px solid #e1e7ea; min-width: 41px; } .mra_divider{ width: 100%; height: 1px; background-color: lightgrey; margin: auto; margin-top: 20px; margin-bottom: 20px; } .mra_arrow_down { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid black; display: inline-block; } .mra_arrow_right { width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid black; display: inline-block; } #mra_style table.mra_divided_table{ background: #eceff1; } #mra_style table.mra_divided_table{ background: #eceff1; } #mra_style table.mra_divided_table td{ background: #cfd8dc; -webkit-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4); -moz-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4); box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4); } #mra_style table.mra_divided_table td.mra_divided_table_top_level{ background: #eceff1; -webkit-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0); -moz-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0); box-shadow: 40px 40px 0px 0px rgba(0,0,0,0); } #mrl_milestone_table{ margin-top: 50px; position: relative; z-index: 0; } #mra_style .btn-primary{ background: #546e7a; } #mra_style .btn-success{ background: #546e7a; } #mra_style .btn-primary:hover{ background: #607d8b; } #mra_style .btn-success:hover{ background: #607d8b; } #mra_style .mra-btn-circle{ border-radius: 50%; height: 32px; width: 32px; } /*END New material style*/ .mra-truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } /*CSS for rendering "milestone" tags on criteria page*/ .mrl_ms_level_locator{ position: absolute; left: -21px; top: -30px; } .mrl_ms_level{ position: absolute; z-index: 100; } .mra_arrow_box{ display: block; width: 40px; text-align: center; font-size: .8em; position: relative; background: #90a4ae; border-radius: 3px; padding: 5px 10px; } .mra_arrow_box_arrow_down { position: absolute; left: 10px; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #90a4ae; } div.innerHeader{ margin: auto; width: 950px; } div.info{ position:fixed; top: 0; right: 0; width: 250px; border-radius: 4px; color: #FFFFFF; background-color: #555555; padding: 3px 10px; } div.enterdata{ margin: auto; position: relative; width: 950px; padding: 25px; background-color: #FFFFFF; } div.question{ margin: auto; position: relative; width: 950px; padding: 25px; } div.questionButtons{ text-align: center; width: 100%; } table.criteriaTable{ display: block; overflow: scroll; } .centerAligned{ margin: auto; width: 950px; text-align: center; } .rightAligned { float: right; } .leftAligned { float: left; } .topAligned { top: 0; display:inline-block; } .buttonRounded{ background-color: #505F90; border-radius: 4px; border: none; color: white; font-size: 16px; padding: 3px 10px; margin: 5px; } .answerDropDown{ font-size: 16px; display: inline-block; } .mraTable{ background-color: #FFFFFF; text-align: left; } th{ font-size:14px; background-color: #0E5492; text-align: left; color: #FFFFFF; padding: 5px; } td{ padding: 5px; } td.blue{ background-color: #008CBA; } td.green{ background-color: #4CAF50; } td.red{ background-color: #f44336; } #blackLinks a:link{ color: black; } #blackLinks a:visited{ color: black; } .glyphicon { font-size:20px; }</dataobject>
             </data>
         </parameter>
-        <parameter id="64fc4851-ddc1-1004-82fa-6be88504bb6f" name="mraCss">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1" name="acronyms">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1" name="threads">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="1ff6a323-ddc7-1004-855a-622c736adf44" name="outputPage">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="36c72afd-ddc9-1004-8475-fc018442a52c" name="actionPlan">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="40163cb0-ddd1-1004-8561-183aa7efb3fb" name="inThreads">
             <currentType value="String"/>
             <data>
                 <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="9e7144aa-ddd5-1004-82a9-e90eb905be31" name="threadStatus">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
             </data>
         </parameter>
         <parameter id="11fc3fa2-de16-1004-8ba7-7e7ff1bfb148" name="inAssessmentPath">
@@ -566,25 +422,7 @@
                 </dataobject>
             </data>
         </parameter>
-        <parameter id="25cd9ca9-de1a-1004-8a13-5151e3e3cff9" name="navigation">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="e16ec717-de1d-1004-886c-d13d17f58736" name="questionVisitList">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="06a305d4-de46-1004-82cb-090645fce541" name="outAssessmentPath">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="06a305d7-de46-1004-82cb-090645fce541" name="answerInfo">
             <currentType value="String"/>
             <data>
                 <dataobject type="String">default</dataobject>
@@ -596,28 +434,10 @@
                 <dataobject type="String"></dataobject>
             </data>
         </parameter>
-        <parameter id="696c6068-de64-1004-8280-105d8b4dad5c" name="reviewInfo">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
-        <parameter id="358c2ae8-de72-1004-8ba8-caf1ca4b8e64" name="answersCSV">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
-            </data>
-        </parameter>
         <parameter id="46c151a2-de7a-1004-8818-83fc652da2ba" name="attachmentId">
             <currentType value="String"/>
             <data>
                 <dataobject type="String"></dataobject>
-            </data>
-        </parameter>
-        <parameter id="46c15200-de7a-1004-8818-83fc652da2ba" name="assessmentNames">
-            <currentType value="String"/>
-            <data>
-                <dataobject type="String">default</dataobject>
             </data>
         </parameter>
         <parameter id="5a6def9d-de7e-1004-8d63-4919b48fd46c" name="dmcProjectId">
@@ -644,10 +464,10 @@
                 <dataobject type="String">0</dataobject>
             </data>
         </parameter>
-        <parameter id="261a121f-debd-1004-8d73-d2d2fecf9a2d" name="isRunningInElectron">
+        <parameter id="e8e9f01e-dec2-1004-8382-b9252180f3c0" name="mraOutputs">
             <currentType value="String"/>
             <data>
-                <dataobject type="String">false</dataobject>
+                <dataobject type="String"></dataobject>
             </data>
         </parameter>
     </parameters>
@@ -694,23 +514,8 @@
         </context>
         <context id="7c2c461f-dd2e-1004-8431-63bc9d81ddd0" name="outputs">
             <modelobjects>
-                <parameter name="definitions" idRef="7c2c467b-dd2e-1004-8431-63bc9d81ddd0"/>
-                <parameter name="assessment" idRef="7c2c4684-dd2e-1004-8431-63bc9d81ddd0"/>
                 <parameter name="outputTemplate" idRef="d05e6312-dd88-1004-8bdd-44b440cccfb6"/>
-                <parameter name="question" idRef="05bda340-ddbf-1004-836e-c69a1b569f28"/>
-                <parameter name="mraCss" idRef="64fc4850-ddc1-1004-82fa-6be88504bb6f"/>
-                <parameter name="acronyms" idRef="1bd486e5-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <parameter name="threads" idRef="1bd486eb-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <parameter name="outputPage" idRef="1ff6a322-ddc7-1004-855a-622c736adf44"/>
-                <parameter name="actionPlan" idRef="36c72afc-ddc9-1004-8475-fc018442a52c"/>
-                <parameter name="threadStatus" idRef="9e7144a9-ddd5-1004-82a9-e90eb905be31"/>
-                <parameter name="navigation" idRef="25cd9ca8-de1a-1004-8a13-5151e3e3cff9"/>
-                <parameter name="outAssessmentPath" idRef="06a305d3-de46-1004-82cb-090645fce541"/>
-                <parameter name="answerInfo" idRef="06a305d6-de46-1004-82cb-090645fce541"/>
-                <parameter name="reviewInfo" idRef="696c6067-de64-1004-8280-105d8b4dad5c"/>
-                <parameter name="answersCSV" idRef="358c2ae7-de72-1004-8ba8-caf1ca4b8e64"/>
-                <parameter name="assessmentNames" idRef="46c151ff-de7a-1004-8818-83fc652da2ba"/>
-                <parameter name="isRunningInElectron" idRef="261a121e-debd-1004-8d73-d2d2fecf9a2d"/>
+                <parameter name="mraOutputs" idRef="e8e9f01d-dec2-1004-8382-b9252180f3c0"/>
             </modelobjects>
         </context>
         <context id="IFACE_MODEL_CXT" name="Model View">
@@ -725,8 +530,6 @@
             <context id="IFACE_BUILD_CXT" name="Build View">
                 <modelobjects>
                     <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
-                    <parameter name="definitions" idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                    <parameter name="assessment" idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
                     <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
                     <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
                     <parameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
@@ -747,95 +550,67 @@
                     <parameter name="whatAction" idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="documentation" idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="questionId" idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="question" idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
                     <parameter name="startCss" idRef="4574f81d-ddc1-1004-8983-53f15f6af3f1"/>
-                    <parameter name="mraCss" idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                    <parameter name="acronyms" idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                    <parameter name="threads" idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                    <parameter name="outputPage" idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                    <parameter name="actionPlan" idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
                     <parameter name="inThreads" idRef="40163cb0-ddd1-1004-8561-183aa7efb3fb"/>
-                    <parameter name="threadStatus" idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                     <parameter name="inAssessmentPath" idRef="11fc3fa2-de16-1004-8ba7-7e7ff1bfb148"/>
                     <parameter name="navThreadId" idRef="25cd9c97-de1a-1004-8a13-5151e3e3cff9"/>
                     <parameter name="navSubThreadId" idRef="25cd9c9a-de1a-1004-8a13-5151e3e3cff9"/>
                     <parameter name="navSubThreadLevelId" idRef="25cd9c9d-de1a-1004-8a13-5151e3e3cff9"/>
                     <parameter name="navQuestionId" idRef="25cd9ca0-de1a-1004-8a13-5151e3e3cff9"/>
-                    <parameter name="navigation" idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
                     <parameter name="questionVisitList" idRef="e16ec717-de1d-1004-886c-d13d17f58736"/>
-                    <parameter name="outAssessmentPath" idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                    <parameter name="answerInfo" idRef="06a305d7-de46-1004-82cb-090645fce541"/>
                     <parameter name="actionPerson" idRef="2ca9e9c1-de48-1004-8e4d-8126b538dd75"/>
-                    <parameter name="reviewInfo" idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                    <parameter name="answersCSV" idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
                     <parameter name="attachmentId" idRef="46c151a2-de7a-1004-8818-83fc652da2ba"/>
-                    <parameter name="assessmentNames" idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
                     <parameter name="dmcProjectId" idRef="5a6def9d-de7e-1004-8d63-4919b48fd46c"/>
                     <parameter name="teamMemberNames" idRef="a10a327c-dea6-1004-891c-de78205b975f"/>
                     <parameter name="teamMemberRoles" idRef="a10a327f-dea6-1004-891c-de78205b975f"/>
                     <parameter name="targetLevel" idRef="b0f88475-dea6-1004-8533-07550f3af84f"/>
-                    <parameter name="isRunningInElectron" idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
+                    <parameter name="mraOutputs" idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
                 </modelobjects>
             </context>
         </view>
         <view name="Interface Causality View">
             <filter id="INPUTS_FILTER" name="Inputs">
                 <parameters>
-                    <parameter name="inThreads" idRef="40163cb0-ddd1-1004-8561-183aa7efb3fb"/>
-                    <parameter name="scheduleRisk" idRef="22fd0b58-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf"/>
-                    <parameter name="questionVisitList" idRef="e16ec717-de1d-1004-886c-d13d17f58736"/>
-                    <parameter name="navSubThreadId" idRef="25cd9c9a-de1a-1004-8a13-5151e3e3cff9"/>
-                    <parameter name="answerValue" idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
-                    <parameter name="reason" idRef="22fd0b5e-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="documentation" idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="targetLevel" idRef="b0f88475-dea6-1004-8533-07550f3af84f"/>
-                    <parameter name="dmcProjectId" idRef="5a6def9d-de7e-1004-8d63-4919b48fd46c"/>
-                    <parameter name="questionId" idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="startCss" idRef="4574f81d-ddc1-1004-8983-53f15f6af3f1"/>
-                    <parameter name="completionDate" idRef="22fd0b5b-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
-                    <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
-                    <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
-                    <parameter name="teamMemberRoles" idRef="a10a327f-dea6-1004-891c-de78205b975f"/>
-                    <parameter name="inputTemplate" idRef="d05e6310-dd88-1004-8bdd-44b440cccfb6"/>
-                    <parameter name="costRisk" idRef="22fd0b55-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="attachmentId" idRef="46c151a2-de7a-1004-8818-83fc652da2ba"/>
                     <parameter name="inAssessmentPath" idRef="11fc3fa2-de16-1004-8ba7-7e7ff1bfb148"/>
-                    <parameter name="location" idRef="d05e630d-dd88-1004-8bdd-44b440cccfb6"/>
+                    <parameter name="scheduleRisk" idRef="22fd0b58-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="dmcProjectId" idRef="5a6def9d-de7e-1004-8d63-4919b48fd46c"/>
+                    <parameter name="targetLevel" idRef="b0f88475-dea6-1004-8533-07550f3af84f"/>
+                    <parameter name="teamMemberRoles" idRef="a10a327f-dea6-1004-891c-de78205b975f"/>
                     <parameter name="assumptions" idRef="164941ab-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="teamMemberNames" idRef="a10a327c-dea6-1004-891c-de78205b975f"/>
-                    <parameter name="actionPerson" idRef="2ca9e9c1-de48-1004-8e4d-8126b538dd75"/>
-                    <parameter name="inputPage" idRef="1649419c-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="whatAction" idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="evidence" idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="navSubThreadLevelId" idRef="25cd9c9d-de1a-1004-8a13-5151e3e3cff9"/>
-                    <parameter name="navQuestionId" idRef="25cd9ca0-de1a-1004-8a13-5151e3e3cff9"/>
                     <parameter name="navThreadId" idRef="25cd9c97-de1a-1004-8a13-5151e3e3cff9"/>
+                    <parameter name="documentation" idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="startCss" idRef="4574f81d-ddc1-1004-8983-53f15f6af3f1"/>
+                    <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
+                    <parameter name="questionId" idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="technicalRisk" idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="evidence" idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
+                    <parameter name="questionVisitList" idRef="e16ec717-de1d-1004-886c-d13d17f58736"/>
+                    <parameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
+                    <parameter name="reason" idRef="22fd0b5e-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="inputTemplate" idRef="d05e6310-dd88-1004-8bdd-44b440cccfb6"/>
+                    <parameter name="actionPerson" idRef="2ca9e9c1-de48-1004-8e4d-8126b538dd75"/>
                     <parameter name="notes" idRef="164941ae-dda9-1004-8227-088d16b2f8a0"/>
+                    <parameter name="navSubThreadId" idRef="25cd9c9a-de1a-1004-8a13-5151e3e3cff9"/>
+                    <parameter name="navQuestionId" idRef="25cd9ca0-de1a-1004-8a13-5151e3e3cff9"/>
+                    <parameter name="answerValue" idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="completionDate" idRef="22fd0b5b-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="location" idRef="d05e630d-dd88-1004-8bdd-44b440cccfb6"/>
+                    <parameter name="whatAction" idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="inThreads" idRef="40163cb0-ddd1-1004-8561-183aa7efb3fb"/>
+                    <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
+                    <parameter name="teamMemberNames" idRef="a10a327c-dea6-1004-891c-de78205b975f"/>
+                    <parameter name="costRisk" idRef="22fd0b55-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf"/>
+                    <parameter name="attachmentId" idRef="46c151a2-de7a-1004-8818-83fc652da2ba"/>
+                    <parameter name="inputPage" idRef="1649419c-dda9-1004-8227-088d16b2f8a0"/>
                 </parameters>
             </filter>
             <filter id="OUTPUTS_FILTER" name="Outputs">
                 <parameters>
-                    <parameter name="threadStatus" idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31" causality="Result"/>
-                    <parameter name="assessment" idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
-                    <parameter name="reviewInfo" idRef="696c6068-de64-1004-8280-105d8b4dad5c" causality="Result"/>
-                    <parameter name="outputPage" idRef="1ff6a323-ddc7-1004-855a-622c736adf44" causality="Result"/>
-                    <parameter name="threads" idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1" causality="Result"/>
                     <parameter name="outputTemplate" idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6" causality="Result"/>
-                    <parameter name="outAssessmentPath" idRef="06a305d4-de46-1004-82cb-090645fce541" causality="Result"/>
-                    <parameter name="mraCss" idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f" causality="Result"/>
-                    <parameter name="question" idRef="05bda341-ddbf-1004-836e-c69a1b569f28" causality="Result"/>
-                    <parameter name="actionPlan" idRef="36c72afd-ddc9-1004-8475-fc018442a52c" causality="Result"/>
-                    <parameter name="navigation" idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9" causality="Result"/>
-                    <parameter name="answerInfo" idRef="06a305d7-de46-1004-82cb-090645fce541" causality="Result"/>
-                    <parameter name="assessmentNames" idRef="46c15200-de7a-1004-8818-83fc652da2ba" causality="Result"/>
-                    <parameter name="definitions" idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0" causality="Result"/>
-                    <parameter name="acronyms" idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1" causality="Result"/>
-                    <parameter name="answersCSV" idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64" causality="Result"/>
-                    <parameter name="isRunningInElectron" idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d" causality="Result"/>
+                    <parameter name="mraOutputs" idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0" causality="Result"/>
                 </parameters>
             </filter>
             <filter id="INDETERMINATES_FILTER" name="Indeterminates"/>
@@ -843,16 +618,10 @@
     </views>
     <directedGraph id="6d8dad4b-dd20-1004-8470-5ac15d25b737">
         <nodes>
-            <node idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-            <node idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-            <node idRef="06a305d7-de46-1004-82cb-090645fce541"/>
             <node idRef="11fc3fa2-de16-1004-8ba7-7e7ff1bfb148"/>
             <node idRef="1649419c-dda9-1004-8227-088d16b2f8a0"/>
             <node idRef="164941ab-dda9-1004-8227-088d16b2f8a0"/>
             <node idRef="164941ae-dda9-1004-8227-088d16b2f8a0"/>
-            <node idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-            <node idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-            <node idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
             <node idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
             <node idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
             <node idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde"/>
@@ -867,24 +636,14 @@
             <node idRef="25cd9c9a-de1a-1004-8a13-5151e3e3cff9"/>
             <node idRef="25cd9c9d-de1a-1004-8a13-5151e3e3cff9"/>
             <node idRef="25cd9ca0-de1a-1004-8a13-5151e3e3cff9"/>
-            <node idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-            <node idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
             <node idRef="2ca9e9c1-de48-1004-8e4d-8126b538dd75"/>
-            <node idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-            <node idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
             <node idRef="40163cb0-ddd1-1004-8561-183aa7efb3fb"/>
             <node idRef="4574f81d-ddc1-1004-8983-53f15f6af3f1"/>
             <node idRef="46c151a2-de7a-1004-8818-83fc652da2ba"/>
-            <node idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
             <node idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
             <node idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
             <node idRef="5a6def9d-de7e-1004-8d63-4919b48fd46c"/>
-            <node idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-            <node idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
             <node idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
-            <node idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-            <node idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-            <node idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
             <node idRef="a10a327c-dea6-1004-891c-de78205b975f"/>
             <node idRef="a10a327f-dea6-1004-891c-de78205b975f"/>
             <node idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
@@ -894,667 +653,150 @@
             <node idRef="d05e6310-dd88-1004-8bdd-44b440cccfb6"/>
             <node idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
             <node idRef="e16ec717-de1d-1004-886c-d13d17f58736"/>
+            <node idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
         </nodes>
         <arcs>
             <from idRef="11fc3fa2-de16-1004-8ba7-7e7ff1bfb148">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="1649419c-dda9-1004-8227-088d16b2f8a0">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="164941ab-dda9-1004-8227-088d16b2f8a0">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="164941ae-dda9-1004-8227-088d16b2f8a0">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b55-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b58-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b5b-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b5e-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="25cd9c97-de1a-1004-8a13-5151e3e3cff9">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="25cd9c9a-de1a-1004-8a13-5151e3e3cff9">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="25cd9c9d-de1a-1004-8a13-5151e3e3cff9">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="25cd9ca0-de1a-1004-8a13-5151e3e3cff9">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="2ca9e9c1-de48-1004-8e4d-8126b538dd75">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="40163cb0-ddd1-1004-8561-183aa7efb3fb">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="4574f81d-ddc1-1004-8983-53f15f6af3f1">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="46c151a2-de7a-1004-8818-83fc652da2ba">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="5a6def9d-de7e-1004-8d63-4919b48fd46c">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
             </from>
             <from idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="a10a327c-dea6-1004-891c-de78205b975f">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="a10a327f-dea6-1004-891c-de78205b975f">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="b03e482e-dd34-1004-805f-42099899dcaf">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="b03e4831-dd34-1004-805f-42099899dcaf">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="b0f88475-dea6-1004-8533-07550f3af84f">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
             </from>
             <from idRef="d05e630d-dd88-1004-8bdd-44b440cccfb6">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="d05e6310-dd88-1004-8bdd-44b440cccfb6">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="e16ec717-de1d-1004-886c-d13d17f58736">
-                <to idRef="05bda341-ddbf-1004-836e-c69a1b569f28"/>
-                <to idRef="06a305d4-de46-1004-82cb-090645fce541"/>
-                <to idRef="06a305d7-de46-1004-82cb-090645fce541"/>
-                <to idRef="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1"/>
-                <to idRef="1ff6a323-ddc7-1004-855a-622c736adf44"/>
-                <to idRef="25cd9ca9-de1a-1004-8a13-5151e3e3cff9"/>
-                <to idRef="261a121f-debd-1004-8d73-d2d2fecf9a2d"/>
-                <to idRef="358c2ae8-de72-1004-8ba8-caf1ca4b8e64"/>
-                <to idRef="36c72afd-ddc9-1004-8475-fc018442a52c"/>
-                <to idRef="46c15200-de7a-1004-8818-83fc652da2ba"/>
-                <to idRef="64fc4851-ddc1-1004-82fa-6be88504bb6f"/>
-                <to idRef="696c6068-de64-1004-8280-105d8b4dad5c"/>
-                <to idRef="7c2c467c-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="7c2c4685-dd2e-1004-8431-63bc9d81ddd0"/>
-                <to idRef="9e7144aa-ddd5-1004-82a9-e90eb905be31"/>
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
         </arcs>
     </directedGraph>
     <interfaceToRelParamMap>
-        <iToRpMap relParamId="05bda341-ddbf-1004-836e-c69a1b569f28" ifaceId="05bda33f-ddbf-1004-836e-c69a1b569f28"/>
-        <iToRpMap relParamId="06a305d4-de46-1004-82cb-090645fce541" ifaceId="06a305d2-de46-1004-82cb-090645fce541"/>
-        <iToRpMap relParamId="06a305d7-de46-1004-82cb-090645fce541" ifaceId="06a305d5-de46-1004-82cb-090645fce541"/>
         <iToRpMap relParamId="11fc3fa2-de16-1004-8ba7-7e7ff1bfb148" ifaceId="11fc3fa0-de16-1004-8ba7-7e7ff1bfb148"/>
         <iToRpMap relParamId="1649419c-dda9-1004-8227-088d16b2f8a0" ifaceId="1649419a-dda9-1004-8227-088d16b2f8a0"/>
         <iToRpMap relParamId="164941ab-dda9-1004-8227-088d16b2f8a0" ifaceId="164941a9-dda9-1004-8227-088d16b2f8a0"/>
         <iToRpMap relParamId="164941ae-dda9-1004-8227-088d16b2f8a0" ifaceId="164941ac-dda9-1004-8227-088d16b2f8a0"/>
-        <iToRpMap relParamId="1bd486e6-ddc3-1004-86d4-5f9a71f2ecd1" ifaceId="1bd486e4-ddc3-1004-86d4-5f9a71f2ecd1"/>
-        <iToRpMap relParamId="1bd486ec-ddc3-1004-86d4-5f9a71f2ecd1" ifaceId="1bd486ea-ddc3-1004-86d4-5f9a71f2ecd1"/>
-        <iToRpMap relParamId="1ff6a323-ddc7-1004-855a-622c736adf44" ifaceId="1ff6a321-ddc7-1004-855a-622c736adf44"/>
         <iToRpMap relParamId="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde" ifaceId="22fd0b4a-ddb3-1004-84c0-f2ce94b6efde"/>
         <iToRpMap relParamId="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde" ifaceId="22fd0b4d-ddb3-1004-84c0-f2ce94b6efde"/>
         <iToRpMap relParamId="22fd0b52-ddb3-1004-84c0-f2ce94b6efde" ifaceId="22fd0b50-ddb3-1004-84c0-f2ce94b6efde"/>
@@ -1569,24 +811,14 @@
         <iToRpMap relParamId="25cd9c9a-de1a-1004-8a13-5151e3e3cff9" ifaceId="25cd9c98-de1a-1004-8a13-5151e3e3cff9"/>
         <iToRpMap relParamId="25cd9c9d-de1a-1004-8a13-5151e3e3cff9" ifaceId="25cd9c9b-de1a-1004-8a13-5151e3e3cff9"/>
         <iToRpMap relParamId="25cd9ca0-de1a-1004-8a13-5151e3e3cff9" ifaceId="25cd9c9e-de1a-1004-8a13-5151e3e3cff9"/>
-        <iToRpMap relParamId="25cd9ca9-de1a-1004-8a13-5151e3e3cff9" ifaceId="25cd9ca7-de1a-1004-8a13-5151e3e3cff9"/>
-        <iToRpMap relParamId="261a121f-debd-1004-8d73-d2d2fecf9a2d" ifaceId="261a121d-debd-1004-8d73-d2d2fecf9a2d"/>
         <iToRpMap relParamId="2ca9e9c1-de48-1004-8e4d-8126b538dd75" ifaceId="2ca9e9bf-de48-1004-8e4d-8126b538dd75"/>
-        <iToRpMap relParamId="358c2ae8-de72-1004-8ba8-caf1ca4b8e64" ifaceId="358c2ae6-de72-1004-8ba8-caf1ca4b8e64"/>
-        <iToRpMap relParamId="36c72afd-ddc9-1004-8475-fc018442a52c" ifaceId="36c72afb-ddc9-1004-8475-fc018442a52c"/>
         <iToRpMap relParamId="40163cb0-ddd1-1004-8561-183aa7efb3fb" ifaceId="40163cae-ddd1-1004-8561-183aa7efb3fb"/>
         <iToRpMap relParamId="4574f81d-ddc1-1004-8983-53f15f6af3f1" ifaceId="4574f81b-ddc1-1004-8983-53f15f6af3f1"/>
         <iToRpMap relParamId="46c151a2-de7a-1004-8818-83fc652da2ba" ifaceId="46c151a0-de7a-1004-8818-83fc652da2ba"/>
-        <iToRpMap relParamId="46c15200-de7a-1004-8818-83fc652da2ba" ifaceId="46c151fe-de7a-1004-8818-83fc652da2ba"/>
         <iToRpMap relParamId="47d82a2b-dd34-1004-8d9c-1a039e44f953" ifaceId="47d82a29-dd34-1004-8d9c-1a039e44f953"/>
         <iToRpMap relParamId="47d82a2e-dd34-1004-8d9c-1a039e44f953" ifaceId="47d82a2c-dd34-1004-8d9c-1a039e44f953"/>
         <iToRpMap relParamId="5a6def9d-de7e-1004-8d63-4919b48fd46c" ifaceId="5a6def9b-de7e-1004-8d63-4919b48fd46c"/>
-        <iToRpMap relParamId="64fc4851-ddc1-1004-82fa-6be88504bb6f" ifaceId="64fc484f-ddc1-1004-82fa-6be88504bb6f"/>
-        <iToRpMap relParamId="696c6068-de64-1004-8280-105d8b4dad5c" ifaceId="696c6066-de64-1004-8280-105d8b4dad5c"/>
         <iToRpMap relParamId="7c2c4676-dd2e-1004-8431-63bc9d81ddd0" ifaceId="7c2c4674-dd2e-1004-8431-63bc9d81ddd0"/>
-        <iToRpMap relParamId="7c2c467c-dd2e-1004-8431-63bc9d81ddd0" ifaceId="7c2c467a-dd2e-1004-8431-63bc9d81ddd0"/>
-        <iToRpMap relParamId="7c2c4685-dd2e-1004-8431-63bc9d81ddd0" ifaceId="7c2c4683-dd2e-1004-8431-63bc9d81ddd0"/>
-        <iToRpMap relParamId="9e7144aa-ddd5-1004-82a9-e90eb905be31" ifaceId="9e7144a8-ddd5-1004-82a9-e90eb905be31"/>
         <iToRpMap relParamId="a10a327c-dea6-1004-891c-de78205b975f" ifaceId="a10a327a-dea6-1004-891c-de78205b975f"/>
         <iToRpMap relParamId="a10a327f-dea6-1004-891c-de78205b975f" ifaceId="a10a327d-dea6-1004-891c-de78205b975f"/>
         <iToRpMap relParamId="b03e482e-dd34-1004-805f-42099899dcaf" ifaceId="b03e482c-dd34-1004-805f-42099899dcaf"/>
@@ -1596,5 +828,6 @@
         <iToRpMap relParamId="d05e6310-dd88-1004-8bdd-44b440cccfb6" ifaceId="d05e630e-dd88-1004-8bdd-44b440cccfb6"/>
         <iToRpMap relParamId="d05e6313-dd88-1004-8bdd-44b440cccfb6" ifaceId="d05e6311-dd88-1004-8bdd-44b440cccfb6"/>
         <iToRpMap relParamId="e16ec717-de1d-1004-886c-d13d17f58736" ifaceId="e16ec715-de1d-1004-886c-d13d17f58736"/>
+        <iToRpMap relParamId="e8e9f01e-dec2-1004-8382-b9252180f3c0" ifaceId="e8e9f01c-dec2-1004-8382-b9252180f3c0"/>
     </interfaceToRelParamMap>
 </modelinterface>
