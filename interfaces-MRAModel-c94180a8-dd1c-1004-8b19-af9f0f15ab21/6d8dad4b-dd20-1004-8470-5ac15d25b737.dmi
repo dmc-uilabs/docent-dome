@@ -250,6 +250,12 @@
                 <dataobject type="String"></dataobject>
             </data>
         </parameter>
+        <parameter id="9017e3ec-dfce-1004-825c-1cdcf3aed2d5" name="attachedFileList">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
         <parameter id="7c2c4676-dd2e-1004-8431-63bc9d81ddd0" name="functionToCall">
             <currentType value="String"/>
             <data>
@@ -494,6 +500,12 @@
                 <dataobject type="String"></dataobject>
             </data>
         </parameter>
+        <parameter id="9017e3ed-dfce-1004-825c-1cdcf3aed2d5" name="attachedFileList">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
     </parameters>
     <visualizations/>
     <relations/>
@@ -536,6 +548,7 @@
                 <parameter name="targetLevel" idRef="b0f88474-dea6-1004-8533-07550f3af84f"/>
                 <parameter name="levelSwitching" idRef="1426775d-df88-1004-8bf3-45ce5329a03a"/>
                 <parameter name="chosenThreads" idRef="9c6cde36-dfa8-1004-8d60-f372f589f382"/>
+                <parameter name="attachedFileList" idRef="9017e3ec-dfce-1004-825c-1cdcf3aed2d5"/>
             </modelobjects>
         </context>
         <context id="7c2c461f-dd2e-1004-8431-63bc9d81ddd0" name="outputs">
@@ -593,48 +606,50 @@
                     <parameter name="mraOutputs" idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
                     <parameter name="levelSwitching" idRef="1426775e-df88-1004-8bf3-45ce5329a03a"/>
                     <parameter name="chosenThreads" idRef="9c6cde37-dfa8-1004-8d60-f372f589f382"/>
+                    <parameter name="attachedFileList" idRef="9017e3ed-dfce-1004-825c-1cdcf3aed2d5"/>
                 </modelobjects>
             </context>
         </view>
         <view name="Interface Causality View">
             <filter id="INPUTS_FILTER" name="Inputs">
                 <parameters>
-                    <parameter name="navQuestionId" idRef="25cd9ca0-de1a-1004-8a13-5151e3e3cff9"/>
-                    <parameter name="dmcProjectId" idRef="5a6def9d-de7e-1004-8d63-4919b48fd46c"/>
-                    <parameter name="inThreads" idRef="40163cb0-ddd1-1004-8561-183aa7efb3fb"/>
-                    <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
-                    <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
-                    <parameter name="inAssessmentPath" idRef="11fc3fa2-de16-1004-8ba7-7e7ff1bfb148"/>
-                    <parameter name="navSubThreadId" idRef="25cd9c9a-de1a-1004-8a13-5151e3e3cff9"/>
-                    <parameter name="questionId" idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="whatAction" idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="startCss" idRef="4574f81d-ddc1-1004-8983-53f15f6af3f1"/>
-                    <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
-                    <parameter name="scheduleRisk" idRef="22fd0b58-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="targetLevel" idRef="b0f88475-dea6-1004-8533-07550f3af84f"/>
-                    <parameter name="attachmentId" idRef="46c151a2-de7a-1004-8818-83fc652da2ba"/>
-                    <parameter name="assumptions" idRef="164941ab-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="actionPerson" idRef="2ca9e9c1-de48-1004-8e4d-8126b538dd75"/>
                     <parameter name="teamMembers" idRef="b03e482e-dd34-1004-805f-42099899dcaf"/>
-                    <parameter name="reason" idRef="22fd0b5e-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="teamMemberNames" idRef="a10a327c-dea6-1004-891c-de78205b975f"/>
-                    <parameter name="levelSwitching" idRef="1426775e-df88-1004-8bf3-45ce5329a03a"/>
+                    <parameter name="inputPage" idRef="1649419c-dda9-1004-8227-088d16b2f8a0"/>
+                    <parameter name="attachedFileList" idRef="9017e3ed-dfce-1004-825c-1cdcf3aed2d5"/>
+                    <parameter name="inputTemplate" idRef="d05e6310-dd88-1004-8bdd-44b440cccfb6"/>
+                    <parameter name="navSubThreadId" idRef="25cd9c9a-de1a-1004-8a13-5151e3e3cff9"/>
+                    <parameter name="scheduleRisk" idRef="22fd0b58-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="completionDate" idRef="22fd0b5b-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="teamMemberRoles" idRef="a10a327f-dea6-1004-891c-de78205b975f"/>
-                    <parameter name="navSubThreadLevelId" idRef="25cd9c9d-de1a-1004-8a13-5151e3e3cff9"/>
-                    <parameter name="chosenThreads" idRef="9c6cde37-dfa8-1004-8d60-f372f589f382"/>
-                    <parameter name="inputPage" idRef="1649419c-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="technicalRisk" idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="notes" idRef="164941ae-dda9-1004-8227-088d16b2f8a0"/>
-                    <parameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf"/>
+                    <parameter name="targetDate" idRef="47d82a2b-dd34-1004-8d9c-1a039e44f953"/>
+                    <parameter name="inAssessmentPath" idRef="11fc3fa2-de16-1004-8ba7-7e7ff1bfb148"/>
                     <parameter name="location" idRef="d05e630d-dd88-1004-8bdd-44b440cccfb6"/>
-                    <parameter name="evidence" idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="navThreadId" idRef="25cd9c97-de1a-1004-8a13-5151e3e3cff9"/>
-                    <parameter name="documentation" idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="answerValue" idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="questionId" idRef="22fd0b67-ddb3-1004-84c0-f2ce94b6efde"/>
                     <parameter name="costRisk" idRef="22fd0b55-ddb3-1004-84c0-f2ce94b6efde"/>
-                    <parameter name="inputTemplate" idRef="d05e6310-dd88-1004-8bdd-44b440cccfb6"/>
+                    <parameter name="startCss" idRef="4574f81d-ddc1-1004-8983-53f15f6af3f1"/>
+                    <parameter name="scope" idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
                     <parameter name="questionVisitList" idRef="e16ec717-de1d-1004-886c-d13d17f58736"/>
+                    <parameter name="assumptions" idRef="164941ab-dda9-1004-8227-088d16b2f8a0"/>
+                    <parameter name="dmcProjectId" idRef="5a6def9d-de7e-1004-8d63-4919b48fd46c"/>
+                    <parameter name="evidence" idRef="22fd0b4f-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="version" idRef="b03e4831-dd34-1004-805f-42099899dcaf"/>
+                    <parameter name="answerValue" idRef="22fd0b4c-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="technicalRisk" idRef="22fd0b52-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="functionToCall" idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
+                    <parameter name="teamMemberNames" idRef="a10a327c-dea6-1004-891c-de78205b975f"/>
+                    <parameter name="chosenThreads" idRef="9c6cde37-dfa8-1004-8d60-f372f589f382"/>
+                    <parameter name="documentation" idRef="22fd0b64-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="navQuestionId" idRef="25cd9ca0-de1a-1004-8a13-5151e3e3cff9"/>
+                    <parameter name="inThreads" idRef="40163cb0-ddd1-1004-8561-183aa7efb3fb"/>
+                    <parameter name="notes" idRef="164941ae-dda9-1004-8227-088d16b2f8a0"/>
+                    <parameter name="levelSwitching" idRef="1426775e-df88-1004-8bf3-45ce5329a03a"/>
+                    <parameter name="actionPerson" idRef="2ca9e9c1-de48-1004-8e4d-8126b538dd75"/>
+                    <parameter name="navThreadId" idRef="25cd9c97-de1a-1004-8a13-5151e3e3cff9"/>
+                    <parameter name="targetLevel" idRef="b0f88475-dea6-1004-8533-07550f3af84f"/>
+                    <parameter name="attachmentId" idRef="46c151a2-de7a-1004-8818-83fc652da2ba"/>
+                    <parameter name="navSubThreadLevelId" idRef="25cd9c9d-de1a-1004-8a13-5151e3e3cff9"/>
+                    <parameter name="reason" idRef="22fd0b5e-ddb3-1004-84c0-f2ce94b6efde"/>
+                    <parameter name="whatAction" idRef="22fd0b61-ddb3-1004-84c0-f2ce94b6efde"/>
                 </parameters>
             </filter>
             <filter id="OUTPUTS_FILTER" name="Outputs">
@@ -675,6 +690,7 @@
             <node idRef="47d82a2e-dd34-1004-8d9c-1a039e44f953"/>
             <node idRef="5a6def9d-de7e-1004-8d63-4919b48fd46c"/>
             <node idRef="7c2c4676-dd2e-1004-8431-63bc9d81ddd0"/>
+            <node idRef="9017e3ed-dfce-1004-825c-1cdcf3aed2d5"/>
             <node idRef="9c6cde37-dfa8-1004-8d60-f372f589f382"/>
             <node idRef="a10a327c-dea6-1004-891c-de78205b975f"/>
             <node idRef="a10a327f-dea6-1004-891c-de78205b975f"/>
@@ -795,8 +811,13 @@
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
                 <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
+            <from idRef="9017e3ed-dfce-1004-825c-1cdcf3aed2d5">
+                <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
+            </from>
             <from idRef="9c6cde37-dfa8-1004-8d60-f372f589f382">
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
+                <to idRef="e8e9f01e-dec2-1004-8382-b9252180f3c0"/>
             </from>
             <from idRef="a10a327c-dea6-1004-891c-de78205b975f">
                 <to idRef="d05e6313-dd88-1004-8bdd-44b440cccfb6"/>
@@ -859,6 +880,7 @@
         <iToRpMap relParamId="47d82a2e-dd34-1004-8d9c-1a039e44f953" ifaceId="47d82a2c-dd34-1004-8d9c-1a039e44f953"/>
         <iToRpMap relParamId="5a6def9d-de7e-1004-8d63-4919b48fd46c" ifaceId="5a6def9b-de7e-1004-8d63-4919b48fd46c"/>
         <iToRpMap relParamId="7c2c4676-dd2e-1004-8431-63bc9d81ddd0" ifaceId="7c2c4674-dd2e-1004-8431-63bc9d81ddd0"/>
+        <iToRpMap relParamId="9017e3ed-dfce-1004-825c-1cdcf3aed2d5" ifaceId="9017e3eb-dfce-1004-825c-1cdcf3aed2d5"/>
         <iToRpMap relParamId="9c6cde37-dfa8-1004-8d60-f372f589f382" ifaceId="9c6cde35-dfa8-1004-8d60-f372f589f382"/>
         <iToRpMap relParamId="a10a327c-dea6-1004-891c-de78205b975f" ifaceId="a10a327a-dea6-1004-891c-de78205b975f"/>
         <iToRpMap relParamId="a10a327f-dea6-1004-891c-de78205b975f" ifaceId="a10a327d-dea6-1004-891c-de78205b975f"/>
